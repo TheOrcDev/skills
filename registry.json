@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "orc-skills",
+  "homepage": "https://github.com/TheOrcDev/skills",
+  "items": [
+    {
+      "name": "orc-me",
+      "type": "registry:item",
+      "title": "Orc Me",
+      "description": "Starter Claude Code skill. Installs to .claude/skills/orc-me/SKILL.md in the target project.",
+      "files": [
+        {
+          "path": "skills/orc-me/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/orc-me/SKILL.md"
+        }
+      ]
+    }
+  ]
+}
