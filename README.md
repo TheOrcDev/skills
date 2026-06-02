@@ -6,7 +6,7 @@ Blunt tools for warchiefs who want work done. Run a command below — the skill 
 
 ## 🪓 The Horde
 
-### `orc-me` — orc voice mode
+### `orc-me` - orc voice mode
 
 Makes Claude blunt, decisive, no hedging. Leads with the answer, picks a side, cuts the padding — but keeps every command and code path exactly right. The voice is the delivery; **directness is the weapon**.
 
@@ -18,4 +18,4 @@ Wake it with `/orc-me`, "orc mode", or "talk like an orc." Say "normal mode" to 
 
 ---
 
-More warriors join the Horde soon. **Lok'tar ogar!** 🪓
+**Lok'tar Ogar!** 🪓
