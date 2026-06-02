@@ -16,6 +16,16 @@ npx shadcn@latest add TheOrcDev/skills/orc-me
 
 Wake it with `/orc-me`, "orc mode", or "talk like an orc." Say "normal mode" to stand it down.
 
+### `war-boss-review` - orc code review
+
+Blunt, zero-hedging review of your changes. Ranks every finding **KILL IT** (blocker), **WEAK** (minor), or **WAAAGH-WORTHY** (strong), strips the politeness padding, and forces a verdict: ship or hold the line.
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/war-boss-review
+```
+
+Call it with `/war-boss-review`, "orc review", or "roast my code."
+
 ---
 
 **Lok'tar Ogar!** 🪓

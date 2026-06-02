@@ -15,6 +15,19 @@
           "target": "~/.claude/skills/orc-me/SKILL.md"
         }
       ]
+    },
+    {
+      "name": "war-boss-review",
+      "type": "registry:item",
+      "title": "War-Boss Review",
+      "description": "Blunt orc code review — ranks findings KILL IT / WEAK / WAAAGH-WORTHY and forces a ship/hold verdict. Installs to .claude/skills/war-boss-review/SKILL.md in the target project.",
+      "files": [
+        {
+          "path": "skills/war-boss-review/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/war-boss-review/SKILL.md"
+        }
+      ]
     }
   ]
 }
