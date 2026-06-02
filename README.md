@@ -1,46 +1,21 @@
-# skills
+# 🪓 Orc Skills
 
-A [shadcn registry](https://ui.shadcn.com/docs/registry/github) of Claude Code skills. Install any skill straight from this repo with the shadcn CLI — no separate registry server needed.
+> **WAAAGH!** Battle-ready skills for Claude Code, forged by [TheOrcDev](https://github.com/TheOrcDev).
 
-## Install a skill
+Blunt tools for warchiefs who want work done. Run a command below — the skill drops into your project's `.claude/skills/`, ready the moment you call it. Zug zug.
+
+## 🪓 The Horde
+
+### `orc-me` — orc voice mode
+
+Makes Claude blunt, decisive, no hedging. Leads with the answer, picks a side, cuts the padding — but keeps every command and code path exactly right. The voice is the delivery; **directness is the weapon**.
 
 ```bash
 npx shadcn@latest add TheOrcDev/skills/orc-me
 ```
 
-This writes the skill into `.claude/skills/orc-me/SKILL.md` in your current project.
+Wake it with `/orc-me`, "orc mode", or "talk like an orc." Say "normal mode" to stand it down.
 
-### Preview before installing
+---
 
-```bash
-npx shadcn@latest view TheOrcDev/skills/orc-me        # inspect the payload
-npx shadcn@latest add TheOrcDev/skills/orc-me --dry-run
-```
-
-### Pin to a version
-
-```bash
-npx shadcn@latest add TheOrcDev/skills/orc-me#v1.0.0
-```
-
-## Available skills
-
-| Skill    | Description                                                          |
-| -------- | ------------------------------------------------------------------- |
-| `orc-me` | Orc voice mode — blunt, decisive, no-hedging answers (accuracy kept) |
-
-## Repo layout
-
-```
-registry.json          # registry manifest — lists every skill as an item
-skills/
-  orc-me/
-    SKILL.md           # the skill itself
-```
-
-## Add your own skill
-
-1. Create `skills/<name>/SKILL.md` with frontmatter (`name`, `description`) and a body.
-2. Add an item to `registry.json` pointing `path` at the file and `target` at `~/.claude/skills/<name>/SKILL.md`.
-3. Validate: `npx shadcn@latest registry validate TheOrcDev/skills`.
-4. Commit and push — it's instantly installable.
+More warriors join the Horde soon. **Lok'tar ogar!** 🪓
