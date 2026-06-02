@@ -25,9 +25,9 @@ npx shadcn@latest add TheOrcDev/skills/orc-me#v1.0.0
 
 ## Available skills
 
-| Skill    | Description                                        |
-| -------- | -------------------------------------------------- |
-| `orc-me` | Starter skill — copy it as a template for your own |
+| Skill    | Description                                                          |
+| -------- | ------------------------------------------------------------------- |
+| `orc-me` | Orc voice mode — blunt, decisive, no-hedging answers (accuracy kept) |
 
 ## Repo layout
 

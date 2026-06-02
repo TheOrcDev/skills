@@ -7,7 +7,7 @@
       "name": "orc-me",
       "type": "registry:item",
       "title": "Orc Me",
-      "description": "Starter Claude Code skill. Installs to .claude/skills/orc-me/SKILL.md in the target project.",
+      "description": "Orc voice mode — blunt, decisive, no-hedging answers with full technical accuracy. Installs to .claude/skills/orc-me/SKILL.md in the target project.",
       "files": [
         {
           "path": "skills/orc-me/SKILL.md",
