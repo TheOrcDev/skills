@@ -28,6 +28,19 @@
           "target": "~/.claude/skills/war-boss-review/SKILL.md"
         }
       ]
+    },
+    {
+      "name": "cut-it",
+      "type": "registry:item",
+      "title": "Cut It",
+      "description": "Cut an existing plan into ordered, self-contained slices (execution phases) sized for an AI agent to run one at a time. Installs to .claude/skills/cut-it/SKILL.md in the target project.",
+      "files": [
+        {
+          "path": "skills/cut-it/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/cut-it/SKILL.md"
+        }
+      ]
     }
   ]
 }

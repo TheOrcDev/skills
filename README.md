@@ -26,6 +26,16 @@ npx shadcn@latest add TheOrcDev/skills/war-boss-review
 
 Call it with `/war-boss-review`, "orc review", or "roast my code."
 
+### `cut-it` - plan slicer
+
+Takes a plan you already have and cuts it into ordered, self-contained slices — execution phases sized for an AI agent to pick up and run one at a time. Dependency-ordered, each slice verifiable and safe to commit.
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/cut-it
+```
+
+Call it with `/cut-it`, "slice this plan", or "break this into phases."
+
 ---
 
 **Lok'tar Ogar!** 🪓
