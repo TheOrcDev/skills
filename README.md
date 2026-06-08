@@ -36,6 +36,16 @@ npx shadcn@latest add TheOrcDev/skills/cut-it
 
 Call it with `/cut-it`, "slice this plan", or "break this into phases."
 
+### `loop-grill-me` - self-driving plan grill
+
+Grills a plan one question at a time, but drives the interview itself: each question gets three answers (**A/B/C**) with one marked **✅ Recommended**, and it auto-answers with the recommended pick — looping down the decision tree until the plan is fully resolved. Review every auto-made decision in one pass and flip any you disagree with.
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/loop-grill-me
+```
+
+Call it with `/loop-grill-me`, "auto-grill this plan", or "grill it and decide."
+
 ---
 
 **Lok'tar Ogar!** 🪓

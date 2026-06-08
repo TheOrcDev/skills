@@ -41,6 +41,19 @@
           "target": "~/.claude/skills/cut-it/SKILL.md"
         }
       ]
+    },
+    {
+      "name": "loop-grill-me",
+      "type": "registry:item",
+      "title": "Loop Grill Me",
+      "description": "Self-driving grill-me: interrogates a plan one question at a time, offers three answers (A/B/C) with one Recommended, and auto-answers with the recommended option until the plan is resolved. Installs to .claude/skills/loop-grill-me/SKILL.md in the target project.",
+      "files": [
+        {
+          "path": "skills/loop-grill-me/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/loop-grill-me/SKILL.md"
+        }
+      ]
     }
   ]
 }
