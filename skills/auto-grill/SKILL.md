@@ -1,9 +1,9 @@
 ---
-name: loop-grill-me
-description: Self-driving version of grill-me. Interrogates a plan or design one question at a time, but for each question offers three answers (A/B/C) with one marked Recommended, then answers it itself by taking the recommended option — looping down the decision tree until the plan is fully resolved. Use when the user wants a plan stress-tested and auto-decided, says "loop-grill-me", "grill it and decide", "auto-grill", or invokes /loop-grill-me.
+name: auto-grill
+description: Self-driving version of grill-me. Interrogates a plan or design one question at a time, but for each question offers three answers (A/B/C) with one marked Recommended, then answers it itself by taking the recommended option — looping down the decision tree until the plan is fully resolved. Use when the user wants a plan stress-tested and auto-decided, says "auto-grill", "auto-grill this plan", "grill it and decide", or invokes /auto-grill.
 ---
 
-# Loop Grill Me
+# Auto Grill
 
 Grill a plan relentlessly — but drive the interview yourself. Walk down each branch of the decision tree one question at a time. For every question, lay out three options and **take the recommended one automatically**, then move on. The output is a fully-resolved plan the user can review and override in one pass, instead of a slow back-and-forth.
 
