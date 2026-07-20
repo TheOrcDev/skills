@@ -1,4 +1,4 @@
 interface:
-  display_name: "Shadscan Pre-commit"
-  short_description: "Gate commits with a deterministic Shadscan audit"
-  default_prompt: "Use $shadscan-pre-commit to add a safe Shadscan pre-commit gate to this repository."
+  display_name: "Shadscan Before Commit"
+  short_description: "Audit every agent-created commit with Shadscan"
+  default_prompt: "Use $shadscan-pre-commit for this task. Establish a baseline now, rerun Shadscan immediately before every commit, and do not install dependencies or change repository tooling."

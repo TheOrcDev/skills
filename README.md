@@ -46,9 +46,9 @@ npx shadcn@latest add TheOrcDev/skills/auto-grill
 
 Call it with `/auto-grill`, "auto-grill this plan", or "grill it and decide."
 
-### `shadscan-pre-commit` - shadcn UI commit gate
+### `shadscan-pre-commit` - AI agent commit check
 
-Adds a deterministic Shadscan score gate before every commit. It detects the package manager and existing hook setup, takes a baseline, pins Shadscan locally, and preserves every command already in the hook.
+Makes an AI agent establish a Shadscan baseline when work begins and audit again immediately before every agent-created commit. It does not install project dependencies, edit package scripts, or configure Git.
 
 Install for Codex, Claude Code, Cursor, and other supported agents:
 
@@ -62,7 +62,7 @@ Install into Claude Code through the shadcn registry:
 npx shadcn@latest add TheOrcDev/skills/shadscan-pre-commit
 ```
 
-Call it with `$shadscan-pre-commit`, "add Shadscan before every commit", or "set up a Shadscan commit gate."
+Call it with `$shadscan-pre-commit`, "run Shadscan before every agent commit", or "prevent UI regressions in this agent task."
 
 ---
 

@@ -1,56 +1,56 @@
 ---
 name: shadscan-pre-commit
-description: Configures a repository to run a version-pinned Shadscan audit before every commit without overwriting existing hooks. Use when a user asks to add Shadscan as a pre-commit gate, prevent shadcn UI regressions, or wire Shadscan into Husky, Lefthook, or simple-git-hooks.
+description: AI-agent commit protocol that establishes a Shadscan baseline and reruns the audit immediately before every agent-created commit without installing dependencies or configuring Git. Use when an agent is asked to commit work in a React shadcn project, prevent UI regressions during an agent task, or run Shadscan before commits.
 ---
 
 # Shadscan Pre-commit
 
-Add a deterministic Shadscan score gate to a JavaScript or TypeScript repository. Preserve the project's package manager, scripts, hooks, lockfile, and unrelated working-tree changes.
+Use Shadscan as an agent-owned checkpoint. This skill changes the agent's commit workflow only; it does not add repository automation.
 
 ## Workflow
 
-1. Inspect before editing:
-   - Read `package.json`, its `packageManager` field, and lockfiles.
-   - Read existing hook configuration, including `.husky/`, `lefthook.yml`, `lefthook.yaml`, and `simple-git-hooks` in `package.json`.
-   - Check `git status`; never revert, stage, or rewrite unrelated changes.
-   - Detect whether `shadscan` is already installed locally.
-2. Establish a baseline:
-   - Use the local binary when present: `<package-manager> exec shadscan --json`.
-   - Otherwise run a one-time package-manager equivalent of `npx --yes shadscan@latest --json`.
-   - Read the top-level `score`; do not parse the human report.
-   - Use a user-specified integer threshold from 0 to 100 when provided. Otherwise use the current score so adoption prevents regressions immediately.
-   - If a gate already exists, preserve its threshold unless the user explicitly requests a change. Never replace it with a lower baseline.
-   - Stop and explain the applicability problem when the score is `null`. Do not invent a threshold.
-3. Install a reproducible local gate:
-   - Add `shadscan` as a dev dependency with the detected package manager.
-   - Keep the resolved version in the lockfile. Do not put `dlx`, `npx`, `bunx`, or another network-dependent installer in the Git hook.
-   - Add or preserve this package script: `"audit:ui": "shadscan --fail-under <threshold> --no-roast"`.
-4. Reuse the existing hook manager. If none exists, install Husky as a dev dependency and run its current `init` command for the detected package manager.
-5. Append the package-manager equivalent of `npm run audit:ui` to the existing pre-commit hook. Preserve every existing command and configuration key.
-6. Verify:
-   - Run the new `audit:ui` script directly.
-   - Confirm a passing score exits zero.
-   - When the baseline is below 100, run a one-off audit with `--fail-under <baseline + 1>` to confirm a failing score exits nonzero. Do not edit the configured script for this test.
-   - At a baseline of 100, skip the synthetic failure because no valid higher threshold exists and report that limitation.
-   - Re-read the hook and `package.json`; report changed files, pinned Shadscan version, baseline, threshold, and hook manager.
+1. Activate before changing files:
+   - Read repository instructions and `git status`.
+   - Detect the package manager and whether `node_modules/.bin/shadscan` exists.
+   - Never revert, stage, or rewrite unrelated changes.
+2. Establish the task baseline:
+   - Run the local binary with `--json` when present.
+   - Otherwise use the matching one-shot command below.
+   - Read the top-level `score` from JSON. Do not parse the human report.
+   - Stop and explain the applicability problem when `score` is `null`.
+3. Set the task floor:
+   - Default to the baseline score so the task cannot introduce a regression.
+   - When the user requests a higher integer floor, use the higher value.
+   - Never lower the baseline unless the user explicitly accepts that regression.
+   - Keep the baseline and floor in task context; do not write configuration files.
+4. Complete the requested work and its normal verification.
+5. Immediately before every agent-created commit:
+   - Rerun the same JSON audit against the complete working tree.
+   - Require a numeric score at or above the task floor.
+   - When it fails, use each finding's evidence and fix guidance, repair in-scope issues, and rerun the audit.
+   - When passing requires out-of-scope work, stop and report the findings. Do not commit without an explicit user override.
+6. Commit only after a passing audit. Report the baseline, floor, final score, and commit alongside the normal task summary.
 
-## Hook Managers
+## One-shot Commands
 
-- **Husky:** put the detected package-manager run command on its own line in `.husky/pre-commit`. Preserve the file and executable mode. Never replace an existing hook.
-- **Lefthook:** add a uniquely named `shadscan` command under `pre-commit.commands` with `run: <package-manager> run audit:ui`. Preserve other commands and YAML structure.
-- **simple-git-hooks:** merge `"pre-commit": "<existing command> && <package-manager> run audit:ui"` into its existing object. Do not discard the existing command.
-- **Unknown or custom manager:** inspect its documentation or local configuration before editing. Do not silently install a second manager.
+Use these only when no local Shadscan binary exists:
+
+- pnpm: `pnpm dlx shadscan@latest --json`
+- npm: `npx --yes shadscan@latest --json`
+- Yarn: `yarn dlx shadscan@latest --json`
+- Bun: `bunx --bun shadscan@latest --json`
+
+Run a detected local binary directly as `node_modules/.bin/shadscan --json` or with the package manager's local-exec command.
 
 ## Guardrails
 
-- Audit the working tree as it exists at commit time; Shadscan is project-wide, not staged-file-only.
-- Do not run auto-fixers from this hook and do not mutate staged files.
-- Do not lower an existing threshold unless the user explicitly asks.
-- Do not duplicate the Shadscan command when the hook is already configured.
-- Do not use raw `.git/hooks` for shared setup because those files are not versioned.
-- Mention `git commit --no-verify` only as an emergency bypass; do not use it during verification.
-- If dependency installation is unavailable, leave the repository consistent and report the exact blocker.
+- Do not install dependencies or change `package.json` or a lockfile.
+- Do not configure Git or add repository automation.
+- Do not mutate staged files or run Shadscan auto-fix behavior.
+- Audit the project-wide working tree, not only the staged diff.
+- Do not claim this intercepts manual commits or agents that have not loaded the skill.
+- Do not commit an unassessed or below-floor result unless the user explicitly overrides it in the current conversation.
 
 ## Completion Format
 
-Return a concise summary with the baseline score, enforced threshold, hook manager, package script, verification result, and files changed. Call out that teammates must install dependencies once after pulling the configuration.
+Return a concise summary with the baseline score, enforced floor, pre-commit score, audit command, commit, and any explicit override. If no commit was requested or created, say that the final audit was advisory rather than a commit checkpoint.

@@ -59,7 +59,7 @@
       "name": "shadscan-pre-commit",
       "type": "registry:item",
       "title": "Shadscan Pre-commit",
-      "description": "Add a deterministic Shadscan score gate before every commit while preserving the project's package manager and existing hooks.",
+      "description": "Give AI agents a Shadscan baseline and pre-commit audit protocol without changing project dependencies, scripts, or Git configuration.",
       "files": [
         {
           "path": "skills/shadscan-pre-commit/SKILL.md",
