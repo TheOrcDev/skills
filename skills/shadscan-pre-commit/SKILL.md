@@ -35,10 +35,10 @@ Use Shadscan as an agent-owned checkpoint. This skill changes the agent's commit
 
 Use these only when no local Shadscan binary exists:
 
-- pnpm: `pnpm dlx shadscan@latest --json`
-- npm: `npx --yes shadscan@latest --json`
-- Yarn: `yarn dlx shadscan@latest --json`
-- Bun: `bunx --bun shadscan@latest --json`
+- pnpm: `pnpm dlx @shadscan/cli@next --json`
+- npm: `npx --yes @shadscan/cli@next --json`
+- Yarn: `yarn dlx --quiet --package @shadscan/cli@next shadscan --json`
+- Bun: `bunx @shadscan/cli@next --json`
 
 Run a detected local binary directly as `node_modules/.bin/shadscan --json` or with the package manager's local-exec command.
 
