@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shadscan Pre-commit"
+  short_description: "Gate commits with a deterministic Shadscan audit"
+  default_prompt: "Use $shadscan-pre-commit to add a safe Shadscan pre-commit gate to this repository."

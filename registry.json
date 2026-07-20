@@ -54,6 +54,19 @@
           "target": "~/.claude/skills/auto-grill/SKILL.md"
         }
       ]
+    },
+    {
+      "name": "shadscan-pre-commit",
+      "type": "registry:item",
+      "title": "Shadscan Pre-commit",
+      "description": "Add a deterministic Shadscan score gate before every commit while preserving the project's package manager and existing hooks.",
+      "files": [
+        {
+          "path": "skills/shadscan-pre-commit/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/shadscan-pre-commit/SKILL.md"
+        }
+      ]
     }
   ]
 }

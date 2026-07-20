@@ -1,8 +1,8 @@
 # 🪓 Orc Skills
 
-> **WAAAGH!** Battle-ready skills for Claude Code, forged by [TheOrcDev](https://github.com/TheOrcDev).
+> **WAAAGH!** Battle-ready agent skills, forged by [TheOrcDev](https://github.com/TheOrcDev).
 
-Blunt tools for warchiefs who want work done. Run a command below — the skill drops into your project's `.claude/skills/`, ready the moment you call it. Zug zug.
+Blunt tools for warchiefs who want work done. Install through the Skills CLI for any supported agent, or use the shadcn command to drop a skill into Claude Code. Zug zug.
 
 ## 🪓 The Horde
 
@@ -45,6 +45,24 @@ npx shadcn@latest add TheOrcDev/skills/auto-grill
 ```
 
 Call it with `/auto-grill`, "auto-grill this plan", or "grill it and decide."
+
+### `shadscan-pre-commit` - shadcn UI commit gate
+
+Adds a deterministic Shadscan score gate before every commit. It detects the package manager and existing hook setup, takes a baseline, pins Shadscan locally, and preserves every command already in the hook.
+
+Install for Codex, Claude Code, Cursor, and other supported agents:
+
+```bash
+npx skills add TheOrcDev/skills --skill shadscan-pre-commit
+```
+
+Install into Claude Code through the shadcn registry:
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/shadscan-pre-commit
+```
+
+Call it with `$shadscan-pre-commit`, "add Shadscan before every commit", or "set up a Shadscan commit gate."
 
 ---
 
