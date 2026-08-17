@@ -67,6 +67,24 @@
           "target": "~/.claude/skills/shadscan-pre-commit/SKILL.md"
         }
       ]
+    },
+    {
+      "name": "intro-video",
+      "type": "registry:item",
+      "title": "Intro Video",
+      "description": "Remotion intro/reel/brand-film skill with remocn and ASR-timed captions. Installs to .claude/skills/intro-video/ in the target project.",
+      "files": [
+        {
+          "path": "skills/intro-video/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/intro-video/SKILL.md"
+        },
+        {
+          "path": "skills/intro-video/scripts/asr.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/intro-video/scripts/asr.py"
+        }
+      ]
     }
   ]
 }

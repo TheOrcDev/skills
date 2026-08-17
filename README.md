@@ -64,6 +64,16 @@ npx shadcn@latest add TheOrcDev/skills/shadscan-pre-commit
 
 Call it with `$shadscan-pre-commit`, "run Shadscan before every agent commit", or "prevent UI regressions in this agent task."
 
+### `intro-video` - remotion intros with ASR captions
+
+Builds Remotion intros, reels, and brand films with remocn. Caption times come from ASR (`sherpa-onnx` + zipformer) — never from character-count guesses. Script for spelling, ASR for timing.
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/intro-video
+```
+
+Call it with `/intro-video`, "make an intro", or "caption this reel."
+
 ---
 
 **Lok'tar Ogar!** 🪓
