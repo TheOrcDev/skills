@@ -7,7 +7,11 @@ description: Build Remotion intro, reel, and brand-film videos with remocn and A
 
 Build Remotion intros, reels, and brand films with remocn. Load the remocn skill for components. This skill owns captions, audio, intros, and render.
 
-**Caption timing comes from ASR. Never estimate from character counts or energy-based pause detection.** Estimating ran 1.1–1.9s late on a ~20s reel. That is a wrong video.
+Three rules, each learned by shipping the wrong video:
+
+1. **Caption timing comes from ASR. Never estimate from character counts or energy-based pause detection.** Estimating ran 1.1–1.9s late on a ~20s reel. That is a wrong video.
+2. **Trim the silence off both ends of the VO before ASR.** See [Audio](#audio).
+3. **Overlays live in the empty top-left, not across the frame,** unless the user asks otherwise. See [Overlays](#overlays).
 
 ## Inputs
 
@@ -18,10 +22,43 @@ Ask for both before any caption work:
 
 Script gives spelling. ASR gives timing. Map script words onto ASR timestamps; keep the times.
 
+## Audio
+
+**Trim the dead air off both ends before anything else.** Raw VO arrives with
+silence at the head and tail. Ship it untrimmed and the video opens on a still
+frame with no voice and ends hanging on nothing.
+
+Order matters: **trim first, then ASR.** ASR timestamps are relative to the file
+you feed it. Trim afterwards and every caption is offset by the length of the
+head silence.
+
+Measure the real boundaries — do not guess a fixed number:
+
+```bash
+ffmpeg -i voice.wav -af silencedetect=noise=-40dB:d=0.15 -f null - 2>&1 \
+  | grep silence_
+```
+
+Read the first `silence_end` (voice starts) and the last `silence_start`
+(voice ends), then cut to those with a small margin so consonants survive:
+
+```bash
+ffmpeg -i voice.wav -ss <start-0.05> -to <end+0.10> -c:a pcm_s16le voice-trim.wav
+```
+
+Confirm with `ffprobe -show_entries format=duration` before moving on. Then run
+ASR on `voice-trim.wav`, and use that same file in the composition — the
+timings only line up against the file they were measured from.
+
+- `-40dB` suits a clean close-mic recording. Noisy room, raise toward `-30dB`.
+- Leave ~0.05s ahead of the first word and ~0.10s after the last. A hard zero cut clips plosives and sounds truncated.
+- Normalise to −16 LUFS **after** trimming.
+- ~0.2s crossfade at clip joins. Build the whole track in **one** ffmpeg filtergraph so frame counts match exactly.
+
 ## ASR
 
 ```bash
-python3 scripts/asr.py voice.wav --fps 30 --out captions.json
+python3 scripts/asr.py voice-trim.wav --fps 30 --out captions.json
 ```
 
 Uses `sherpa-onnx` from PyPI and a zipformer model from **GitHub release assets** (allowlisted). Whisper weights on Azure/HuggingFace are often blocked — do not start there. The script downloads the model on first run.
@@ -46,8 +83,32 @@ Drive every caption `from` / `durationInFrames` from that JSON. 2–4 words on s
 | Over footage | plate behind the text | same |
 
 - **Opening clip:** vignette + Ken Burns `1.0 → 1.09`, origin `50% 42%`.
-- **Audio:** −16 LUFS. Trim ~0.12s head / ~0.16s tail. ~0.2s at clip joins. Build the track in **one** ffmpeg filtergraph so frame counts match exactly.
 - **Logos:** real assets only — npm icon packs or the product's own GitHub repo. Never redraw.
+
+## Overlays
+
+**Animations, logo lockups, code cards, stat callouts and every other overlay
+go in the empty space in the top-left. Never across the whole screen** — unless
+the user explicitly asks for full-screen.
+
+A full-bleed animation covers the speaker and fights the captions. The top-left
+is empty on nearly every talking-head frame, so that is where an overlay reads
+without hiding anything.
+
+Look at an actual frame first and put the overlay in the empty corner you see
+there. Where the subject genuinely sits left, mirror the box to the top-right.
+Starting points:
+
+| | Vertical 1080×1920 | Landscape 1920×1080 |
+|---|---|---|
+| Box origin | x 60, y 200 | x 80, y 80 |
+| Box size | ~560 × 560 | ~680 × 420 |
+| Max scale | ~50% of width | ~35% of width |
+
+- Keep the overlay clear of the caption band at the bottom and, on vertical, of the right-hand action rail.
+- Animate **in place** — scale/fade/slide within the box. Do not let a transition sweep across the full frame on the way in.
+- One overlay at a time. Two competing corners is worse than none.
+- Full-screen is legitimate for a deliberate cutaway or end card. That is a different beat, not an overlay — cut to it, do not lay it over the speaker.
 
 ## Render
 
