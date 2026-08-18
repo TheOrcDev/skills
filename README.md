@@ -64,6 +64,16 @@ npx shadcn@latest add TheOrcDev/skills/shadscan-pre-commit
 
 Call it with `$shadscan-pre-commit`, "run Shadscan before every agent commit", or "prevent UI regressions in this agent task."
 
+### `github-to-origin` - move a repo to Cursor Origin
+
+Moves a repo from GitHub to Cursor Origin hosting and, critically, repoints Vercel so production keeps deploying. Covers the two traps that make this look done when it isn't: a synced repo is a *mirror* with GitHub still the source of truth, and installing the Vercel app on the Origin repo does not move the project that owns your domain.
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/github-to-origin
+```
+
+Call it with `/github-to-origin`, "move this repo to origin", or "why isn't my Origin push deploying?"
+
 ### `intro-video` - remotion intros with ASR captions
 
 Builds Remotion intros, reels, and brand films with remocn. Caption times come from ASR (`sherpa-onnx` + zipformer) — never from character-count guesses. Script for spelling, ASR for timing.
