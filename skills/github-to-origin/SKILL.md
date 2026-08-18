@@ -28,8 +28,9 @@ Both look like success. Neither is.
 
 - Origin is early beta and needs a paid Cursor plan.
 - The `origin` CLI must be installed. Check with `origin --version`.
-- Two steps need a human in a browser and cannot be automated: the login, and
-  the detach confirmation. Plan for that rather than discovering it midway.
+- One step needs a human in a browser and cannot be automated: the Cursor-side
+  detach confirmation (step 6). The Origin login needs a browser too, but the CLI
+  drives it. Vercel is scriptable — see step 7.
 
 ## 1. Snapshot first
 
@@ -124,11 +125,22 @@ The dialog states the GitHub repo is **not deleted**. After detaching, the Sync
 Status panel and the detach option disappear, and `origin repo view` no longer
 reports a mirror status. Verify that rather than trusting the click.
 
-## 7. Point Vercel at Origin (browser, human required)
+## 7. Point Vercel at Origin
 
 **This is the step that decides whether production updates.**
 
-In the Vercel **project** that owns the production domain:
+Do this on the Vercel **project that owns the production domain**.
+
+The CLI can do it — `vercel git` has both subcommands (verified on CLI 46.1.0):
+
+```bash
+vercel link                    # link this directory to the right project first
+vercel git disconnect
+vercel git connect https://origin.cursor.com/<org>/<repo>.git
+```
+
+Vercel's docs describe `connect` only as "a Git provider repository" and do not
+name Origin, so if the CLI rejects the URL, fall back to the dashboard:
 
 **Project Settings** → **Git** → **Connected Git Repository** → **Disconnect**,
 then connect the Origin repo.
