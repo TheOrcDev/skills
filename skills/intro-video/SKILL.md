@@ -57,3 +57,27 @@ Drive every caption `from` / `durationInFrames` from that JSON. 2–4 words on s
 - Render **150–225 frame chunks**, concat, then mux audio. Full renders blow tool timeouts.
 - Concurrency 1 on a single core.
 - If `remocn.dev` 403s, pull components from the remocn GitHub repo `registry-artifacts/` instead of `shadcn add`. npm, PyPI, and GitHub release assets work.
+- Frame format **JPEG, quality 95**. PNG at 4K is ~30MB/frame — a 200-frame chunk needs ~6GB of temp space and fails silently when the disk runs out. Check `df -h /` and clear `out/` first.
+- **A chunk that overruns leaves a truncated file with no error.** `ffprobe` the frame count after every chunk before concatenating.
+
+### 4K
+
+Render the 1920×1080 composition with `--scale=2`. It stays 1920×1080
+logically but rasterizes at 2× device pixels, so captions, lockups and
+vignettes come out natively sharp. Do **not** build a separate 4K composition.
+
+```bash
+npx remotion render src/index.ts <Comp> out/kN.mp4 \
+  --codec=h264 --crf=17 --muted --scale=2 --frames=A-B
+```
+
+Concat the chunks, then mux the audio.
+
+- Re-cut every source asset at native 4K first.
+- ~74 frames per chunk over talking-head footage. Drop to ~40 over cutaways that are themselves 4K video — compositing 4K over a decoding 4K clip is much slower.
+- 1080p plus an ffmpeg lanczos upscale takes ~4 min against ~1 hour for true 4K. Offer it, but confirm before switching.
+
+## Cover art
+
+Safe areas differ per platform and the wrong guess buries the type. See
+`references/cover-art.md`.

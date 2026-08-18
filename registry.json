@@ -83,6 +83,11 @@
           "path": "skills/intro-video/scripts/asr.py",
           "type": "registry:file",
           "target": "~/.claude/skills/intro-video/scripts/asr.py"
+        },
+        {
+          "path": "skills/intro-video/references/cover-art.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/intro-video/references/cover-art.md"
         }
       ]
     }
