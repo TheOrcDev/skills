@@ -8,7 +8,7 @@ Blunt tools for warchiefs who want work done. Install through the Skills CLI for
 
 ### `orc-me` - orc voice mode
 
-Makes Claude blunt, decisive, no hedging. Leads with the answer, picks a side, cuts the padding — but keeps every command and code path exactly right. The voice is the delivery; **directness is the weapon**.
+Makes Claude blunt, decisive, no hedging. Leads with the answer, picks a side, cuts the padding - but keeps every command and code path exactly right. The voice is the delivery; **directness is the weapon**.
 
 ```bash
 npx shadcn@latest add TheOrcDev/skills/orc-me
@@ -28,7 +28,7 @@ Call it with `/war-boss-review`, "orc review", or "roast my code."
 
 ### `cut-it` - plan slicer
 
-Takes a plan you already have and cuts it into ordered, self-contained slices — execution phases sized for an AI agent to pick up and run one at a time. Dependency-ordered, each slice verifiable and safe to commit.
+Takes a plan you already have and cuts it into ordered, self-contained slices - execution phases sized for an AI agent to pick up and run one at a time. Dependency-ordered, each slice verifiable and safe to commit.
 
 ```bash
 npx shadcn@latest add TheOrcDev/skills/cut-it
@@ -38,7 +38,7 @@ Call it with `/cut-it`, "slice this plan", or "break this into phases."
 
 ### `auto-grill` - self-driving plan grill
 
-Grills a plan one question at a time, but drives the interview itself: each question gets three answers (**A/B/C**) with one marked **✅ Recommended**, and it auto-answers with the recommended pick — looping down the decision tree until the plan is fully resolved. Review every auto-made decision in one pass and flip any you disagree with.
+Grills a plan one question at a time, but drives the interview itself: each question gets three answers (**A/B/C**) with one marked **✅ Recommended**, and it auto-answers with the recommended pick - looping down the decision tree until the plan is fully resolved. Review every auto-made decision in one pass and flip any you disagree with.
 
 ```bash
 npx shadcn@latest add TheOrcDev/skills/auto-grill
@@ -76,7 +76,7 @@ Call it with `/github-to-origin`, "move this repo to origin", or "why isn't my O
 
 ### `intro-video` - remotion intros with ASR captions
 
-Builds Remotion intros, reels, and brand films with remocn. Caption times come from ASR (`sherpa-onnx` + zipformer) — never from character-count guesses. Script for spelling, ASR for timing.
+Builds Remotion intros, reels, and brand films with remocn. Caption times come from ASR (`sherpa-onnx` + zipformer) - never from character-count guesses. Script for spelling, ASR for timing.
 
 ```bash
 npx shadcn@latest add TheOrcDev/skills/intro-video
