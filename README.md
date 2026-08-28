@@ -84,6 +84,20 @@ npx shadcn@latest add TheOrcDev/skills/intro-video
 
 Call it with `/intro-video`, "make an intro", or "caption this reel."
 
+### `grond` - one word, everything to main
+
+Say **GROND** once. The agent stages every change, writes a real commit message,
+merges onto the default branch, pushes, and reports back in orc voice. The word
+itself is the authorization, so it never stops to ask. It still refuses to force-push,
+halts on secrets like `.env` or `*.pem`, backs out cleanly on a merge conflict, and
+reports a rejected push as a rejected push.
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/grond
+```
+
+Call it with `/grond`, "GROND", or "smash it to main."
+
 ---
 
 **Lok'tar Ogar!** 🪓

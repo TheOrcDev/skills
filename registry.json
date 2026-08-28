@@ -103,6 +103,19 @@
           "target": "~/.claude/skills/github-to-origin/SKILL.md"
         }
       ]
+    },
+    {
+      "name": "grond",
+      "type": "registry:item",
+      "title": "GROND",
+      "description": "One word, GROND, and the agent stages everything, commits it, gets it onto the default branch, pushes, and reports the result in orc voice. Installs to .claude/skills/grond/SKILL.md in the target project.",
+      "files": [
+        {
+          "path": "skills/grond/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/grond/SKILL.md"
+        }
+      ]
     }
   ]
 }
