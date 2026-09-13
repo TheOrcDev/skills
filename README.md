@@ -4,6 +4,31 @@
 
 Blunt tools for warchiefs who want work done. Install through the Skills CLI for any supported agent, or use the shadcn command to drop a skill into Claude Code. Zug zug.
 
+## 🎮 Game development
+
+Six skills from the Final Stand production pipeline live in [`game-dev/`](game-dev/README.md), covering reference art, Meshy generation, Blender cleanup, animation and Unity integration. These workflows depend on Final Stand's project tooling and contracts; the collection documents those prerequisites.
+
+| Skill | Purpose |
+|---|---|
+| [game-art-reference-packs](game-dev/game-art-reference-packs/SKILL.md) | Consistent four-view references, crop checks and source lineage |
+| [meshy-asset-production](game-dev/meshy-asset-production/SKILL.md) | Geometry and texture tasks, credit accounting and original exports |
+| [game-model-cleanup](game-dev/game-model-cleanup/SKILL.md) | Geometry repair, polygon budgets, materials and verified exports |
+| [creature-animation](game-dev/creature-animation/SKILL.md) | Creature gaits, actions, deformation checks and preview reels |
+| [humanoid-animation](game-dev/humanoid-animation/SKILL.md) | Meshy humanoid rigs, motion presets and equipment attachment |
+| [unity-asset-integration](game-dev/unity-asset-integration/SKILL.md) | Native import, presentation assets and gameplay verification |
+
+Install a skill using its name, for example:
+
+```bash
+npx skills add TheOrcDev/skills --full-depth --skill game-art-reference-packs
+```
+
+The shadcn registry also includes each skill's workflow and rules files:
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/game-art-reference-packs
+```
+
 ## 🪓 The Horde
 
 ### `orc-me` - orc voice mode

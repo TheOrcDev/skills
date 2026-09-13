@@ -4,6 +4,124 @@
   "homepage": "https://github.com/TheOrcDev/skills",
   "items": [
     {
+      "name": "game-art-reference-packs",
+      "type": "registry:item",
+      "title": "Game Art Reference Packs",
+      "description": "Creates and validates Final Stand concept turnarounds and deterministic four-view upload packs with source lineage. Use when preparing or correcting front, left, back and right references for a unit or a Meshy generation request; provider transactions belong to meshy-asset-production.",
+      "files": [
+        {
+          "path": "game-dev/game-art-reference-packs/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/game-art-reference-packs/SKILL.md"
+        },
+        {
+          "path": "game-dev/game-art-reference-packs/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/game-art-reference-packs/WORKFLOW.md"
+        }
+      ]
+    },
+    {
+      "name": "meshy-asset-production",
+      "type": "registry:item",
+      "title": "Meshy Asset Production",
+      "description": "Runs Final Stand Meshy geometry and texture production with governed reference packs, candidate review, credit accounting and immutable exports. Use when generating, retrying, texturing or recovering a Meshy unit task; humanoid rigging and motion selection belong to humanoid-animation.",
+      "files": [
+        {
+          "path": "game-dev/meshy-asset-production/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/meshy-asset-production/SKILL.md"
+        },
+        {
+          "path": "game-dev/meshy-asset-production/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/meshy-asset-production/WORKFLOW.md"
+        }
+      ]
+    },
+    {
+      "name": "game-model-cleanup",
+      "type": "registry:item",
+      "title": "Game Model Cleanup",
+      "description": "Converts Final Stand provider meshes into budgeted, textured and verifiable game-model candidates using the existing Blender tooling. Use when repairing geometry, reducing polygons, separating equipment, correcting materials, normalizing transforms or preparing accepted exports; animation authoring uses the existing animation skills.",
+      "files": [
+        {
+          "path": "game-dev/game-model-cleanup/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/game-model-cleanup/SKILL.md"
+        },
+        {
+          "path": "game-dev/game-model-cleanup/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/game-model-cleanup/WORKFLOW.md"
+        }
+      ]
+    },
+    {
+      "name": "unity-asset-integration",
+      "type": "registry:item",
+      "title": "Unity Asset Integration",
+      "description": "Installs and verifies Final Stand 3D model packages or animation updates through the repository's Unity importers, presentation profiles and prefab installers. Use when deploying an accepted model, wiring its materials or presentation, validating imported clips, or checking that an installed unit appears correctly in gameplay.",
+      "files": [
+        {
+          "path": "game-dev/unity-asset-integration/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/unity-asset-integration/SKILL.md"
+        },
+        {
+          "path": "game-dev/unity-asset-integration/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/unity-asset-integration/WORKFLOW.md"
+        }
+      ]
+    },
+    {
+      "name": "creature-animation",
+      "type": "registry:item",
+      "title": "Creature Animation",
+      "description": "Author, gate, preview and install production animation sets for Final Stand creatures (quadrupeds, arthropods, flyers, hybrids) using the Plan 009 pipeline in tools/3d/animation_quality/creatures. Use when adding a creature to the roster, re-authoring a creature's Idle/Locomotion/BasicAttack/Hit/Death/Cast clips, fixing a rejected animation, running the reimport gates or Unity install, or when the user mentions creature animation, bites, deaths, gaits, reels, Plan 009 or the animal roster.",
+      "files": [
+        {
+          "path": "game-dev/creature-animation/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/creature-animation/SKILL.md"
+        },
+        {
+          "path": "game-dev/creature-animation/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/creature-animation/RULES.md"
+        },
+        {
+          "path": "game-dev/creature-animation/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/creature-animation/WORKFLOW.md"
+        }
+      ]
+    },
+    {
+      "name": "humanoid-animation",
+      "type": "registry:item",
+      "title": "Humanoid Animation",
+      "description": "Produce production animation sets for Final Stand humanoid heroes and enemies from Meshy's humanoid rig and preset motion library (Plan 011 route), then package, gate, preview and install them. Use when animating a humanoid subject (Thorgrim, Sylra, Ignis, Seraphine, Malachar, Rhazgar, skeletons, necromancer, ogres, trolls, demon vanguard, bone colossus), choosing Meshy presets for Idle/Locomotion/BasicAttack/Cast/Hit/Death, rigging a biped on Meshy, or when the user mentions humanoid animation, Mixamo, preset motions, Plan 011 or the Malachar pilot.",
+      "files": [
+        {
+          "path": "game-dev/humanoid-animation/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/humanoid-animation/SKILL.md"
+        },
+        {
+          "path": "game-dev/humanoid-animation/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/humanoid-animation/RULES.md"
+        },
+        {
+          "path": "game-dev/humanoid-animation/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/humanoid-animation/WORKFLOW.md"
+        }
+      ]
+    },
+    {
       "name": "orc-me",
       "type": "registry:item",
       "title": "Orc Me",
