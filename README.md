@@ -8,6 +8,8 @@ Blunt tools for warchiefs who want work done. Install through the Skills CLI for
 
 Six skills from the Final Stand production pipeline live in [`game-dev/`](game-dev/README.md), covering reference art, Meshy generation, Blender cleanup, animation and Unity integration. These workflows depend on Final Stand's project tooling and contracts; the collection documents those prerequisites.
 
+The portable version is [`rig-it`](#rig-it---game-character-rigging-that-survives-the-engine) below: the same rigging and animation loop with its Blender tooling bundled, driven by a per-subject contract instead of Final Stand's registry.
+
 | Skill | Purpose |
 |---|---|
 | [game-art-reference-packs](game-dev/game-art-reference-packs/SKILL.md) | Consistent four-view references, crop checks and source lineage |
