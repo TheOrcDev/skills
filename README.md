@@ -109,6 +109,20 @@ npx shadcn@latest add TheOrcDev/skills/intro-video
 
 Call it with `/intro-video`, "make an intro", or "caption this reel."
 
+### `rig-it` - game character rigging that survives the engine
+
+Rigging is where past models hit the wall: one bpy script, an armature that binds, and no way to see the elbow is wrong. `rig-it` never lets the agent judge a rig from the code that built it. A per-subject contract picks the body plan; creatures get a deterministic scaffold rig and contact-driven Idle/Locomotion/Attack/Hit/Death clips, bipeds get a Mixamo-skeleton package (Meshy or mixamo.com) with rest-pose weight transfer, grip-seated weapons and polish passes that fix sliding feet, sinking deaths and hitching idles. Every clip is exported, **reimported into an empty scene**, measured against numeric gates, rendered over a checker floor and cut into a labeled reel. Unity Humanoid and Generic import documented. Blender 4.5 headless scripts included.
+
+```bash
+npx skills add TheOrcDev/skills --skill rig-it
+```
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/rig-it
+```
+
+Call it with `/rig-it`, "rig this character", "my feet are sliding", or "get this Mixamo rig into Unity."
+
 ### `grond` - one word, everything to main
 
 Say **GROND** once. The agent stages every change, writes a real commit message,

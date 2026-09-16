@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "wolf",
+  "displayName": "Wolf",
+  "family": "quadruped",
+  "engineRig": "Generic",
+  "requiredClips": ["Idle", "Locomotion", "BasicAttack", "Hit", "Death"],
+  "source": {
+    "model": "../Models/Wolf/wolf.fbx",
+    "textures": "../Models/Wolf/Textures"
+  },
+  "rigidParts": [],
+  "moveSpeedUnitsPerSecond": 5.2,
+  "budgets": {"trianglesMax": 12000, "textureSize": 1024, "materialSlotsMax": 1},
+  "criticalAnatomy": "Four legs, bushy tail, alert ears, readable muzzle",
+  "calibration": {
+    "addJaw": {"hinge": 0.45, "depth": 0.025},
+    "gait": {"type": "trot", "cycleSeconds": 0.5, "duty": 0.44, "stride": 0.46, "clearance": 0.12,
+             "bounce": 0.035, "pitch": 0.03, "headBob": 0.03, "tailSwing": 0.14},
+    "attack": {"type": "bite", "seconds": 0.9, "contact": 0.4, "lunge": 0.18, "gape": 0.55, "headDip": 0.12, "twist": 0.45},
+    "death": {"type": "collapse", "seconds": 1.6, "roll": 0.95}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "malachar",
+  "displayName": "Malachar",
+  "family": "mixamo-biped",
+  "engineRig": "Humanoid",
+  "requiredClips": ["Idle", "Locomotion", "BasicAttack", "Cast", "Hit", "Death"],
+  "source": {
+    "model": "../Models/Malachar/malachar.fbx",
+    "textures": "../Models/Malachar/Textures"
+  },
+  "rigidParts": [
+    {"object": "Malachar_Staff", "bone": "mixamorig:RightHand", "grip": {"fraction": 0.4, "direction": "up"}}
+  ],
+  "moveSpeedUnitsPerSecond": 7.1,
+  "presets": {
+    "Idle": "Idle 1", "Locomotion": "Walking", "BasicAttack": "Mage Spell Cast",
+    "Cast": "Mage Spell Cast 3", "Hit": "Hit Reaction", "Death": "Dead"
+  },
+  "calibration": {
+    "soleWeightThreshold": 0.85
+  }
+}
