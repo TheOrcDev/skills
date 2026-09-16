@@ -1,6 +1,6 @@
 # Game development skills
 
-Six project-specific skills from [Final Stand](https://github.com/TheOrcDev/finalstand), copied from [commit 23c230a](https://github.com/TheOrcDev/finalstand/commit/23c230ac10e83d2a3317e4642995af15ec2e696a). The skill files are preserved with their companion workflows and rules.
+Six project-specific skills from [Final Stand](https://github.com/TheOrcDev/finalstand), copied from [commit 23c230a](https://github.com/TheOrcDev/finalstand/commit/23c230ac10e83d2a3317e4642995af15ec2e696a). The skill files are preserved with their companion workflows and rules. `rig-it` is the portable seventh: the same rigging and animation loop rebuilt around a per-subject contract with its Blender tooling bundled, so it does not need a Final Stand checkout.
 
 | Stage | Skill | Supporting files |
 |---|---|---|
@@ -10,6 +10,7 @@ Six project-specific skills from [Final Stand](https://github.com/TheOrcDev/fina
 | Creature animation | [creature-animation](creature-animation/SKILL.md) | [Rules](creature-animation/RULES.md), [workflow](creature-animation/WORKFLOW.md) |
 | Humanoid animation | [humanoid-animation](humanoid-animation/SKILL.md) | [Rules](humanoid-animation/RULES.md), [workflow](humanoid-animation/WORKFLOW.md) |
 | Unity integration | [unity-asset-integration](unity-asset-integration/SKILL.md) | [Workflow](unity-asset-integration/WORKFLOW.md) |
+| Portable rigging and animation | [rig-it](rig-it/SKILL.md) | [Rules](rig-it/RULES.md), [workflow](rig-it/WORKFLOW.md), [references](rig-it/references/), Blender scripts in `scripts/` |
 
 ## Requirements and scope
 

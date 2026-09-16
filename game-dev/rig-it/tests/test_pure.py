@@ -1,6 +1,6 @@
 """Pure-Python checks for rig-it (no Blender): contract, calibration, motion, gates.
 
-Run: python3 -m unittest discover -s skills/rig-it/tests
+Run: python3 -m unittest discover -s game-dev/rig-it/tests
 """
 from __future__ import annotations
 

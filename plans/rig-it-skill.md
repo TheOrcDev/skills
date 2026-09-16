@@ -53,7 +53,7 @@ how the loop runs without a human in it.
 ## Skill layout
 
 ```
-skills/rig-it/
+game-dev/rig-it/
   SKILL.md                 route picker, contract, the verify loop, do-nots
   RULES.md                 every learned rule, engine-neutral wording
   WORKFLOW.md              headless Blender invocation, Meshy/Mixamo steps, Unity install

@@ -122,6 +122,154 @@
       ]
     },
     {
+      "name": "rig-it",
+      "type": "registry:item",
+      "title": "Rig It",
+      "description": "Contract-driven game character rigging and animation: scaffold rigs for creatures, Mixamo-skeleton packaging for bipeds, gates on a fresh reimport, reels, Unity Humanoid/Generic export. Blender 4.5 headless scripts included. Installs to .claude/skills/rig-it/ in the target project.",
+      "files": [
+        {
+          "path": "game-dev/rig-it/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/RULES.md"
+        },
+        {
+          "path": "game-dev/rig-it/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/SKILL.md"
+        },
+        {
+          "path": "game-dev/rig-it/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/WORKFLOW.md"
+        },
+        {
+          "path": "game-dev/rig-it/references/body-plans.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/references/body-plans.md"
+        },
+        {
+          "path": "game-dev/rig-it/references/gaits.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/references/gaits.md"
+        },
+        {
+          "path": "game-dev/rig-it/references/gates.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/references/gates.md"
+        },
+        {
+          "path": "game-dev/rig-it/references/pitfalls.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/references/pitfalls.md"
+        },
+        {
+          "path": "game-dev/rig-it/references/polish-passes.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/references/polish-passes.md"
+        },
+        {
+          "path": "game-dev/rig-it/references/unity-import.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/references/unity-import.md"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/author_clips.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/author_clips.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/blender_common.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/blender_common.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/calibration.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/calibration.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/contract.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/contract.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/export_fbx.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/export_fbx.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/fixtures/make_mixamo_fixture.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/fixtures/make_mixamo_fixture.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/gates.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/gates.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/inspect_model.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/inspect_model.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/motion.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/motion.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/package_biped.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/package_biped.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/pipeline.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/pipeline.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/reel.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/reel.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/render_previews.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/render_previews.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/review_clips.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/review_clips.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/rig_input.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/rig_input.py"
+        },
+        {
+          "path": "game-dev/rig-it/scripts/scaffold_rig.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/scripts/scaffold_rig.py"
+        },
+        {
+          "path": "game-dev/rig-it/templates/rig-contract.biped.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/templates/rig-contract.biped.json"
+        },
+        {
+          "path": "game-dev/rig-it/templates/rig-contract.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/templates/rig-contract.json"
+        },
+        {
+          "path": "game-dev/rig-it/tests/test_pure.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/rig-it/tests/test_pure.py"
+        }
+      ]
+    },
+    {
       "name": "orc-me",
       "type": "registry:item",
       "title": "Orc Me",
@@ -232,154 +380,6 @@
           "path": "skills/grond/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/grond/SKILL.md"
-        }
-      ]
-    },
-    {
-      "name": "rig-it",
-      "type": "registry:item",
-      "title": "Rig It",
-      "description": "Contract-driven game character rigging and animation: scaffold rigs for creatures, Mixamo-skeleton packaging for bipeds, gates on a fresh reimport, reels, Unity Humanoid/Generic export. Blender 4.5 headless scripts included. Installs to .claude/skills/rig-it/ in the target project.",
-      "files": [
-        {
-          "path": "skills/rig-it/RULES.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/RULES.md"
-        },
-        {
-          "path": "skills/rig-it/SKILL.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/SKILL.md"
-        },
-        {
-          "path": "skills/rig-it/WORKFLOW.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/WORKFLOW.md"
-        },
-        {
-          "path": "skills/rig-it/references/body-plans.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/references/body-plans.md"
-        },
-        {
-          "path": "skills/rig-it/references/gaits.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/references/gaits.md"
-        },
-        {
-          "path": "skills/rig-it/references/gates.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/references/gates.md"
-        },
-        {
-          "path": "skills/rig-it/references/pitfalls.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/references/pitfalls.md"
-        },
-        {
-          "path": "skills/rig-it/references/polish-passes.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/references/polish-passes.md"
-        },
-        {
-          "path": "skills/rig-it/references/unity-import.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/references/unity-import.md"
-        },
-        {
-          "path": "skills/rig-it/scripts/author_clips.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/author_clips.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/blender_common.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/blender_common.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/calibration.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/calibration.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/contract.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/contract.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/export_fbx.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/export_fbx.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/fixtures/make_mixamo_fixture.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/fixtures/make_mixamo_fixture.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/gates.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/gates.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/inspect_model.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/inspect_model.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/motion.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/motion.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/package_biped.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/package_biped.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/pipeline.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/pipeline.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/reel.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/reel.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/render_previews.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/render_previews.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/review_clips.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/review_clips.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/rig_input.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/rig_input.py"
-        },
-        {
-          "path": "skills/rig-it/scripts/scaffold_rig.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/scripts/scaffold_rig.py"
-        },
-        {
-          "path": "skills/rig-it/templates/rig-contract.biped.json",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/templates/rig-contract.biped.json"
-        },
-        {
-          "path": "skills/rig-it/templates/rig-contract.json",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/templates/rig-contract.json"
-        },
-        {
-          "path": "skills/rig-it/tests/test_pure.py",
-          "type": "registry:file",
-          "target": "~/.claude/skills/rig-it/tests/test_pure.py"
         }
       ]
     }

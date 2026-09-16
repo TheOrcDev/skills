@@ -8,8 +8,6 @@ Blunt tools for warchiefs who want work done. Install through the Skills CLI for
 
 Six skills from the Final Stand production pipeline live in [`game-dev/`](game-dev/README.md), covering reference art, Meshy generation, Blender cleanup, animation and Unity integration. These workflows depend on Final Stand's project tooling and contracts; the collection documents those prerequisites.
 
-The portable version is [`rig-it`](#rig-it---game-character-rigging-that-survives-the-engine) below: the same rigging and animation loop with its Blender tooling bundled, driven by a per-subject contract instead of Final Stand's registry.
-
 | Skill | Purpose |
 |---|---|
 | [game-art-reference-packs](game-dev/game-art-reference-packs/SKILL.md) | Consistent four-view references, crop checks and source lineage |
@@ -18,6 +16,7 @@ The portable version is [`rig-it`](#rig-it---game-character-rigging-that-survive
 | [creature-animation](game-dev/creature-animation/SKILL.md) | Creature gaits, actions, deformation checks and preview reels |
 | [humanoid-animation](game-dev/humanoid-animation/SKILL.md) | Meshy humanoid rigs, motion presets and equipment attachment |
 | [unity-asset-integration](game-dev/unity-asset-integration/SKILL.md) | Native import, presentation assets and gameplay verification |
+| [rig-it](game-dev/rig-it/SKILL.md) | Portable rigging and animation loop: contract, scaffold or Mixamo route, gates on a fresh reimport, reels, Blender scripts bundled |
 
 Install a skill using its name, for example:
 
@@ -30,6 +29,20 @@ The shadcn registry also includes each skill's workflow and rules files:
 ```bash
 npx shadcn@latest add TheOrcDev/skills/game-art-reference-packs
 ```
+
+### `rig-it` - game character rigging that survives the engine
+
+Rigging is where past models hit the wall: one bpy script, an armature that binds, and no way to see the elbow is wrong. `rig-it` never lets the agent judge a rig from the code that built it. A per-subject contract picks the body plan; creatures get a deterministic scaffold rig and contact-driven Idle/Locomotion/Attack/Hit/Death clips, bipeds get a Mixamo-skeleton package (Meshy or mixamo.com) with rest-pose weight transfer, grip-seated weapons and polish passes that fix sliding feet, sinking deaths and hitching idles. Every clip is exported, **reimported into an empty scene**, measured against numeric gates, rendered over a checker floor and cut into a labeled reel. Unity Humanoid and Generic import documented. Blender 4.5 headless scripts included.
+
+```bash
+npx skills add TheOrcDev/skills --full-depth --skill rig-it
+```
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/rig-it
+```
+
+Call it with `/rig-it`, "rig this character", "my feet are sliding", or "get this Mixamo rig into Unity."
 
 ## 🪓 The Horde
 
@@ -110,20 +123,6 @@ npx shadcn@latest add TheOrcDev/skills/intro-video
 ```
 
 Call it with `/intro-video`, "make an intro", or "caption this reel."
-
-### `rig-it` - game character rigging that survives the engine
-
-Rigging is where past models hit the wall: one bpy script, an armature that binds, and no way to see the elbow is wrong. `rig-it` never lets the agent judge a rig from the code that built it. A per-subject contract picks the body plan; creatures get a deterministic scaffold rig and contact-driven Idle/Locomotion/Attack/Hit/Death clips, bipeds get a Mixamo-skeleton package (Meshy or mixamo.com) with rest-pose weight transfer, grip-seated weapons and polish passes that fix sliding feet, sinking deaths and hitching idles. Every clip is exported, **reimported into an empty scene**, measured against numeric gates, rendered over a checker floor and cut into a labeled reel. Unity Humanoid and Generic import documented. Blender 4.5 headless scripts included.
-
-```bash
-npx skills add TheOrcDev/skills --skill rig-it
-```
-
-```bash
-npx shadcn@latest add TheOrcDev/skills/rig-it
-```
-
-Call it with `/rig-it`, "rig this character", "my feet are sliding", or "get this Mixamo rig into Unity."
 
 ### `grond` - one word, everything to main
 
