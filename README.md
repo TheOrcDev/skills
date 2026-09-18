@@ -124,6 +124,20 @@ npx shadcn@latest add TheOrcDev/skills/intro-video
 
 Call it with `/intro-video`, "make an intro", or "caption this reel."
 
+### `living-backdrop` - one still image, a hero that breathes
+
+Takes a single image and makes it live: the subject slides against the background with the pointer, breathes around the point where it leaves the frame, and the scene gets wind, cloud drift, a light pulse and dust. **Two depth-mapped layers in one shader** - no video, no 3D model. The bundled pipeline cuts the mask, paints the subject out of the background, estimates depth, upscales and packs the textures; the three.js component fades in over a server-rendered poster that doubles as the reduced-motion fallback. Built for the [orcdev.com](https://orcdev.com) hero.
+
+```bash
+npx skills add TheOrcDev/skills --skill living-backdrop
+```
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/living-backdrop
+```
+
+Call it with `/living-backdrop`, "make this image feel alive", or "add depth to my hero."
+
 ### `grond` - one word, everything to main
 
 Say **GROND** once. The agent stages every change, writes a real commit message,

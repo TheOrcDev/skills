@@ -382,6 +382,54 @@
           "target": "~/.claude/skills/grond/SKILL.md"
         }
       ]
+    },
+    {
+      "name": "living-backdrop",
+      "type": "registry:item",
+      "title": "Living Backdrop",
+      "description": "Turn one still image into a living web backdrop: depth parallax, a breathing subject, and ambient wind, clouds, light and dust in one WebGL shader with a poster fallback. Asset pipeline and three.js component included. Installs to .claude/skills/living-backdrop/ in the target project.",
+      "files": [
+        {
+          "path": "skills/living-backdrop/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/SKILL.md"
+        },
+        {
+          "path": "skills/living-backdrop/references/pitfalls.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/references/pitfalls.md"
+        },
+        {
+          "path": "skills/living-backdrop/scripts/build.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/scripts/build.sh"
+        },
+        {
+          "path": "skills/living-backdrop/scripts/segment.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/scripts/segment.py"
+        },
+        {
+          "path": "skills/living-backdrop/scripts/inpaint_depth.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/scripts/inpaint_depth.py"
+        },
+        {
+          "path": "skills/living-backdrop/scripts/upscale.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/scripts/upscale.py"
+        },
+        {
+          "path": "skills/living-backdrop/scripts/pack.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/scripts/pack.py"
+        },
+        {
+          "path": "skills/living-backdrop/templates/LivingBackdrop.tsx",
+          "type": "registry:file",
+          "target": "~/.claude/skills/living-backdrop/templates/LivingBackdrop.tsx"
+        }
+      ]
     }
   ]
 }
