@@ -364,7 +364,7 @@
       "description": "Write TikTok, Reels and YouTube Shorts scripts as one package: spoken script plus an editor-ready beat-by-beat shot list (camera, captions, graphics, B-roll, cuts), following the Hook, bridge, Value, CTA arc with four titles, description, X post and tags. Installs to .claude/skills/short-format-video/SKILL.md in the target project.",
       "files": [
         {
-          "path": "skills/short-format-video/SKILL.md",
+          "path": "videos/short-format-video/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/short-format-video/SKILL.md"
         }

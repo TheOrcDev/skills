@@ -44,6 +44,28 @@ npx shadcn@latest add TheOrcDev/skills/rig-it
 
 Call it with `/rig-it`, "rig this character", "my feet are sliding", or "get this Mixamo rig into Unity."
 
+## 🎬 Video
+
+Skills for scripting and packaging video content live in [`videos/`](videos/README.md), one folder per format. Short format is here now; long format and other video skills will land in the same directory as they are written.
+
+| Skill | Purpose |
+|---|---|
+| [short-format-video](videos/short-format-video/SKILL.md) | Shorts, Reels and TikTok scripts: spoken script plus editor-ready shot list on the Hook, bridge, Value, CTA arc |
+
+### `short-format-video` - Shorts scripts with editor-ready shot lists
+
+Writes a TikTok, Reel or YouTube Short as one document with two halves: the **spoken script** and a beat-by-beat **shot list** (camera angle, captions, on-screen graphics, B-roll, cut notes), so an editor can cut the video from the doc and the footage alone. Every Short runs the same arc, **Hook, post-hook bridge, Value, CTA**, with a hard angle change right after the hook, captions on every beat, graphics that match the spoken line, and A-roll/B-roll marked per beat. Ships with the standing OrcDev packaging: four titles with one Recommended, description, X post, YouTube tags, and honest product claims only.
+
+```bash
+npx skills add TheOrcDev/skills --full-depth --skill short-format-video
+```
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/short-format-video
+```
+
+Call it with `/short-format-video`, "write a Short", or "script this Reel."
+
 ## 🪓 The Horde
 
 ### `orc-me` - orc voice mode
@@ -123,20 +145,6 @@ npx shadcn@latest add TheOrcDev/skills/intro-video
 ```
 
 Call it with `/intro-video`, "make an intro", or "caption this reel."
-
-### `short-format-video` - Shorts scripts with editor-ready shot lists
-
-Writes a TikTok, Reel or YouTube Short as one document with two halves: the **spoken script** and a beat-by-beat **shot list** (camera angle, captions, on-screen graphics, B-roll, cut notes), so an editor can cut the video from the doc and the footage alone. Every Short runs the same arc, **Hook, post-hook bridge, Value, CTA**, with a hard angle change right after the hook, captions on every beat, graphics that match the spoken line, and A-roll/B-roll marked per beat. Ships with the standing OrcDev packaging: four titles with one Recommended, description, X post, YouTube tags, and honest product claims only.
-
-```bash
-npx skills add TheOrcDev/skills --skill short-format-video
-```
-
-```bash
-npx shadcn@latest add TheOrcDev/skills/short-format-video
-```
-
-Call it with `/short-format-video`, "write a Short", or "script this Reel."
 
 ### `living-backdrop` - one still image, a hero that breathes
 
