@@ -124,6 +124,20 @@ npx shadcn@latest add TheOrcDev/skills/intro-video
 
 Call it with `/intro-video`, "make an intro", or "caption this reel."
 
+### `short-format-video` - Shorts scripts with editor-ready shot lists
+
+Writes a TikTok, Reel or YouTube Short as one document with two halves: the **spoken script** and a beat-by-beat **shot list** (camera angle, captions, on-screen graphics, B-roll, cut notes), so an editor can cut the video from the doc and the footage alone. Every Short runs the same arc, **Hook, post-hook bridge, Value, CTA**, with a hard angle change right after the hook, captions on every beat, graphics that match the spoken line, and A-roll/B-roll marked per beat. Ships with the standing OrcDev packaging: four titles with one Recommended, description, X post, YouTube tags, and honest product claims only.
+
+```bash
+npx skills add TheOrcDev/skills --skill short-format-video
+```
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/short-format-video
+```
+
+Call it with `/short-format-video`, "write a Short", or "script this Reel."
+
 ### `living-backdrop` - one still image, a hero that breathes
 
 Takes a single image and makes it live: the subject slides against the background with the pointer, breathes around the point where it leaves the frame, and the scene gets wind, cloud drift, a light pulse and dust. **Two depth-mapped layers in one shader** - no video, no 3D model. The bundled pipeline cuts the mask, paints the subject out of the background, estimates depth, upscales and packs the textures; the three.js component fades in over a server-rendered poster that doubles as the reduced-motion fallback. Built for the [orcdev.com](https://orcdev.com) hero.
