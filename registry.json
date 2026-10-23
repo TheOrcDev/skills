@@ -504,6 +504,44 @@
           "target": "~/.claude/skills/ship-check/references/qa-scenarios.md"
         }
       ]
+    },
+    {
+      "name": "art-requests",
+      "type": "registry:item",
+      "title": "Art Requests",
+      "description": "Generate every game image through a request file: GPT-6.1 Sol through Codex or GPT Image through the Vercel AI Gateway, immutable raws, receipts, a spend ledger, per-plan budgets with an 80% stop, and a review table that records which variant won and why. Part of the adventure-kit collection. Installs to ~/.claude/skills/art-requests/.",
+      "files": [
+        {
+          "path": "adventure-kit/art-requests/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/art-requests/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/art-requests/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/art-requests/RULES.md"
+        },
+        {
+          "path": "adventure-kit/art-requests/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/art-requests/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/art-requests/templates/budgets.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/art-requests/templates/budgets.json"
+        },
+        {
+          "path": "adventure-kit/art-requests/templates/request.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/art-requests/templates/request.md"
+        },
+        {
+          "path": "adventure-kit/art-requests/templates/specs.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/art-requests/templates/specs.json"
+        }
+      ]
     }
   ]
 }

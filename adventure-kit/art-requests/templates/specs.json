@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "harbour-steps-now",
+    "title": "Harbour steps, now",
+    "kind": "now",
+    "plan": "008",
+    "purpose": "The present layer of `harbour_steps` (atlas H2), the area's second room. Exits left to `harbour_square` and up the steps to `lighthouse_door`. Hotspots: the bollard, the net shed door, the moored rowboat.",
+    "requested": "plan 008, slice 4 (room H2)",
+    "references": ["art-source/style/harbour-style-key.png"],
+    "fields": {
+      "setting": "a stone harbour stair climbing from the quay to a lighthouse on the headland, a net shed with a broken door on the left, a rowboat moored at the bottom step",
+      "composition": "the stair rises from the lower right toward the lighthouse at the upper left; the shed door is a clear dark rectangle on the left; the rowboat sits at the right edge; the horizon at about half height",
+      "ground": "the wide wet quay of worn flagstones, open from edge to edge.",
+      "light": "a pale overcast sky behind the lighthouse"
+    },
+    "must": ["An open, light floor across the lower third", "The shed door and the stair as clear exits"],
+    "mustNot": ["Figures, readable text, or a frame"],
+    "criteria": ["The floor reads light enough for the hero to stand on", "Three to six hotspots are separated by light or haze", "It matches the style key's style"]
+  },
+  {
+    "slug": "harbour-steps-then",
+    "title": "Harbour steps, then",
+    "kind": "then",
+    "plan": "008",
+    "purpose": "The past layer of `harbour_steps`, as an edit of the accepted now image (replace the reference with its accepted raw). Must pass `adv-art align` at p90 ≤ 3 px.",
+    "requested": "plan 008, slice 4 (room H2)",
+    "references": ["art-source/raw/IMG-0042/IMG-0042-v1.png"],
+    "fields": {
+      "keep": "the stair, the net shed on the left, the lighthouse on the headland, the rowboat at the bottom step and the quay",
+      "place": "the same harbour stair",
+      "when": "forty years earlier, on a bright summer morning",
+      "restore": "the shed door whole and painted blue, nets drying on poles, the lighthouse lamp polished, flower boxes on the shed, the rowboat freshly painted."
+    },
+    "criteria": ["`adv-art align` p90 ≤ 3 px against the now image", "It reads as the same place in its good years"]
+  },
+  {
+    "slug": "npc-keeper",
+    "title": "NPC: the keeper",
+    "kind": "npc",
+    "plan": "008",
+    "purpose": "The lighthouse keeper (cast.md), one painting skinned to a few bones in Godot. Stands by the lighthouse door.",
+    "requested": "plan 008, slice 5 (NPCs)",
+    "size": "1440x2560",
+    "references": ["art-source/style/harbour-style-key.png"],
+    "fields": {
+      "character": "the old lighthouse keeper: tall and thin, in a long oilskin coat and a wide-brimmed sou'wester hat, a coil of rope over one shoulder, an unlit storm lantern in one hand.",
+      "face": "his face is lost in the shadow of the hat brim; only a white beard edge catches the light",
+      "pose": "standing, slightly bent forward into the wind, the lantern hanging from his right hand away from his coat, his left hand on the rope."
+    },
+    "criteria": ["Whole from hat to boots, nothing cropped", "Arms and head clear enough of the body to bend with a few bones", "A clean transparent background"]
+  },
+  {
+    "slug": "items-harbour",
+    "title": "Items: the harbour",
+    "kind": "items",
+    "plan": "008",
+    "purpose": "Inventory icons for the harbour part, cut in reading order by `adv-art icons`.",
+    "requested": "plan 008, slice 6 (items)",
+    "references": ["art-source/style/harbour-style-key.png"],
+    "fields": {
+      "count": "four",
+      "grid": "2 by 2",
+      "items": "1. a brass lighthouse key on a short leather strap; 2. a coil of tarred rope; 3. a cracked lantern lens; 4. a folded tide chart tied with string."
+    }
+  },
+  {
+    "slug": "closeup-tide-board",
+    "title": "Close-up: the tide board",
+    "kind": "closeup",
+    "plan": "008",
+    "purpose": "The close-up of the tide board on the harbour steps. The tide time must be large enough to read, so it counts as read when the close-up opens.",
+    "requested": "plan 008, slice 6 (close-ups)",
+    "references": ["art-source/raw/IMG-0042/IMG-0042-v1.png"],
+    "fields": {
+      "subject": "the wooden tide board nailed to the shed wall",
+      "detail": "weathered planks, rusted nails, a chalked column of tide times with one line circled.",
+      "lettering": "The circled line reads clearly, in large chalk capitals: LOW TIDE 4 BELLS. "
+    }
+  },
+  {
+    "slug": "hero-model-sheet",
+    "title": "Hero model sheet",
+    "kind": "raw",
+    "plan": "002",
+    "purpose": "The hero's design: four views on one baseline, the reference for every hero painting after it.",
+    "requested": "plan 002, slice 1 (the hero's design)",
+    "background": "transparent",
+    "references": ["art-source/style/harbour-style-key.png"],
+    "prompt": "A character model sheet for the hero of a point-and-click adventure game, in the style of the attached painting: <design>. The sheet shows four views of the same character side by side, evenly spaced, all exactly the same height, standing on one shared invisible baseline: 1) full profile facing right, 2) front, 3) back, 4) three-quarter view facing right. A relaxed neutral standing pose in every view, arms hanging a little away from the body so the hands are clearly visible, feet slightly apart. Each figure whole from head to toes. On a fully transparent background, with no ground, cast shadow or scenery. No text, labels, letters or numbers. No watermark, signature or border.",
+    "criteria": ["The four views are the same design at the same height", "The hands stand clear of the body in front and back views", "It reads against the style key's darkest and lightest areas"]
+  }
+]
