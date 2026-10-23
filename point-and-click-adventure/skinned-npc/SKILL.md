@@ -1,6 +1,6 @@
 ---
 name: skinned-npc
-description: Adds a talking side character to an adventure-kit Godot game as one painting skinned to a few bones. Sol paints the NPC once on a transparent background, npc.json places 4 to 8 bones and the feet, adv-art npc trims and grades the painting, new_npc.gd meshes and skins it to a Skeleton2D, and RigBody plays motions written as data (idle sway, voice-driven talk bends, keyed one-shots). Use when adding, redesigning or re-rigging an NPC, a shopkeeper, a guard or any non-player character, when an NPC's arms tear or its feet slide, when giving an NPC a gesture such as lean, write or ring a bell, or when the user mentions npc.json, npc_spec.json, new_npc.gd, RigBody, motions, bones or a skinned painting.
+description: Adds a talking side character to a point-and-click-adventure Godot game as one painting skinned to a few bones. Sol paints the NPC once on a transparent background, npc.json places 4 to 8 bones and the feet, adv-art npc trims and grades the painting, new_npc.gd meshes and skins it to a Skeleton2D, and RigBody plays motions written as data (idle sway, voice-driven talk bends, keyed one-shots). Use when adding, redesigning or re-rigging an NPC, a shopkeeper, a guard or any non-player character, when an NPC's arms tear or its feet slide, when giving an NPC a gesture such as lean, write or ring a bell, or when the user mentions npc.json, npc_spec.json, new_npc.gd, RigBody, motions, bones or a skinned painting.
 ---
 
 # skinned-npc

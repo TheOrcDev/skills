@@ -81,6 +81,10 @@ bun tools/build/browser-qa.ts <scenario> [canvas=1920x1080] [passes=2] [shots-di
 - With a `shots-dir`, each screenshot the scenario takes is also captured from
   the page (the game's own land in the browser's storage).
 - Quote the warm pass.
+- `[browser] Chrome's debugging endpoint did not come up` inside an agent's
+  sandboxed shell usually means the sandbox refused Chrome's renderers
+  (`bootstrap_look_up … Permission denied` on stderr). Run `browser-qa.ts`
+  outside the sandbox; it only opens a throwaway profile on localhost.
 
 A manual look through browser automation: open
 `http://localhost:8060/?qa=<scenario>` (skips the click) or the plain URL
@@ -154,6 +158,7 @@ row in `plans/README.md` when the plan is done.
 
 ```sh
 tools/build/export.sh web
+export VERCEL_SCOPE=<team> VERCEL_PROJECT=<project>
 tools/build/deploy.sh                  # a preview deployment
 tools/build/deploy.sh --prod           # production, under the operator's authorization
 QA_BASE_URL=https://<project>.vercel.app bun tools/build/browser-qa.ts <scenario>

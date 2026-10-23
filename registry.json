@@ -448,25 +448,25 @@
       "name": "voice-cast",
       "type": "registry:item",
       "title": "Voice Cast",
-      "description": "Voice every line of a point-and-click adventure with ElevenLabs: extract lines by static Dialogue Manager ID, diff against a lock, post masters to -18 LUFS QOA, and write the envelopes that drive a mouthless hero. Generation is the designed process, marked unproven. Part of the adventure-kit collection. Installs to ~/.claude/skills/voice-cast/.",
+      "description": "Voice every line of a point-and-click adventure with ElevenLabs: extract lines by static Dialogue Manager ID, diff against a lock, post masters to -18 LUFS QOA, and write the envelopes that drive a mouthless hero. Generation is the designed process, marked unproven. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/voice-cast/.",
       "files": [
         {
-          "path": "adventure-kit/voice-cast/SKILL.md",
+          "path": "point-and-click-adventure/voice-cast/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/voice-cast/SKILL.md"
         },
         {
-          "path": "adventure-kit/voice-cast/RULES.md",
+          "path": "point-and-click-adventure/voice-cast/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/voice-cast/RULES.md"
         },
         {
-          "path": "adventure-kit/voice-cast/WORKFLOW.md",
+          "path": "point-and-click-adventure/voice-cast/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/voice-cast/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/voice-cast/references/designed-process.md",
+          "path": "point-and-click-adventure/voice-cast/references/designed-process.md",
           "type": "registry:file",
           "target": "~/.claude/skills/voice-cast/references/designed-process.md"
         }
@@ -476,30 +476,30 @@
       "name": "ship-check",
       "type": "registry:item",
       "title": "Ship Check",
-      "description": "Prove a point-and-click adventure change in the builds people play: headless import, GUT and lint, scripted QA in the exported desktop app and in Chrome, the real pack file list, per-room budgets, reels, evidence in docs/qa and Vercel deploys. Part of the adventure-kit collection. Installs to ~/.claude/skills/ship-check/.",
+      "description": "Prove a point-and-click adventure change in the builds people play: headless import, GUT and lint, scripted QA in the exported desktop app and in Chrome, the real pack file list, per-room budgets, reels, evidence in docs/qa and Vercel deploys. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/ship-check/.",
       "files": [
         {
-          "path": "adventure-kit/ship-check/SKILL.md",
+          "path": "point-and-click-adventure/ship-check/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/ship-check/SKILL.md"
         },
         {
-          "path": "adventure-kit/ship-check/RULES.md",
+          "path": "point-and-click-adventure/ship-check/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/ship-check/RULES.md"
         },
         {
-          "path": "adventure-kit/ship-check/WORKFLOW.md",
+          "path": "point-and-click-adventure/ship-check/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/ship-check/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/ship-check/references/budgets.md",
+          "path": "point-and-click-adventure/ship-check/references/budgets.md",
           "type": "registry:file",
           "target": "~/.claude/skills/ship-check/references/budgets.md"
         },
         {
-          "path": "adventure-kit/ship-check/references/qa-scenarios.md",
+          "path": "point-and-click-adventure/ship-check/references/qa-scenarios.md",
           "type": "registry:file",
           "target": "~/.claude/skills/ship-check/references/qa-scenarios.md"
         }
@@ -509,35 +509,35 @@
       "name": "art-requests",
       "type": "registry:item",
       "title": "Art Requests",
-      "description": "Generate every game image through a request file: GPT-6.1 Sol through Codex or GPT Image through the Vercel AI Gateway, immutable raws, receipts, a spend ledger, per-plan budgets with an 80% stop, and a review table that records which variant won and why. Part of the adventure-kit collection. Installs to ~/.claude/skills/art-requests/.",
+      "description": "Generate every game image through a request file: GPT-6.1 Sol through Codex or GPT Image through the Vercel AI Gateway, immutable raws, receipts, a spend ledger, per-plan budgets with an 80% stop, and a review table that records which variant won and why. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/art-requests/.",
       "files": [
         {
-          "path": "adventure-kit/art-requests/SKILL.md",
+          "path": "point-and-click-adventure/art-requests/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/art-requests/SKILL.md"
         },
         {
-          "path": "adventure-kit/art-requests/RULES.md",
+          "path": "point-and-click-adventure/art-requests/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/art-requests/RULES.md"
         },
         {
-          "path": "adventure-kit/art-requests/WORKFLOW.md",
+          "path": "point-and-click-adventure/art-requests/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/art-requests/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/art-requests/templates/budgets.json",
+          "path": "point-and-click-adventure/art-requests/templates/budgets.json",
           "type": "registry:file",
           "target": "~/.claude/skills/art-requests/templates/budgets.json"
         },
         {
-          "path": "adventure-kit/art-requests/templates/request.md",
+          "path": "point-and-click-adventure/art-requests/templates/request.md",
           "type": "registry:file",
           "target": "~/.claude/skills/art-requests/templates/request.md"
         },
         {
-          "path": "adventure-kit/art-requests/templates/specs.json",
+          "path": "point-and-click-adventure/art-requests/templates/specs.json",
           "type": "registry:file",
           "target": "~/.claude/skills/art-requests/templates/specs.json"
         }
@@ -547,50 +547,50 @@
       "name": "look-gate",
       "type": "registry:item",
       "title": "Look Gate",
-      "description": "Set a point-and-click game's look before volume art: the style bible, composition rules for playable rooms, shared prompt preambles, an engine A/B, the first style key and landmark crops, the hero's model sheet, and one room proven in the engine with the operator's sign-off. Part of the adventure-kit collection. Installs to ~/.claude/skills/look-gate/.",
+      "description": "Set a point-and-click game's look before volume art: the style bible, composition rules for playable rooms, shared prompt preambles, an engine A/B, the first style key and landmark crops, the hero's model sheet, and one room proven in the engine with the operator's sign-off. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/look-gate/.",
       "files": [
         {
-          "path": "adventure-kit/look-gate/SKILL.md",
+          "path": "point-and-click-adventure/look-gate/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/SKILL.md"
         },
         {
-          "path": "adventure-kit/look-gate/RULES.md",
+          "path": "point-and-click-adventure/look-gate/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/RULES.md"
         },
         {
-          "path": "adventure-kit/look-gate/WORKFLOW.md",
+          "path": "point-and-click-adventure/look-gate/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/look-gate/templates/preambles/closeup.txt",
+          "path": "point-and-click-adventure/look-gate/templates/preambles/closeup.txt",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/templates/preambles/closeup.txt"
         },
         {
-          "path": "adventure-kit/look-gate/templates/preambles/items.txt",
+          "path": "point-and-click-adventure/look-gate/templates/preambles/items.txt",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/templates/preambles/items.txt"
         },
         {
-          "path": "adventure-kit/look-gate/templates/preambles/now.txt",
+          "path": "point-and-click-adventure/look-gate/templates/preambles/now.txt",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/templates/preambles/now.txt"
         },
         {
-          "path": "adventure-kit/look-gate/templates/preambles/npc.txt",
+          "path": "point-and-click-adventure/look-gate/templates/preambles/npc.txt",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/templates/preambles/npc.txt"
         },
         {
-          "path": "adventure-kit/look-gate/templates/preambles/then.txt",
+          "path": "point-and-click-adventure/look-gate/templates/preambles/then.txt",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/templates/preambles/then.txt"
         },
         {
-          "path": "adventure-kit/look-gate/templates/style-bible.md",
+          "path": "point-and-click-adventure/look-gate/templates/style-bible.md",
           "type": "registry:file",
           "target": "~/.claude/skills/look-gate/templates/style-bible.md"
         }
@@ -600,60 +600,60 @@
       "name": "paint-room",
       "type": "registry:item",
       "title": "Paint Room",
-      "description": "Turn an atlas entry into a playable point-and-click room: Sol paints the present, the past is an edit of it, an alignment gate checks the pair, and a traced room.json builds the art and the Godot scene through adv-art room and new_room.gd. Close-ups, item icons, props and clean plates included. Part of the adventure-kit collection. Installs to ~/.claude/skills/paint-room/.",
+      "description": "Turn an atlas entry into a playable point-and-click room: Sol paints the present, the past is an edit of it, an alignment gate checks the pair, and a traced room.json builds the art and the Godot scene through adv-art room and new_room.gd. Close-ups, item icons, props and clean plates included. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/paint-room/.",
       "files": [
         {
-          "path": "adventure-kit/paint-room/SKILL.md",
+          "path": "point-and-click-adventure/paint-room/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/SKILL.md"
         },
         {
-          "path": "adventure-kit/paint-room/RULES.md",
+          "path": "point-and-click-adventure/paint-room/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/RULES.md"
         },
         {
-          "path": "adventure-kit/paint-room/WORKFLOW.md",
+          "path": "point-and-click-adventure/paint-room/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/paint-room/references/room-json.md",
+          "path": "point-and-click-adventure/paint-room/references/room-json.md",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/references/room-json.md"
         },
         {
-          "path": "adventure-kit/paint-room/templates/closeup.json",
+          "path": "point-and-click-adventure/paint-room/templates/closeup.json",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/templates/closeup.json"
         },
         {
-          "path": "adventure-kit/paint-room/templates/items.json",
+          "path": "point-and-click-adventure/paint-room/templates/items.json",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/templates/items.json"
         },
         {
-          "path": "adventure-kit/paint-room/templates/requests.json",
+          "path": "point-and-click-adventure/paint-room/templates/requests.json",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/templates/requests.json"
         },
         {
-          "path": "adventure-kit/paint-room/templates/room.full.json",
+          "path": "point-and-click-adventure/paint-room/templates/room.full.json",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/templates/room.full.json"
         },
         {
-          "path": "adventure-kit/paint-room/templates/room.json",
+          "path": "point-and-click-adventure/paint-room/templates/room.json",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/templates/room.json"
         },
         {
-          "path": "adventure-kit/paint-room/templates/room_script.gd",
+          "path": "point-and-click-adventure/paint-room/templates/room_script.gd",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/templates/room_script.gd"
         },
         {
-          "path": "adventure-kit/paint-room/templates/then-request.json",
+          "path": "point-and-click-adventure/paint-room/templates/then-request.json",
           "type": "registry:file",
           "target": "~/.claude/skills/paint-room/templates/then-request.json"
         }
@@ -663,45 +663,45 @@
       "name": "story-track",
       "type": "registry:item",
       "title": "Story Track",
-      "description": "Write a point-and-click adventure's story and puzzles so they can be built and tested: three drafted cores, a signed bible, cast and room atlas, a Mermaid puzzle chart per part before any art, Dialogue Manager scripts with static line IDs and voice direction, hint goals, journal pages and a playthrough that GUT and QA both run. Part of the adventure-kit collection. Installs to ~/.claude/skills/story-track/.",
+      "description": "Write a point-and-click adventure's story and puzzles so they can be built and tested: three drafted cores, a signed bible, cast and room atlas, a Mermaid puzzle chart per part before any art, Dialogue Manager scripts with static line IDs and voice direction, hint goals, journal pages and a playthrough that GUT and QA both run. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/story-track/.",
       "files": [
         {
-          "path": "adventure-kit/story-track/SKILL.md",
+          "path": "point-and-click-adventure/story-track/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/SKILL.md"
         },
         {
-          "path": "adventure-kit/story-track/RULES.md",
+          "path": "point-and-click-adventure/story-track/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/RULES.md"
         },
         {
-          "path": "adventure-kit/story-track/WORKFLOW.md",
+          "path": "point-and-click-adventure/story-track/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/story-track/templates/atlas.md",
+          "path": "point-and-click-adventure/story-track/templates/atlas.md",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/templates/atlas.md"
         },
         {
-          "path": "adventure-kit/story-track/templates/bible.md",
+          "path": "point-and-click-adventure/story-track/templates/bible.md",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/templates/bible.md"
         },
         {
-          "path": "adventure-kit/story-track/templates/cast.md",
+          "path": "point-and-click-adventure/story-track/templates/cast.md",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/templates/cast.md"
         },
         {
-          "path": "adventure-kit/story-track/templates/puzzles.md",
+          "path": "point-and-click-adventure/story-track/templates/puzzles.md",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/templates/puzzles.md"
         },
         {
-          "path": "adventure-kit/story-track/templates/sample.dialogue",
+          "path": "point-and-click-adventure/story-track/templates/sample.dialogue",
           "type": "registry:file",
           "target": "~/.claude/skills/story-track/templates/sample.dialogue"
         }
@@ -711,35 +711,35 @@
       "name": "skinned-npc",
       "type": "registry:item",
       "title": "Skinned NPC",
-      "description": "Add a talking side character to a point-and-click game as one painting skinned to a few bones: Sol paints the NPC once on transparency, npc.json places the bones and feet, adv-art npc trims and grades it, new_npc.gd meshes and skins it to a Skeleton2D, and RigBody plays idle, voice-driven talk and keyed one-shots written as data. Part of the adventure-kit collection. Installs to ~/.claude/skills/skinned-npc/.",
+      "description": "Add a talking side character to a point-and-click game as one painting skinned to a few bones: Sol paints the NPC once on transparency, npc.json places the bones and feet, adv-art npc trims and grades it, new_npc.gd meshes and skins it to a Skeleton2D, and RigBody plays idle, voice-driven talk and keyed one-shots written as data. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/skinned-npc/.",
       "files": [
         {
-          "path": "adventure-kit/skinned-npc/SKILL.md",
+          "path": "point-and-click-adventure/skinned-npc/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/skinned-npc/SKILL.md"
         },
         {
-          "path": "adventure-kit/skinned-npc/RULES.md",
+          "path": "point-and-click-adventure/skinned-npc/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/skinned-npc/RULES.md"
         },
         {
-          "path": "adventure-kit/skinned-npc/WORKFLOW.md",
+          "path": "point-and-click-adventure/skinned-npc/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/skinned-npc/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/skinned-npc/references/bones-and-motions.md",
+          "path": "point-and-click-adventure/skinned-npc/references/bones-and-motions.md",
           "type": "registry:file",
           "target": "~/.claude/skills/skinned-npc/references/bones-and-motions.md"
         },
         {
-          "path": "adventure-kit/skinned-npc/templates/npc.json",
+          "path": "point-and-click-adventure/skinned-npc/templates/npc.json",
           "type": "registry:file",
           "target": "~/.claude/skills/skinned-npc/templates/npc.json"
         },
         {
-          "path": "adventure-kit/skinned-npc/templates/request.json",
+          "path": "point-and-click-adventure/skinned-npc/templates/request.json",
           "type": "registry:file",
           "target": "~/.claude/skills/skinned-npc/templates/request.json"
         }
@@ -749,50 +749,50 @@
       "name": "painted-hero",
       "type": "registry:item",
       "title": "Painted Hero",
-      "description": "Design and animate a point-and-click game's main character as hand-painted 2D frames: a Blender mannequin rig supplies every pose, Sol paints the hero over 4x2 pose-guide sheets, and adv-art cuts, registers and packs the frames with the rig's anchors, events and ground speed. Pose rig script included. Part of the adventure-kit collection. Installs to ~/.claude/skills/painted-hero/.",
+      "description": "Design and animate a point-and-click game's main character as hand-painted 2D frames: a Blender mannequin rig supplies every pose, Sol paints the hero over 4x2 pose-guide sheets, and adv-art cuts, registers and packs the frames with the rig's anchors, events and ground speed. Pose rig script included. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/painted-hero/.",
       "files": [
         {
-          "path": "adventure-kit/painted-hero/SKILL.md",
+          "path": "point-and-click-adventure/painted-hero/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/SKILL.md"
         },
         {
-          "path": "adventure-kit/painted-hero/RULES.md",
+          "path": "point-and-click-adventure/painted-hero/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/RULES.md"
         },
         {
-          "path": "adventure-kit/painted-hero/WORKFLOW.md",
+          "path": "point-and-click-adventure/painted-hero/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/painted-hero/references/painted-json.md",
+          "path": "point-and-click-adventure/painted-hero/references/painted-json.md",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/references/painted-json.md"
         },
         {
-          "path": "adventure-kit/painted-hero/references/requests.md",
+          "path": "point-and-click-adventure/painted-hero/references/requests.md",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/references/requests.md"
         },
         {
-          "path": "adventure-kit/painted-hero/scripts/extract_base_mesh.py",
+          "path": "point-and-click-adventure/painted-hero/scripts/extract_base_mesh.py",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/scripts/extract_base_mesh.py"
         },
         {
-          "path": "adventure-kit/painted-hero/scripts/pose_rig.py",
+          "path": "point-and-click-adventure/painted-hero/scripts/pose_rig.py",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/scripts/pose_rig.py"
         },
         {
-          "path": "adventure-kit/painted-hero/templates/hero_rig.json",
+          "path": "point-and-click-adventure/painted-hero/templates/hero_rig.json",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/templates/hero_rig.json"
         },
         {
-          "path": "adventure-kit/painted-hero/templates/painted.json",
+          "path": "point-and-click-adventure/painted-hero/templates/painted.json",
           "type": "registry:file",
           "target": "~/.claude/skills/painted-hero/templates/painted.json"
         }
@@ -802,30 +802,30 @@
       "name": "memory-reveals",
       "type": "registry:item",
       "title": "Memory Reveals",
-      "description": "Add two-state places and cinematics to a point-and-click game: an aligned past carried in the same room, visions, playable memories, memory vistas, zoom-out discovery reveals built from 3:1 rings, a cutscene runner whose skip leaves the world as a watched run would, letterbox, journal rewatching and Reduce camera motion. Part of the adventure-kit collection. Installs to ~/.claude/skills/memory-reveals/.",
+      "description": "Add two-state places and cinematics to a point-and-click game: an aligned past carried in the same room, visions, playable memories, memory vistas, zoom-out discovery reveals built from 3:1 rings, a cutscene runner whose skip leaves the world as a watched run would, letterbox, journal rewatching and Reduce camera motion. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/memory-reveals/.",
       "files": [
         {
-          "path": "adventure-kit/memory-reveals/SKILL.md",
+          "path": "point-and-click-adventure/memory-reveals/SKILL.md",
           "type": "registry:file",
           "target": "~/.claude/skills/memory-reveals/SKILL.md"
         },
         {
-          "path": "adventure-kit/memory-reveals/RULES.md",
+          "path": "point-and-click-adventure/memory-reveals/RULES.md",
           "type": "registry:file",
           "target": "~/.claude/skills/memory-reveals/RULES.md"
         },
         {
-          "path": "adventure-kit/memory-reveals/WORKFLOW.md",
+          "path": "point-and-click-adventure/memory-reveals/WORKFLOW.md",
           "type": "registry:file",
           "target": "~/.claude/skills/memory-reveals/WORKFLOW.md"
         },
         {
-          "path": "adventure-kit/memory-reveals/references/cutscenes.md",
+          "path": "point-and-click-adventure/memory-reveals/references/cutscenes.md",
           "type": "registry:file",
           "target": "~/.claude/skills/memory-reveals/references/cutscenes.md"
         },
         {
-          "path": "adventure-kit/memory-reveals/templates/reveal.json",
+          "path": "point-and-click-adventure/memory-reveals/templates/reveal.json",
           "type": "registry:file",
           "target": "~/.claude/skills/memory-reveals/templates/reveal.json"
         }

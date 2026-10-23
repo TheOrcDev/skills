@@ -1,4 +1,4 @@
-# Adventure kit
+# Point-and-click adventure
 
 Ten skills and a template project for making a mouse-driven, fully voiced
 point-and-click adventure with painted backgrounds, a hand-painted hero and
