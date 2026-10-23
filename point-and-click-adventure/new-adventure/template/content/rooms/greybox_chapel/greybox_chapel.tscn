@@ -1,0 +1,130 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://content/rooms/greybox_chapel/greybox_chapel.gd" id="1_ruksn"]
+[ext_resource type="Texture2D" path="res://content/rooms/greybox_chapel/art/bg_now.png" id="2_2emxs"]
+[ext_resource type="Texture2D" path="res://content/rooms/greybox_chapel/art/flask.png" id="3_3tcun"]
+[ext_resource type="Texture2D" path="res://content/rooms/greybox_chapel/art/bg_then.png" id="4_dsa2l"]
+[ext_resource type="Script" path="res://src/core/scale_zones.gd" id="5_nvwgm"]
+[ext_resource type="Script" path="res://src/core/hotspot.gd" id="6_bgus0"]
+[ext_resource type="Script" path="res://src/core/exit.gd" id="7_07v0x"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_jvohn"]
+vertices = PackedVector2Array(1920, 1062, 0, 1062, 0, 790, 1920, 790)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(0, 790, 1920, 790, 1920, 1062, 0, 1062)])
+agent_radius = 0.0
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_qxq30"]
+vertices = PackedVector2Array(1920, 1062, 0, 1062, 0, 790, 1920, 790)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(0, 790, 1920, 790, 1920, 1062, 0, 1062)])
+agent_radius = 0.0
+
+[node name="GreyboxChapel" type="Node2D" unique_id=940312402]
+script = ExtResource("1_ruksn")
+room_id = &"greybox_chapel"
+display_name = "Chapel"
+
+[node name="Layers" type="Node2D" parent="." unique_id=1689242766]
+
+[node name="Now" type="Node2D" parent="Layers" unique_id=662058615]
+
+[node name="Background" type="Sprite2D" parent="Layers/Now" unique_id=1147575157]
+texture = ExtResource("2_2emxs")
+centered = false
+
+[node name="Flask" type="Sprite2D" parent="Layers/Now" unique_id=504815969]
+position = Vector2(1520, 420)
+texture = ExtResource("3_3tcun")
+centered = false
+
+[node name="Then" type="Node2D" parent="Layers" unique_id=1779277295]
+
+[node name="Background" type="Sprite2D" parent="Layers/Then" unique_id=238750580]
+texture = ExtResource("4_dsa2l")
+centered = false
+
+[node name="WalkAreas" type="Node2D" parent="." unique_id=2131034325]
+
+[node name="Now" type="NavigationRegion2D" parent="WalkAreas" unique_id=1011425323]
+navigation_polygon = SubResource("NavigationPolygon_jvohn")
+
+[node name="Then" type="NavigationRegion2D" parent="WalkAreas" unique_id=804029306]
+navigation_polygon = SubResource("NavigationPolygon_qxq30")
+enabled = false
+
+[node name="ScaleZones" type="Node2D" parent="." unique_id=1565778142]
+script = ExtResource("5_nvwgm")
+far_y = 790.0
+far_scale = 0.72
+near_y = 1062.0
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=667661944]
+
+[node name="Altar" type="Area2D" parent="Hotspots" unique_id=1077199322]
+script = ExtResource("6_bgus0")
+id = &"altar"
+display_name = "Altar"
+walk_offset = Vector2(1210, 905)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Altar" unique_id=1406289965]
+polygon = PackedVector2Array(800, 820, 800, 530, 1120, 530, 1120, 820)
+
+[node name="Carving" type="Area2D" parent="Hotspots" unique_id=684122105]
+script = ExtResource("6_bgus0")
+id = &"carving"
+display_name = "Carving"
+era = &"then"
+walk_offset = Vector2(1210, 905)
+pick_priority = 1
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Carving" unique_id=986773428]
+polygon = PackedVector2Array(820, 590, 1100, 590, 1100, 690, 820, 690)
+
+[node name="Flask" type="Area2D" parent="Hotspots" unique_id=1241389573]
+script = ExtResource("6_bgus0")
+id = &"flask"
+display_name = "Oil flask"
+walk_offset = Vector2(1560, 920)
+pick_priority = 1
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Flask" unique_id=1516804860]
+polygon = PackedVector2Array(1520, 420, 1590, 420, 1590, 530, 1520, 530)
+
+[node name="Window" type="Area2D" parent="Hotspots" unique_id=1688488375]
+script = ExtResource("6_bgus0")
+id = &"window"
+display_name = "Window"
+walk_offset = Vector2(460, 900)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Window" unique_id=877336287]
+polygon = PackedVector2Array(380, 170, 540, 170, 540, 520, 380, 520)
+
+[node name="ExitEast" type="Area2D" parent="Hotspots" unique_id=1759980630]
+script = ExtResource("7_07v0x")
+target_room = &"greybox_gate"
+target_entry = &"from_chapel"
+id = &"exit_east"
+display_name = "To the gatehouse"
+default_verb = &"walk"
+walk_offset = Vector2(1860, 980)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/ExitEast" unique_id=216453828]
+polygon = PackedVector2Array(1825, 560, 1920, 560, 1920, 1062, 1825, 1062)
+
+[node name="Exits" type="Node2D" parent="." unique_id=1999477001]
+
+[node name="Markers" type="Node2D" parent="." unique_id=1040650004]
+
+[node name="default" type="Marker2D" parent="Markers" unique_id=646130727]
+position = Vector2(960, 960)
+
+[node name="from_gate" type="Marker2D" parent="Markers" unique_id=97488930]
+position = Vector2(1750, 980)
+
+[node name="Actors" type="Node2D" parent="." unique_id=1586059594]
+y_sort_enabled = true
+
+[node name="Foreground" type="Node2D" parent="." unique_id=416408953]
+
+[node name="Cinematics" type="Node2D" parent="." unique_id=1357423802]

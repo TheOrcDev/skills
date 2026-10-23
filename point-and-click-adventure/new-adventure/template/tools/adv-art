@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs the art tools (tools/art) from anywhere: tools/adv-art <command> --help
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+exec uv run --quiet --project "$ROOT/tools/art" adv-art "$@"

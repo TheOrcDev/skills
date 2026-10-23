@@ -1,0 +1,31 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://content/closeups/greybox_notice/greybox_notice.gd" id="1_pgfiy"]
+[ext_resource type="Texture2D" path="res://content/closeups/greybox_notice/art/bg.png" id="2_loh8w"]
+[ext_resource type="Script" path="res://src/core/hotspot.gd" id="3_roeac"]
+
+[node name="GreyboxNotice" type="Node2D" unique_id=53462439]
+script = ExtResource("1_pgfiy")
+closeup_id = &"greybox_notice"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1223965784]
+texture = ExtResource("2_loh8w")
+centered = false
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=1734316699]
+
+[node name="Text" type="Area2D" parent="Hotspots" unique_id=979121434]
+script = ExtResource("3_roeac")
+id = &"text"
+display_name = "The order"
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Text" unique_id=1744007196]
+polygon = PackedVector2Array(440, 240, 1340, 240, 1340, 700, 440, 700)
+
+[node name="Seal" type="Area2D" parent="Hotspots" unique_id=1107927469]
+script = ExtResource("3_roeac")
+id = &"seal"
+display_name = "Seal"
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Seal" unique_id=1353624059]
+polygon = PackedVector2Array(1320, 740, 1480, 740, 1480, 900, 1320, 900)

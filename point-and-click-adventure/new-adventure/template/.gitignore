@@ -1,0 +1,28 @@
+# Godot
+.godot/
+/build/
+
+# Secrets
+.env
+
+# Tooling
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Bulky, reproducible art intermediates (the builders make them again)
+art-source/work/rooms/*/then_aligned_2560.png
+art-source/work/rooms/*/depth_*_16.png
+art-source/work/characters/*/renders*/
+art-source/work/characters/*/rig/
+art-source/work/characters/*/rig-*/
+art-source/work/characters/*/preview/
+art-source/work/characters/*/painted/
+art-source/work/characters/*/painted-report.json
+*.blend1
+# The hero's base mesh (painted-hero WORKFLOW §0): downloaded once per machine.
+art-source/vendor/human-base-meshes/

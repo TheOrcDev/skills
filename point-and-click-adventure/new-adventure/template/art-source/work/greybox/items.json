@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rag",
+    "name": "Rag",
+    "icon": "res://content/items/rag/icon.png",
+    "look_file": "greybox",
+    "look_cue": "rag_look",
+    "combinations": {
+      "oil": "oiled_rag"
+    }
+  },
+  {
+    "id": "oil",
+    "name": "Oil flask",
+    "icon": "res://content/items/oil/icon.png",
+    "look_file": "greybox",
+    "look_cue": "oil_look",
+    "combinations": {
+      "rag": "oiled_rag"
+    }
+  },
+  {
+    "id": "oiled_rag",
+    "name": "Oiled rag",
+    "icon": "res://content/items/oiled_rag/icon.png",
+    "look_file": "greybox",
+    "look_cue": "oiled_rag_look",
+    "combinations": {}
+  }
+]

@@ -1,0 +1,10 @@
+~ start
+
+Keeper: You again. What do you want? [ID:TEST_KEEPER_ASK]
+- Who are you? [if not GameState.get_flag("test_asked_who") /] [ID:TEST_UNKNOWN_WHO]
+	do GameState.set_flag("test_asked_who")
+	Keeper: The keeper. Of what, nobody remembers. [ID:TEST_KEEPER_WHO]
+	=> start
+- Goodbye. [ID:TEST_UNKNOWN_BYE]
+	Keeper: Mind the dark. [ID:TEST_KEEPER_BYE]
+	=> END

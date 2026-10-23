@@ -1,0 +1,219 @@
+{
+  "display_name": "Chapel",
+  "layers": {
+    "now": [
+      {
+        "name": "Background",
+        "texture": "res://content/rooms/greybox_chapel/art/bg_now.png"
+      },
+      {
+        "name": "Flask",
+        "texture": "res://content/rooms/greybox_chapel/art/flask.png",
+        "position": [
+          1520,
+          420
+        ]
+      }
+    ],
+    "then": [
+      {
+        "name": "Background",
+        "texture": "res://content/rooms/greybox_chapel/art/bg_then.png"
+      }
+    ]
+  },
+  "walk": {
+    "now": [
+      [
+        0,
+        790
+      ],
+      [
+        1920,
+        790
+      ],
+      [
+        1920,
+        1062
+      ],
+      [
+        0,
+        1062
+      ]
+    ],
+    "then": [
+      [
+        0,
+        790
+      ],
+      [
+        1920,
+        790
+      ],
+      [
+        1920,
+        1062
+      ],
+      [
+        0,
+        1062
+      ]
+    ]
+  },
+  "scale_zones": {
+    "far_y": 790,
+    "far_scale": 0.72,
+    "near_y": 1062,
+    "near_scale": 1.0
+  },
+  "markers": {
+    "default": [
+      960,
+      960
+    ],
+    "from_gate": [
+      1750,
+      980
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "altar",
+      "name": "Altar",
+      "polygon": [
+        [
+          800,
+          820
+        ],
+        [
+          800,
+          530
+        ],
+        [
+          1120,
+          530
+        ],
+        [
+          1120,
+          820
+        ]
+      ],
+      "walk_to": [
+        1210,
+        905
+      ]
+    },
+    {
+      "id": "carving",
+      "name": "Carving",
+      "era": "then",
+      "pick_priority": 1,
+      "polygon": [
+        [
+          820,
+          590
+        ],
+        [
+          1100,
+          590
+        ],
+        [
+          1100,
+          690
+        ],
+        [
+          820,
+          690
+        ]
+      ],
+      "walk_to": [
+        1210,
+        905
+      ]
+    },
+    {
+      "id": "flask",
+      "name": "Oil flask",
+      "polygon": [
+        [
+          1520,
+          420
+        ],
+        [
+          1590,
+          420
+        ],
+        [
+          1590,
+          530
+        ],
+        [
+          1520,
+          530
+        ]
+      ],
+      "walk_to": [
+        1560,
+        920
+      ],
+      "pick_priority": 1
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "polygon": [
+        [
+          380,
+          170
+        ],
+        [
+          540,
+          170
+        ],
+        [
+          540,
+          520
+        ],
+        [
+          380,
+          520
+        ]
+      ],
+      "walk_to": [
+        460,
+        900
+      ]
+    },
+    {
+      "id": "exit_east",
+      "name": "To the gatehouse",
+      "polygon": [
+        [
+          1825,
+          560
+        ],
+        [
+          1920,
+          560
+        ],
+        [
+          1920,
+          1062
+        ],
+        [
+          1825,
+          1062
+        ]
+      ],
+      "walk_to": [
+        1860,
+        980
+      ],
+      "exit": {
+        "room": "greybox_gate",
+        "entry": "from_chapel",
+        "direction": "right"
+      }
+    }
+  ]
+}

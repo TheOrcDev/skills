@@ -1,0 +1,115 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://content/rooms/greybox_courtyard/greybox_courtyard.gd" id="1_sgw35"]
+[ext_resource type="Texture2D" path="res://content/rooms/greybox_courtyard/art/bg_now.png" id="2_x5usk"]
+[ext_resource type="Script" path="res://src/core/scale_zones.gd" id="3_fjghn"]
+[ext_resource type="Script" path="res://src/core/hotspot.gd" id="4_6oiri"]
+[ext_resource type="Script" path="res://src/core/exit.gd" id="5_rdrn7"]
+[ext_resource type="PackedScene" path="res://content/characters/warden/warden.tscn" id="6_dxlhw"]
+[ext_resource type="Script" path="res://src/core/actor.gd" id="7_nyxht"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_bmx5j"]
+vertices = PackedVector2Array(1920, 1062, 0, 1062, 0, 790, 1920, 790)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(0, 790, 1920, 790, 1920, 1062, 0, 1062)])
+agent_radius = 0.0
+
+[node name="GreyboxCourtyard" type="Node2D" unique_id=1046851302]
+script = ExtResource("1_sgw35")
+room_id = &"greybox_courtyard"
+display_name = "Courtyard"
+
+[node name="Layers" type="Node2D" parent="." unique_id=1026277080]
+
+[node name="Now" type="Node2D" parent="Layers" unique_id=896967380]
+
+[node name="Background" type="Sprite2D" parent="Layers/Now" unique_id=176935179]
+texture = ExtResource("2_x5usk")
+centered = false
+
+[node name="Then" type="Node2D" parent="Layers" unique_id=232426872]
+
+[node name="WalkAreas" type="Node2D" parent="." unique_id=813019318]
+
+[node name="Now" type="NavigationRegion2D" parent="WalkAreas" unique_id=82242114]
+navigation_polygon = SubResource("NavigationPolygon_bmx5j")
+
+[node name="Then" type="NavigationRegion2D" parent="WalkAreas" unique_id=1218094850]
+enabled = false
+
+[node name="ScaleZones" type="Node2D" parent="." unique_id=1854364631]
+script = ExtResource("3_fjghn")
+far_y = 790.0
+far_scale = 0.72
+near_y = 1062.0
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=321323861]
+
+[node name="Warden" type="Area2D" parent="Hotspots" unique_id=521878826]
+script = ExtResource("4_6oiri")
+id = &"warden"
+display_name = "Warden"
+default_verb = &"talk"
+walk_offset = Vector2(1470, 950)
+pick_priority = 2
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Warden" unique_id=39463688]
+polygon = PackedVector2Array(1570, 940, 1570, 610, 1710, 610, 1710, 940)
+
+[node name="Path" type="Area2D" parent="Hotspots" unique_id=794024067]
+script = ExtResource("4_6oiri")
+id = &"path"
+display_name = "The way on"
+walk_offset = Vector2(940, 900)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Path" unique_id=228999481]
+polygon = PackedVector2Array(700, 790, 1180, 790, 1500, 1062, 420, 1062)
+
+[node name="Milestone" type="Area2D" parent="Hotspots" unique_id=247312654]
+script = ExtResource("4_6oiri")
+id = &"milestone"
+display_name = "Milestone"
+walk_offset = Vector2(1200, 905)
+pick_priority = 1
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Milestone" unique_id=999503945]
+polygon = PackedVector2Array(1240, 880, 1240, 790, 1290, 790, 1290, 880)
+
+[node name="ExitGate" type="Area2D" parent="Hotspots" unique_id=1981063496]
+script = ExtResource("5_rdrn7")
+target_room = &"greybox_gate"
+target_entry = &"from_courtyard"
+direction = &"left"
+id = &"exit_gate"
+display_name = "Back through the gate"
+default_verb = &"walk"
+walk_offset = Vector2(80, 980)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/ExitGate" unique_id=199869027]
+polygon = PackedVector2Array(0, 420, 150, 420, 150, 1062, 0, 1062)
+
+[node name="Exits" type="Node2D" parent="." unique_id=806598189]
+
+[node name="Markers" type="Node2D" parent="." unique_id=1405289326]
+
+[node name="default" type="Marker2D" parent="Markers" unique_id=217640972]
+position = Vector2(500, 960)
+
+[node name="from_gate" type="Marker2D" parent="Markers" unique_id=749348493]
+position = Vector2(260, 980)
+
+[node name="Actors" type="Node2D" parent="." unique_id=661224906]
+y_sort_enabled = true
+
+[node name="Warden" type="Node2D" parent="Actors" unique_id=113524556 groups=["era_now"] instance=ExtResource("6_dxlhw")]
+position = Vector2(1640, 940)
+script = ExtResource("7_nyxht")
+speaker_name = "Warden"
+speaker_aliases = PackedStringArray()
+talk_animations = Array[StringName]([&"talk_a", &"talk_b"])
+subtitle_color = Color(0.8, 0.84, 0.9, 1)
+speech_offset = Vector2(0, -328.0164)
+
+[node name="Foreground" type="Node2D" parent="." unique_id=851384686]
+
+[node name="Cinematics" type="Node2D" parent="." unique_id=173507380]

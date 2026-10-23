@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://kao4q5bl10c2"
+path="res://.godot/imported/hints.dialogue-143228c0998f11178f1820b8a5c49ccd.tres"
+
+[deps]
+
+source_file="res://content/dialogue/hints.dialogue"
+dest_files=["res://.godot/imported/hints.dialogue-143228c0998f11178f1820b8a5c49ccd.tres"]
+
+[params]
+
+defaults=true

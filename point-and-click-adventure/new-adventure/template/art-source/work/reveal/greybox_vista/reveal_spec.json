@@ -1,0 +1,46 @@
+{
+  "rings": [
+    {
+      "texture": "res://content/cutscenes/greybox_vista/art/ring0.png",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "scale": 1.0
+    },
+    {
+      "texture": "res://content/cutscenes/greybox_vista/art/ring1.png",
+      "position": [
+        768.0,
+        450.0
+      ],
+      "scale": 0.5
+    }
+  ],
+  "world_size": [
+    3072,
+    1072
+  ],
+  "feather": 0.08,
+  "hero": {
+    "feet": [
+      1536,
+      880
+    ],
+    "height": 180
+  },
+  "start": {
+    "zoom": 2.4,
+    "center": [
+      1536,
+      790
+    ]
+  },
+  "end": {
+    "zoom": 0.7491,
+    "center": [
+      1536.0,
+      536.0
+    ]
+  }
+}

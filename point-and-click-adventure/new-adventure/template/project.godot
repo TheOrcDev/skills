@@ -1,0 +1,69 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Adventure"
+config/description="A point-and-click adventure."
+run/main_scene="res://src/core/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0.0196, 0.0196, 0.0275, 1)
+boot_splash/show_image=false
+
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GameState="*res://src/core/game_state.gd"
+Inventory="*res://src/core/inventory.gd"
+Rooms="*res://src/core/rooms.gd"
+Interaction="*res://src/core/interaction.gd"
+Say="*res://src/core/say.gd"
+Flashback="*res://src/systems/flashback.gd"
+Closeups="*res://src/systems/closeups.gd"
+Saves="*res://src/core/saves.gd"
+Settings="*res://src/core/settings.gd"
+Menus="*res://src/ui/menus.gd"
+Hints="*res://src/systems/hints.gd"
+Cutscenes="*res://src/systems/cinematics/cutscenes.gd"
+Journal="*res://src/systems/journal.gd"
+Voice="*res://src/systems/voice.gd"
+Qa="*res://src/core/qa.gd"
+
+[dialogue_manager]
+
+editor/translations/UPDATE_TRANSLATION_TEMPLATES_AUTOMATICALLY=false
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/gut/plugin.cfg")
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://content/dialogue/core.dialogue", "res://content/dialogue/greybox.dialogue", "res://content/dialogue/hints.dialogue", "res://content/dialogue/journal.dialogue")
+
+[navigation]
+
+world/map_use_async_iterations=false
+world/region_use_async_iterations=false
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+shader_compiler/shader_cache/enabled.web=false

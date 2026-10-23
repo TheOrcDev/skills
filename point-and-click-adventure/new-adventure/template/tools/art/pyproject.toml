@@ -1,0 +1,29 @@
+[project]
+name = "adv-art"
+version = "0.1.0"
+description = "Image processing tools for Past (docs/art-pipeline.md §7)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy>=2.1,<3",
+  "opencv-python-headless>=4.10,<5",
+  "pillow>=11,<13",
+]
+
+[project.optional-dependencies]
+depth = [
+  "torch>=2.6,<3",
+  "transformers>=4.50,<6",
+]
+
+[project.scripts]
+adv-art = "adv_art.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["adv_art"]

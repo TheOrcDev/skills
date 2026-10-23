@@ -1,0 +1,23 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/core/actor.gd" id="1_rgy4l"]
+[ext_resource type="Script" path="res://src/systems/hero/hero_body.gd" id="2_cbi1g"]
+[ext_resource type="Resource" path="res://content/characters/hero/hero_sprites.tres" id="3_4wk2i"]
+[ext_resource type="Script" path="res://src/core/idle_fidgets.gd" id="4_1xr55"]
+
+[node name="Hero" type="Node2D" unique_id=892858930]
+script = ExtResource("1_rgy4l")
+speaker_name = "Hero"
+speaker_aliases = PackedStringArray()
+depth_speed = 0.6
+step_with_frames = true
+talk_animations = Array[StringName]([&"talk_a", &"talk_b"])
+subtitle_color = Color(0.86, 0.89, 0.96, 1)
+speech_offset = Vector2(0, -520)
+
+[node name="Body" type="Node2D" parent="." unique_id=215151857]
+script = ExtResource("2_cbi1g")
+sprites = ExtResource("3_4wk2i")
+
+[node name="IdleFidgets" type="Node" parent="." unique_id=2045274043]
+script = ExtResource("4_1xr55")

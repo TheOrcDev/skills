@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Texture2D" path="res://content/items/oil/icon.png" id="1_13wbs"]
+[ext_resource type="Script" path="res://src/core/item_def.gd" id="2_qmcru"]
+
+[resource]
+script = ExtResource("2_qmcru")
+id = &"oil"
+display_name = "Oil flask"
+icon = ExtResource("1_13wbs")
+look_file = &"greybox"
+look_cue = &"oil_look"
+combinations = {
+&"rag": &"oiled_rag"
+}

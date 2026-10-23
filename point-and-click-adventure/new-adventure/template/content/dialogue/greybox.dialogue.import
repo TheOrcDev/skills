@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dy7r7ymfwx734"
+path="res://.godot/imported/greybox.dialogue-9808b848b13e867903ae9f531ba09b9d.tres"
+
+[deps]
+
+source_file="res://content/dialogue/greybox.dialogue"
+dest_files=["res://.godot/imported/greybox.dialogue-9808b848b13e867903ae9f531ba09b9d.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,12 @@
+{
+  "name": "past-audio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.6",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemDef" format=3]
+
+[ext_resource type="Texture2D" path="res://content/items/oiled_rag/icon.png" id="1_62kh6"]
+[ext_resource type="Script" path="res://src/core/item_def.gd" id="2_phrja"]
+
+[resource]
+script = ExtResource("2_phrja")
+id = &"oiled_rag"
+display_name = "Oiled rag"
+icon = ExtResource("1_62kh6")
+look_file = &"greybox"
+look_cue = &"oiled_rag_look"

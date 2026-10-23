@@ -1,0 +1,113 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/systems/cinematics/reveal_stage.gd" id="1_cpl4n"]
+[ext_resource type="Script" path="res://src/systems/cinematics/reveal.gd" id="2_wv714"]
+[ext_resource type="Texture2D" path="res://content/cutscenes/greybox_vista/art/ring0.png" id="3_iq62t"]
+[ext_resource type="Texture2D" path="res://content/cutscenes/greybox_vista/art/ring1.png" id="4_0okmp"]
+[ext_resource type="Script" path="res://src/systems/hero/hero_body.gd" id="5_7s7bl"]
+[ext_resource type="Resource" path="res://content/characters/hero/hero_sprites.tres" id="6_dgv2d"]
+
+[sub_resource type="FontVariation" id="FontVariation_jir2a"]
+spacing_glyph = 30
+
+[sub_resource type="FontVariation" id="FontVariation_wirpp"]
+spacing_glyph = 10
+
+[sub_resource type="Animation" id="Animation_jt7fb"]
+length = 13.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Reveal:progress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 11),
+"transitions": PackedFloat32Array(1, -2, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(9.5, 12.6),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"show_title"
+}, {
+"args": [],
+"method": &"hide_title"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hua3h"]
+_data = {
+&"reveal": SubResource("Animation_jt7fb")
+}
+
+[node name="GreyboxVista" type="Node2D" unique_id=1711746213]
+script = ExtResource("1_cpl4n")
+
+[node name="Reveal" type="Node2D" parent="." unique_id=316087166]
+script = ExtResource("2_wv714")
+start_center = Vector2(1536, 790)
+end_zoom = 0.7491
+
+[node name="Ring0" type="Sprite2D" parent="Reveal" unique_id=1977353007]
+texture = ExtResource("3_iq62t")
+centered = false
+
+[node name="Ring1" type="Sprite2D" parent="Reveal" unique_id=1420916697]
+texture_filter = 4
+position = Vector2(768, 450)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_0okmp")
+centered = false
+
+[node name="Hero" type="Node2D" parent="Reveal" unique_id=848467348]
+position = Vector2(1536, 880)
+scale = Vector2(0.375, 0.375)
+script = ExtResource("5_7s7bl")
+sprites = ExtResource("6_dgv2d")
+
+[node name="Title" type="CanvasLayer" parent="." unique_id=757967326]
+layer = 55
+
+[node name="Card" type="VBoxContainer" parent="Title" unique_id=608275768]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="Name" type="Label" parent="Title/Card" unique_id=697549787]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_jir2a")
+theme_override_font_sizes/font_size = 117
+theme_override_colors/font_color = Color(0.9, 0.91, 0.94, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.7)
+theme_override_constants/shadow_offset_y = 4
+text = "BEYOND THE GATE"
+horizontal_alignment = 1
+
+[node name="Place" type="Label" parent="Title/Card" unique_id=332706302]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_wirpp")
+theme_override_font_sizes/font_size = 40
+theme_override_colors/font_color = Color(0.9, 0.91, 0.94, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.7)
+theme_override_constants/shadow_offset_y = 4
+text = "The greybox"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1716022888]
+libraries/ = SubResource("AnimationLibrary_hua3h")

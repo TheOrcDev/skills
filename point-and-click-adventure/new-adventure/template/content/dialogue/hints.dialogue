@@ -1,0 +1,65 @@
+~ rag_1
+
+Hero: That gate won't open for wishing. Something in here might help. [ID:HINT_RAG_1]
+
+=> END
+
+~ rag_2
+
+Hero: There's a rag on a hook by the wall. Rags are rarely useless. [ID:HINT_RAG_2]
+
+=> END
+
+~ word_1
+
+Hero: The gatekeeper wants a word. Words have to come from somewhere. [ID:HINT_WORD_1]
+
+=> END
+
+~ word_2
+
+Hero: The chapel's altar. Its past might remember what its present forgot. [ID:HINT_WORD_2]
+
+=> END
+
+~ oil_1
+
+Hero: Those hinges are rusted solid. They need something to drink. [ID:HINT_OIL_1]
+
+=> END
+
+~ oil_2
+
+Hero: There's a flask on the chapel shelf. [ID:HINT_OIL_2]
+
+=> END
+
+~ hinges_1
+
+Hero: Oil and a rag. Together they might do what neither does alone. [ID:HINT_HINGES_1]
+
+=> END
+
+~ hinges_2
+
+Hero: Combine the oil with the rag, then use it on the gate. [ID:HINT_HINGES_2]
+
+=> END
+
+~ say_word_1
+
+Hero: The gate is ready. The gatekeeper is still waiting for the word. [ID:HINT_SAY_WORD_1]
+
+=> END
+
+~ through_1
+
+Hero: The gate is open. Whatever is beyond it is waiting. [ID:HINT_THROUGH_1]
+
+=> END
+
+~ none
+
+Hero: Nothing pulls at me right now. [ID:HINT_NONE_1]
+
+=> END

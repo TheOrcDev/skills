@@ -10,3 +10,9 @@ node_modules/
 # Python
 __pycache__/
 *.py[cod]
+
+# point-and-click-adventure's template fetches these addons at setup (new-adventure/scripts/fetch_addons.sh)
+point-and-click-adventure/new-adventure/template/addons/dialogue_manager/
+point-and-click-adventure/new-adventure/template/addons/gut/
+point-and-click-adventure/new-adventure/template/.godot/
+point-and-click-adventure/new-adventure/template/build/

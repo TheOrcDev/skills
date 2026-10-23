@@ -1,0 +1,180 @@
+~ gatekeeper_look
+
+Hero: A statue with its hand out. Waiting for something, or someone. [ID:GB_KEEPER_LOOK_1]
+
+=> END
+
+~ gatekeeper_talk
+
+Gatekeeper: Halt. This gate opens only for one who knows the word of the house. [ID:GB_KEEPER_HALT]
+
+=> gatekeeper_ask
+
+~ gatekeeper_ask
+
+Gatekeeper: Speak. [ID:GB_KEEPER_SPEAK]
+- What word? [ID:GB_ASK_WORD]
+	Gatekeeper: It was carved on the chapel's altar, before the fire. [ID:GB_KEEPER_WORD]
+	=> gatekeeper_ask
+- Who are you? [if not GameState.get_flag("greybox_asked_who") /] [ID:GB_ASK_WHO]
+	do GameState.set_flag("greybox_asked_who")
+	Gatekeeper: Stone. I keep the gate. That is all I remember being. [ID:GB_KEEPER_WHO]
+	=> gatekeeper_ask
+- The word is Mercy. [if GameState.get_flag("greybox_knows_word") /] [ID:GB_SAY_WORD]
+	do GameState.set_flag("greybox_word_spoken")
+	Gatekeeper: Mercy. Yes. The gate will hear you, if its hinges still can. [ID:GB_KEEPER_HEARD]
+	=> END
+- Nothing. [ID:GB_LEAVE]
+	=> END
+
+~ gate_look
+
+Hero: Iron, gone orange with rust. Nobody has been through here in a while. [ID:GB_GATE_LOOK_1]
+
+=> END
+
+~ gate_rusted
+
+Hero: Rusted solid. The hinges haven't moved in years. [ID:GB_GATE_RUSTED_1]
+
+=> END
+
+~ gate_unheard
+
+Hero: The hinges give a little now. The gate still won't open for me. [ID:GB_GATE_UNHEARD_1]
+
+=> END
+
+~ gate_oiled
+
+Hero: There. The hinges are drinking it up. [ID:GB_GATE_OILED_1]
+
+=> END
+
+~ gate_opens
+
+Hero: It gives. Slowly, like it's remembering how. [ID:GB_GATE_OPENS_1]
+
+=> END
+
+~ rag_look_hook
+
+Hero: A rag on a hook. Somebody's idea of tidy. [ID:GB_RAG_HOOK_1]
+
+=> END
+
+~ rag_take
+
+Hero: Mine now. Nobody's going to miss it. [ID:GB_RAG_TAKE_1]
+
+=> END
+
+~ rag_look
+
+Hero: A rag. Dry, stiff, and not much else. [ID:GB_RAG_LOOK_1]
+
+=> END
+
+~ oil_look
+
+Hero: Lamp oil. Thick, and it still smells of smoke. [ID:GB_OIL_LOOK_1]
+
+=> END
+
+~ oiled_rag_look
+
+Hero: A rag soaked in oil. Good for a hinge, or a fire. [ID:GB_OILED_RAG_LOOK_1]
+
+=> END
+
+~ altar_look
+
+Hero: Something was carved here once. The fire took most of it. [ID:GB_ALTAR_LOOK_1]
+
+=> END
+
+~ altar_touch
+
+Hero: The stone is still warm. Or I am. [ID:GB_ALTAR_TOUCH_1]
+
+=> END
+
+~ altar_past
+
+Hero: MERCY. Carved deep, before the fire. [ID:GB_ALTAR_PAST_1]
+
+=> END
+
+~ flask_look_shelf
+
+Hero: A flask on the shelf. Oil, by the smell. [ID:GB_FLASK_SHELF_1]
+
+=> END
+
+~ flask_take
+
+Hero: Oil. That might help with something rusted. [ID:GB_FLASK_TAKE_1]
+
+=> END
+
+~ window_look
+
+Hero: Grey light. It doesn't reach the floor. [ID:GB_WINDOW_LOOK_1]
+
+=> END
+
+~ path_look
+
+Hero: The way on. Whatever is out there, I got this far on my own. [ID:GB_PATH_LOOK_1]
+
+=> END
+
+~ path_use
+
+Hero: Let's see where it goes. [ID:GB_PATH_USE_1]
+
+=> END
+
+~ milestone_look
+
+Hero: A milestone. Whatever distance it promised has worn away. [ID:GB_MILESTONE_LOOK_1]
+
+=> END
+
+~ milestone_use
+
+Hero: Warm. Somebody used to stop here, and look out at all of it. [ID:GB_MILESTONE_USE_1]
+
+=> END
+
+~ notice_text
+
+Hero: "The gate opens for the word that was carved." Carved where, I wonder. [ID:GB_NOTICE_TEXT]
+
+=> END
+
+~ notice_seal
+
+Hero: A seal pressed so hard it cracked the board. [ID:GB_NOTICE_SEAL]
+
+=> END
+
+~ warden_look
+
+Hero: Someone keeps watch out here, leaning on a staff taller than they are. [ID:GB_WARDEN_LOOK]
+
+=> END
+
+~ warden_talk
+
+Warden: You got through. Most turn back at the rust. [ID:GB_WARDEN_TALK_1]
+Hero: The rust and I came to an arrangement. [ID:GB_WARDEN_TALK_2]
+Warden: Then the road is yours. [ID:GB_WARDEN_TALK_3]
+
+=> END
+
+~ window_memory
+
+Hero: Light. The whole chapel full of it, and someone singing. [ID:GB_WINDOW_MEMORY]
+
+=> END

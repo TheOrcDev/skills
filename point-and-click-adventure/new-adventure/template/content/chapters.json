@@ -1,0 +1,23 @@
+{
+  "_doc": "The game's parts and what each holds: rooms, close-ups, characters, dialogue folders and cutscenes. Read by src/core/chapters.gd, the every-room test, the QA room tour and tools/build/export.sh, which leaves every part without \"web\": true out of the browser build. `flags`, `memories` and `items` are what a player holds on reaching the part's start, so QA and tests can start mid-game. List rooms as they are built.",
+  "parts": [
+    {
+      "id": "greybox",
+      "title": "The Greybox",
+      "web": true,
+      "start": "greybox_gate",
+      "flags": [],
+      "rooms": [
+        "greybox_gate",
+        "greybox_chapel",
+        "greybox_courtyard"
+      ],
+      "closeups": [],
+      "dialogue": [],
+      "characters": [],
+      "cutscenes": [
+        "greybox_vista"
+      ]
+    }
+  ]
+}

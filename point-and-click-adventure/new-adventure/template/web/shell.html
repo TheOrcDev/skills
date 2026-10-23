@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<meta name="theme-color" content="#050507">
+		<meta name="description" content="Adventure: a point-and-click adventure. Play it in your browser.">
+		<title>Adventure</title>
+		<link rel="icon" type="image/png" href="loading/icon.png">
+		<link rel="apple-touch-icon" href="loading/icon.png">
+		<link rel="preload" as="image" href="loading/now.webp" fetchpriority="high">
+		<link rel="preload" as="image" href="loading/then.webp">
+		<!--
+			The browser build's loading screen, from Godot 4.7.2's default web
+			shell. A room's present waits in grey; as the engine and the game
+			pack download, its past blooms back from --bloom-at, as a memory does
+			in the game. tools/build/loading_art.sh makes the pictures from any
+			room with both eras. When the download is done, a
+			click starts the game, so the browser lets its voices play from the
+			first line. A ?qa= run starts without the click.
+		-->
+		<style>
+@property --bloom {
+	syntax: '<percentage>';
+	inherits: true;
+	initial-value: 0%;
+}
+
+:root {
+	--ink: #050507;
+	--mist: #e4e6ec;
+	--ash: #8a8e99;
+	--gold: #e8c27a;
+	--gold-deep: #b5833a;
+	--bloom: 0%;
+	/* Where the past blooms from, as a background position of the pictures. */
+	--bloom-at: 50% 40%;
+}
+
+html, body, #canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	color: var(--mist);
+	background-color: var(--ink);
+	overflow: hidden;
+	touch-action: none;
+	font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Noto Sans', sans-serif;
+}
+
+#canvas {
+	display: block;
+}
+
+#canvas:focus {
+	outline: none;
+}
+
+#status {
+	position: fixed;
+	inset: 0;
+	overflow: hidden;
+	background: var(--ink);
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+	transition: opacity 1.4s ease, --bloom 1.6s cubic-bezier(0.3, 0, 0.2, 1);
+}
+
+#status.ready {
+	cursor: pointer;
+}
+
+#status.leaving {
+	--bloom: 160%;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 1.6s ease 0.7s, --bloom 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* The two eras of the loading room, one over the other. */
+.era {
+	position: absolute;
+	inset: -3%;
+	/* The same point of picture and box line up, so the bloom stays on the
+	   bloom's origin however the screen crops the room. */
+	background-position: var(--bloom-at);
+	background-size: cover;
+	animation: drift 70s ease-in-out infinite alternate;
+}
+
+.era.now {
+	background-image: url('loading/now.webp');
+	opacity: 0;
+	transition: opacity 2.4s ease;
+}
+
+.era.now.shown {
+	opacity: 1;
+}
+
+.era.then {
+	background-image: url('loading/then.webp');
+	-webkit-mask-image: radial-gradient(ellipse 100% 100% at var(--bloom-at), #000 calc(var(--bloom) - 14%), transparent var(--bloom));
+	mask-image: radial-gradient(ellipse 100% 100% at var(--bloom-at), #000 calc(var(--bloom) - 14%), transparent var(--bloom));
+}
+
+@keyframes drift {
+	from { transform: scale(1) translate3d(0, 0, 0); }
+	to { transform: scale(1.06) translate3d(-1.2%, 0.6%, 0); }
+}
+
+/* Fog that drifts across the floor. */
+.fog {
+	position: absolute;
+	left: -50%;
+	width: 200%;
+	pointer-events: none;
+	background:
+		radial-gradient(ellipse 22% 50% at 18% 60%, rgba(214, 218, 228, 0.20), transparent 70%),
+		radial-gradient(ellipse 28% 45% at 46% 55%, rgba(214, 218, 228, 0.14), transparent 70%),
+		radial-gradient(ellipse 20% 55% at 72% 62%, rgba(214, 218, 228, 0.18), transparent 70%),
+		radial-gradient(ellipse 26% 40% at 92% 50%, rgba(214, 218, 228, 0.12), transparent 70%);
+	filter: blur(18px);
+}
+
+.fog.low {
+	bottom: -12%;
+	height: 55%;
+	animation: fog 48s linear infinite;
+}
+
+.fog.high {
+	bottom: 14%;
+	height: 40%;
+	opacity: 0.55;
+	animation: fog 77s linear infinite reverse;
+}
+
+@keyframes fog {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(25%, 0, 0); }
+}
+
+/* Darkness at the edges and under the title, so the words stay legible. */
+.shade {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background:
+		radial-gradient(ellipse 85% 75% at 50% 42%, transparent 45%, rgba(3, 3, 5, 0.75) 100%),
+		linear-gradient(to bottom, rgba(3, 3, 5, 0) 45%, rgba(3, 3, 5, 0.55) 72%, rgba(3, 3, 5, 0.9) 100%);
+}
+
+.card {
+	position: absolute;
+	left: 16px;
+	right: 16px;
+	bottom: clamp(48px, 12vh, 132px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	transition: opacity 0.9s ease, transform 1.4s ease;
+}
+
+#status.leaving .card {
+	opacity: 0;
+	transform: translateY(-10px);
+}
+
+.title {
+	margin: 0;
+	font-size: clamp(64px, 11vw, 148px);
+	font-weight: 300;
+	letter-spacing: 0.32em;
+	/* The tracking also follows the last letter; this keeps the word centred. */
+	margin-right: -0.32em;
+	line-height: 1;
+	color: var(--mist);
+	text-shadow: 0 0 40px rgba(0, 0, 0, 0.8), 0 2px 6px rgba(0, 0, 0, 0.9);
+	opacity: 0;
+	animation: rise 2.4s ease 0.3s forwards;
+}
+
+.tagline {
+	margin: 18px 0 0;
+	font-size: clamp(13px, 1.5vw, 18px);
+	font-weight: 400;
+	letter-spacing: 0.24em;
+	margin-right: -0.24em;
+	color: var(--ash);
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+	opacity: 0;
+	animation: rise 2.4s ease 1.1s forwards;
+}
+
+@keyframes rise {
+	from { opacity: 0; transform: translateY(8px); }
+	to { opacity: 1; transform: none; }
+}
+
+.thread {
+	position: relative;
+	width: min(420px, 72vw);
+	height: 1px;
+	margin-top: clamp(36px, 6vh, 56px);
+	background: rgba(228, 230, 236, 0.16);
+	transition: opacity 1s ease;
+}
+
+.thread i {
+	position: absolute;
+	left: 0;
+	top: -0.5px;
+	height: 2px;
+	width: 0;
+	background: linear-gradient(to right, var(--gold-deep), var(--gold));
+	box-shadow: 0 0 10px rgba(232, 194, 122, 0.75), 0 0 2px rgba(255, 235, 190, 0.9);
+	transition: width 0.4s ease-out;
+}
+
+#status.ready .thread {
+	opacity: 0;
+}
+
+.state {
+	margin-top: 16px;
+	min-height: 1.4em;
+	font-size: 12px;
+	letter-spacing: 0.3em;
+	margin-right: -0.3em;
+	text-transform: uppercase;
+	color: var(--ash);
+	font-variant-numeric: tabular-nums;
+	transition: color 0.8s ease;
+}
+
+#status.ready .state {
+	color: var(--gold);
+	font-size: 14px;
+	text-shadow: 0 0 18px rgba(232, 194, 122, 0.55);
+	animation: breathe 3.2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+	0%, 100% { opacity: 0.55; }
+	50% { opacity: 1; }
+}
+
+#status.failed .thread {
+	display: none;
+}
+
+#status.failed .state {
+	max-width: 36em;
+	color: #e3a9a0;
+	text-transform: none;
+	letter-spacing: 0.04em;
+	margin-right: 0;
+	line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.era, .fog {
+		animation: none;
+	}
+	#status.ready .state {
+		animation: none;
+	}
+}
+		</style>
+		$GODOT_HEAD_INCLUDE
+	</head>
+	<body>
+		<canvas id="canvas">
+			Your browser does not support the canvas tag.
+		</canvas>
+
+		<noscript>
+			Adventure needs JavaScript to run in the browser.
+		</noscript>
+
+		<div id="status" role="button" aria-label="Adventure is loading">
+			<div class="era now"></div>
+			<div class="era then"></div>
+			<div class="fog high"></div>
+			<div class="fog low"></div>
+			<div class="shade"></div>
+			<div class="card">
+				<h1 class="title">ADVENTURE</h1>
+				<p class="tagline">A point-and-click adventure</p>
+				<div class="thread"><i></i></div>
+				<div class="state" aria-live="polite">Loading</div>
+			</div>
+		</div>
+
+		<script src="$GODOT_URL"></script>
+		<script>
+const GODOT_CONFIG = $GODOT_CONFIG;
+const GODOT_THREADS_ENABLED = $GODOT_THREADS_ENABLED;
+
+(function () {
+	const status = document.getElementById('status');
+	const thread = status.querySelector('.thread i');
+	const state = status.querySelector('.state');
+	const now = status.querySelector('.era.now');
+	const automated = new URLSearchParams(window.location.search).has('qa');
+
+	// The ruin fades in once its picture is here, never as a half-drawn image.
+	const picture = new Image();
+	picture.onload = () => now.classList.add('shown');
+	picture.src = 'loading/now.webp';
+
+	function fail(err) {
+		console.error(err);
+		status.classList.remove('ready');
+		status.classList.add('failed');
+		const text = err instanceof Error ? err.message : String(err || 'An unknown error occurred.');
+		state.textContent = 'Adventure could not start. ' + text;
+	}
+
+	function showProgress(current, total) {
+		if (!(current > 0 && total > 0)) {
+			return;
+		}
+		const done = Math.min(current / total, 1);
+		thread.style.width = (done * 100).toFixed(2) + '%';
+		// A little colour from the start, most of the room by the end.
+		status.style.setProperty('--bloom', (14 + Math.sqrt(done) * 46).toFixed(2) + '%');
+		const mb = (bytes) => Math.round(bytes / 1048576);
+		state.textContent = 'Loading · ' + Math.floor(done * 100) + '% · ' + mb(current) + ' of ' + mb(total) + ' MB';
+	}
+
+	const missing = Engine.getMissingFeatures({ threads: GODOT_THREADS_ENABLED });
+	if (missing.length !== 0) {
+		fail('Your browser is missing: ' + missing.join(', ') + '. Try a current Chrome, Firefox or Safari.');
+		return;
+	}
+
+	// Engine.startGame() downloads and starts in one go. These are its steps,
+	// with a click between the download and the start.
+	const engine = new Engine(Object.assign({}, GODOT_CONFIG, { onProgress: showProgress }));
+	const exe = GODOT_CONFIG['executable'];
+	const pack = GODOT_CONFIG['mainPack'] || exe + '.pck';
+	const args = ['--main-pack', pack].concat(GODOT_CONFIG['args'] || []);
+
+	function begin() {
+		status.classList.remove('ready');
+		status.classList.add('leaving');
+		status.setAttribute('aria-label', 'Adventure is starting');
+		engine.start({ 'args': args }).then(() => {
+			window.setTimeout(() => status.remove(), 2400);
+		}, fail);
+	}
+
+	Promise.all([engine.init(exe), engine.preloadFile(pack, pack)]).then(() => {
+		if (automated) {
+			begin();
+			return;
+		}
+		status.classList.add('ready');
+		status.setAttribute('aria-label', 'Click to begin Adventure');
+		state.textContent = 'Click to begin';
+		const onClick = () => {
+			status.removeEventListener('click', onClick);
+			document.removeEventListener('keydown', onKey);
+			begin();
+		};
+		const onKey = (event) => {
+			if (event.key === 'Enter' || event.key === ' ') {
+				onClick();
+			}
+		};
+		status.addEventListener('click', onClick);
+		document.addEventListener('keydown', onKey);
+	}, fail);
+}());
+		</script>
+	</body>
+</html>

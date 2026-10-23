@@ -1,0 +1,173 @@
+{
+  "display_name": "Courtyard",
+  "layers": {
+    "now": [
+      {
+        "name": "Background",
+        "texture": "res://content/rooms/greybox_courtyard/art/bg_now.png"
+      }
+    ]
+  },
+  "walk": {
+    "now": [
+      [
+        0,
+        790
+      ],
+      [
+        1920,
+        790
+      ],
+      [
+        1920,
+        1062
+      ],
+      [
+        0,
+        1062
+      ]
+    ]
+  },
+  "scale_zones": {
+    "far_y": 790,
+    "far_scale": 0.72,
+    "near_y": 1062,
+    "near_scale": 1.0
+  },
+  "markers": {
+    "default": [
+      500,
+      960
+    ],
+    "from_gate": [
+      260,
+      980
+    ]
+  },
+  "npcs": [
+    {
+      "scene": "res://content/characters/warden/warden.tscn",
+      "name": "Warden",
+      "position": [
+        1640,
+        940
+      ],
+      "facing": "left",
+      "era": "now"
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "warden",
+      "name": "Warden",
+      "default_verb": "talk",
+      "pick_priority": 2,
+      "walk_to": [
+        1470,
+        950
+      ],
+      "polygon": [
+        [
+          1570,
+          940
+        ],
+        [
+          1570,
+          610
+        ],
+        [
+          1710,
+          610
+        ],
+        [
+          1710,
+          940
+        ]
+      ]
+    },
+    {
+      "id": "path",
+      "name": "The way on",
+      "polygon": [
+        [
+          700,
+          790
+        ],
+        [
+          1180,
+          790
+        ],
+        [
+          1500,
+          1062
+        ],
+        [
+          420,
+          1062
+        ]
+      ],
+      "walk_to": [
+        940,
+        900
+      ]
+    },
+    {
+      "id": "milestone",
+      "name": "Milestone",
+      "pick_priority": 1,
+      "walk_to": [
+        1200,
+        905
+      ],
+      "polygon": [
+        [
+          1240,
+          880
+        ],
+        [
+          1240,
+          790
+        ],
+        [
+          1290,
+          790
+        ],
+        [
+          1290,
+          880
+        ]
+      ]
+    },
+    {
+      "id": "exit_gate",
+      "name": "Back through the gate",
+      "polygon": [
+        [
+          0,
+          420
+        ],
+        [
+          150,
+          420
+        ],
+        [
+          150,
+          1062
+        ],
+        [
+          0,
+          1062
+        ]
+      ],
+      "walk_to": [
+        80,
+        980
+      ],
+      "exit": {
+        "room": "greybox_gate",
+        "entry": "from_courtyard",
+        "direction": "left"
+      }
+    }
+  ]
+}

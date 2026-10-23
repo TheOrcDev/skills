@@ -1,0 +1,34 @@
+~ fallback_look
+
+% Hero: Nothing remarkable. [ID:CORE_FALLBACK_LOOK_1]
+% Hero: It keeps its secrets. [ID:CORE_FALLBACK_LOOK_2]
+% Hero: I look at it. It doesn't look back. [ID:CORE_FALLBACK_LOOK_3]
+
+=> END
+
+~ fallback_use
+
+% Hero: I don't think that does anything. [ID:CORE_FALLBACK_USE_1]
+% Hero: Better not. [ID:CORE_FALLBACK_USE_2]
+
+=> END
+
+~ fallback_talk
+
+% Hero: It has nothing to say. [ID:CORE_FALLBACK_TALK_1]
+
+=> END
+
+~ fallback_item
+
+% Hero: They don't belong together. [ID:CORE_FALLBACK_ITEM_1]
+% Hero: I could try. It wouldn't work. [ID:CORE_FALLBACK_ITEM_2]
+
+=> END
+
+~ fallback_combine
+
+% Hero: These two have nothing to do with each other. [ID:CORE_FALLBACK_COMBINE_1]
+% Hero: No. Some things are better left apart. [ID:CORE_FALLBACK_COMBINE_2]
+
+=> END

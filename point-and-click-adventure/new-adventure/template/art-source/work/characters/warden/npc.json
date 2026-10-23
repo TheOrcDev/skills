@@ -1,0 +1,183 @@
+{
+  "id": "warden",
+  "speaker": "Warden",
+  "painting": "art-source/work/characters/warden/warden_painting.png",
+  "height": 330,
+  "feet": [
+    260,
+    1265
+  ],
+  "speech": [
+    260,
+    120
+  ],
+  "subtitle_color": [
+    0.8,
+    0.84,
+    0.9
+  ],
+  "grid": 28,
+  "bones": [
+    {
+      "name": "Base",
+      "parent": "",
+      "from": [
+        260,
+        1265
+      ],
+      "to": [
+        260,
+        650
+      ]
+    },
+    {
+      "name": "Spine",
+      "parent": "Base",
+      "from": [
+        260,
+        640
+      ],
+      "to": [
+        260,
+        380
+      ]
+    },
+    {
+      "name": "Head",
+      "parent": "Spine",
+      "from": [
+        260,
+        360
+      ],
+      "to": [
+        260,
+        150
+      ]
+    },
+    {
+      "name": "ArmR",
+      "parent": "Spine",
+      "from": [
+        195,
+        410
+      ],
+      "to": [
+        125,
+        705
+      ]
+    },
+    {
+      "name": "ArmL",
+      "parent": "Spine",
+      "from": [
+        325,
+        410
+      ],
+      "to": [
+        386,
+        646
+      ]
+    },
+    {
+      "name": "Staff",
+      "parent": "ArmL",
+      "from": [
+        416,
+        640
+      ],
+      "to": [
+        416,
+        130
+      ]
+    }
+  ],
+  "motions": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "Spine": [
+          0.8,
+          0.22,
+          0.0
+        ],
+        "Head": [
+          1.4,
+          0.13,
+          1.0
+        ],
+        "ArmR": [
+          1.2,
+          0.22,
+          0.5
+        ]
+      }
+    },
+    "talk_a": {
+      "loop": true,
+      "bones": {
+        "Spine": [
+          1.0,
+          0.3,
+          0.0
+        ],
+        "Head": [
+          1.5,
+          0.2,
+          1.0
+        ]
+      },
+      "voice": {
+        "Head": 5.0,
+        "Spine": 1.5,
+        "ArmR": -14.0
+      }
+    },
+    "talk_b": {
+      "loop": true,
+      "bones": {
+        "Spine": [
+          1.2,
+          0.35,
+          0.0
+        ],
+        "Head": [
+          2.0,
+          0.3,
+          0.5
+        ]
+      },
+      "voice": {
+        "Head": -4.0,
+        "ArmR": 10.0
+      }
+    },
+    "nod": {
+      "loop": false,
+      "length": 1.4,
+      "keys": {
+        "Head": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.4,
+            9.0
+          ],
+          [
+            0.8,
+            0.0
+          ],
+          [
+            1.1,
+            6.0
+          ],
+          [
+            1.4,
+            0.0
+          ]
+        ]
+      }
+    }
+  }
+}

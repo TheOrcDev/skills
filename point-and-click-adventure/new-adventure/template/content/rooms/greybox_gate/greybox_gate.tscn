@@ -1,0 +1,138 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://content/rooms/greybox_gate/greybox_gate.gd" id="1_i7rul"]
+[ext_resource type="Texture2D" path="res://content/rooms/greybox_gate/art/bg_now.png" id="2_3y7hl"]
+[ext_resource type="Texture2D" path="res://content/rooms/greybox_gate/art/gate.png" id="3_optdr"]
+[ext_resource type="Texture2D" path="res://content/rooms/greybox_gate/art/rag.png" id="4_mperb"]
+[ext_resource type="Script" path="res://src/core/scale_zones.gd" id="5_kaf5y"]
+[ext_resource type="Script" path="res://src/core/hotspot.gd" id="6_lyxgx"]
+[ext_resource type="Script" path="res://src/core/exit.gd" id="7_j4i1f"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_vvjcm"]
+vertices = PackedVector2Array(1920, 1062, 0, 1062, 0, 790, 1920, 790)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(0, 790, 1920, 790, 1920, 1062, 0, 1062)])
+agent_radius = 0.0
+
+[node name="GreyboxGate" type="Node2D" unique_id=1399229743]
+script = ExtResource("1_i7rul")
+room_id = &"greybox_gate"
+display_name = "Gatehouse"
+
+[node name="Layers" type="Node2D" parent="." unique_id=744756471]
+
+[node name="Now" type="Node2D" parent="Layers" unique_id=1262996255]
+
+[node name="Background" type="Sprite2D" parent="Layers/Now" unique_id=982182442]
+texture = ExtResource("2_3y7hl")
+centered = false
+
+[node name="Gate" type="Sprite2D" parent="Layers/Now" unique_id=571730900]
+position = Vector2(1500, 300)
+texture = ExtResource("3_optdr")
+centered = false
+
+[node name="Rag" type="Sprite2D" parent="Layers/Now" unique_id=1915126795]
+position = Vector2(262, 430)
+texture = ExtResource("4_mperb")
+centered = false
+
+[node name="Then" type="Node2D" parent="Layers" unique_id=725520752]
+
+[node name="WalkAreas" type="Node2D" parent="." unique_id=1747396328]
+
+[node name="Now" type="NavigationRegion2D" parent="WalkAreas" unique_id=1948419394]
+navigation_polygon = SubResource("NavigationPolygon_vvjcm")
+
+[node name="Then" type="NavigationRegion2D" parent="WalkAreas" unique_id=1123663100]
+enabled = false
+
+[node name="ScaleZones" type="Node2D" parent="." unique_id=60093725]
+script = ExtResource("5_kaf5y")
+far_y = 790.0
+far_scale = 0.72
+near_y = 1062.0
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=240955465]
+
+[node name="Gatekeeper" type="Area2D" parent="Hotspots" unique_id=206874142]
+script = ExtResource("6_lyxgx")
+id = &"gatekeeper"
+display_name = "Gatekeeper"
+default_verb = &"talk"
+walk_offset = Vector2(930, 905)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Gatekeeper" unique_id=1731104322]
+polygon = PackedVector2Array(850, 860, 850, 760, 880, 760, 880, 450, 895, 380, 930, 352, 965, 380, 980, 450, 980, 760, 1010, 760, 1010, 860)
+
+[node name="Gate" type="Area2D" parent="Hotspots" unique_id=1286738820]
+script = ExtResource("6_lyxgx")
+id = &"gate"
+display_name = "Rusted gate"
+walk_offset = Vector2(1560, 935)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Gate" unique_id=283003534]
+polygon = PackedVector2Array(1500, 900, 1500, 380, 1660, 270, 1820, 380, 1820, 900)
+
+[node name="Rag" type="Area2D" parent="Hotspots" unique_id=620074472]
+script = ExtResource("6_lyxgx")
+id = &"rag"
+display_name = "Rag"
+walk_offset = Vector2(330, 930)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Rag" unique_id=696930278]
+polygon = PackedVector2Array(262, 430, 362, 430, 362, 580, 262, 580)
+
+[node name="Notice" type="Area2D" parent="Hotspots" unique_id=652058959]
+script = ExtResource("6_lyxgx")
+id = &"notice"
+display_name = "Notice"
+walk_offset = Vector2(575, 900)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Notice" unique_id=36243644]
+polygon = PackedVector2Array(470, 380, 680, 380, 680, 560, 470, 560)
+
+[node name="ExitWest" type="Area2D" parent="Hotspots" unique_id=48987737]
+script = ExtResource("7_j4i1f")
+target_room = &"greybox_chapel"
+target_entry = &"from_gate"
+direction = &"left"
+id = &"exit_west"
+display_name = "To the chapel"
+default_verb = &"walk"
+walk_offset = Vector2(60, 980)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/ExitWest" unique_id=452133669]
+polygon = PackedVector2Array(0, 560, 95, 560, 95, 1062, 0, 1062)
+
+[node name="Beyond" type="Area2D" parent="Hotspots" unique_id=1078470560]
+script = ExtResource("7_j4i1f")
+target_room = &"greybox_courtyard"
+target_entry = &"from_gate"
+id = &"beyond"
+display_name = "Through the gate"
+default_verb = &"walk"
+walk_offset = Vector2(1660, 935)
+
+[node name="Shape" type="CollisionPolygon2D" parent="Hotspots/Beyond" unique_id=1579896711]
+polygon = PackedVector2Array(1500, 900, 1500, 380, 1660, 270, 1820, 380, 1820, 900)
+
+[node name="Exits" type="Node2D" parent="." unique_id=1571368390]
+
+[node name="Markers" type="Node2D" parent="." unique_id=1261867232]
+
+[node name="default" type="Marker2D" parent="Markers" unique_id=1015900155]
+position = Vector2(700, 960)
+
+[node name="from_chapel" type="Marker2D" parent="Markers" unique_id=35417446]
+position = Vector2(170, 980)
+
+[node name="from_courtyard" type="Marker2D" parent="Markers" unique_id=1362042511]
+position = Vector2(1640, 960)
+
+[node name="Actors" type="Node2D" parent="." unique_id=1034904710]
+y_sort_enabled = true
+
+[node name="Foreground" type="Node2D" parent="." unique_id=2105675993]
+
+[node name="Cinematics" type="Node2D" parent="." unique_id=626791546]

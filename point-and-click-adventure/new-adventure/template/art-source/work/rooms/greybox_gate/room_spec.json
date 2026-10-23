@@ -1,0 +1,272 @@
+{
+  "display_name": "Gatehouse",
+  "layers": {
+    "now": [
+      {
+        "name": "Background",
+        "texture": "res://content/rooms/greybox_gate/art/bg_now.png"
+      },
+      {
+        "name": "Gate",
+        "texture": "res://content/rooms/greybox_gate/art/gate.png",
+        "position": [
+          1500,
+          300
+        ]
+      },
+      {
+        "name": "Rag",
+        "texture": "res://content/rooms/greybox_gate/art/rag.png",
+        "position": [
+          262,
+          430
+        ]
+      }
+    ]
+  },
+  "walk": {
+    "now": [
+      [
+        0,
+        790
+      ],
+      [
+        1920,
+        790
+      ],
+      [
+        1920,
+        1062
+      ],
+      [
+        0,
+        1062
+      ]
+    ]
+  },
+  "scale_zones": {
+    "far_y": 790,
+    "far_scale": 0.72,
+    "near_y": 1062,
+    "near_scale": 1.0
+  },
+  "markers": {
+    "default": [
+      700,
+      960
+    ],
+    "from_chapel": [
+      170,
+      980
+    ],
+    "from_courtyard": [
+      1640,
+      960
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "gatekeeper",
+      "name": "Gatekeeper",
+      "polygon": [
+        [
+          850,
+          860
+        ],
+        [
+          850,
+          760
+        ],
+        [
+          880,
+          760
+        ],
+        [
+          880,
+          450
+        ],
+        [
+          895,
+          380
+        ],
+        [
+          930,
+          352
+        ],
+        [
+          965,
+          380
+        ],
+        [
+          980,
+          450
+        ],
+        [
+          980,
+          760
+        ],
+        [
+          1010,
+          760
+        ],
+        [
+          1010,
+          860
+        ]
+      ],
+      "walk_to": [
+        930,
+        905
+      ],
+      "default_verb": "talk"
+    },
+    {
+      "id": "gate",
+      "name": "Rusted gate",
+      "polygon": [
+        [
+          1500,
+          900
+        ],
+        [
+          1500,
+          380
+        ],
+        [
+          1660,
+          270
+        ],
+        [
+          1820,
+          380
+        ],
+        [
+          1820,
+          900
+        ]
+      ],
+      "walk_to": [
+        1560,
+        935
+      ]
+    },
+    {
+      "id": "rag",
+      "name": "Rag",
+      "polygon": [
+        [
+          262,
+          430
+        ],
+        [
+          362,
+          430
+        ],
+        [
+          362,
+          580
+        ],
+        [
+          262,
+          580
+        ]
+      ],
+      "walk_to": [
+        330,
+        930
+      ]
+    },
+    {
+      "id": "notice",
+      "name": "Notice",
+      "walk_to": [
+        575,
+        900
+      ],
+      "polygon": [
+        [
+          470,
+          380
+        ],
+        [
+          680,
+          380
+        ],
+        [
+          680,
+          560
+        ],
+        [
+          470,
+          560
+        ]
+      ]
+    },
+    {
+      "id": "exit_west",
+      "name": "To the chapel",
+      "polygon": [
+        [
+          0,
+          560
+        ],
+        [
+          95,
+          560
+        ],
+        [
+          95,
+          1062
+        ],
+        [
+          0,
+          1062
+        ]
+      ],
+      "walk_to": [
+        60,
+        980
+      ],
+      "exit": {
+        "room": "greybox_chapel",
+        "entry": "from_gate",
+        "direction": "left"
+      }
+    },
+    {
+      "id": "beyond",
+      "name": "Through the gate",
+      "polygon": [
+        [
+          1500,
+          900
+        ],
+        [
+          1500,
+          380
+        ],
+        [
+          1660,
+          270
+        ],
+        [
+          1820,
+          380
+        ],
+        [
+          1820,
+          900
+        ]
+      ],
+      "walk_to": [
+        1660,
+        935
+      ],
+      "exit": {
+        "room": "greybox_courtyard",
+        "entry": "from_gate",
+        "direction": "right"
+      }
+    }
+  ]
+}

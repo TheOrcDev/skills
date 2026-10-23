@@ -44,6 +44,31 @@ npx shadcn@latest add TheOrcDev/skills/rig-it
 
 Call it with `/rig-it`, "rig this character", "my feet are sliding", or "get this Mixamo rig into Unity."
 
+## 🗝️ Point-and-click adventure
+
+Ten skills and a template project for making a mouse-driven, fully voiced point-and-click adventure in Godot 4.7.2, pulled out of the production of *Past* (52 painted rooms, 13 NPCs and a hand-painted hero, on desktop and in the browser). They live in [`point-and-click-adventure/`](point-and-click-adventure/README.md), with the production map.
+
+| Skill | Purpose |
+|---|---|
+| [new-adventure](point-and-click-adventure/new-adventure/SKILL.md) | A working Godot project: adventure core, verb coin, inventory, saves, scaffolds, tools, tests, QA, desktop and web builds, a greybox sample that plays end to end |
+| [art-requests](point-and-click-adventure/art-requests/SKILL.md) | Every image from a request file: Sol through Codex or GPT Image through the gateway, immutable raws, receipts, budgets |
+| [look-gate](point-and-click-adventure/look-gate/SKILL.md) | Style bible, prompt preambles, style keys and one room proven in the engine before volume art |
+| [story-track](point-and-click-adventure/story-track/SKILL.md) | Signed bible, cast and atlas, a puzzle chart per part before any art, scripts with line IDs, hints and playthroughs |
+| [paint-room](point-and-click-adventure/paint-room/SKILL.md) | A playable room from one data file: present, aligned past, walk area, hotspots, close-ups, items |
+| [painted-hero](point-and-click-adventure/painted-hero/SKILL.md) | The hero painted frame by frame by Sol over a Blender rig's pose guides |
+| [skinned-npc](point-and-click-adventure/skinned-npc/SKILL.md) | Side characters as one painting skinned to a few bones |
+| [memory-reveals](point-and-click-adventure/memory-reveals/SKILL.md) | Flashbacks, two-state rooms, cutscenes and zoom-out reveals |
+| [voice-cast](point-and-click-adventure/voice-cast/SKILL.md) | Every line voiced with ElevenLabs, posted and wired to subtitles |
+| [ship-check](point-and-click-adventure/ship-check/SKILL.md) | Proof in the exported desktop app and in Chrome, budgets, reels, deploys |
+
+Start a game:
+
+```bash
+npx skills add TheOrcDev/skills --full-depth --skill new-adventure
+```
+
+Install the others the same way, and keep them side by side: they link to each other and `new-adventure` copies files from `painted-hero` and `look-gate`.
+
 ## 🎬 Video
 
 Skills for scripting and packaging video content live in [`videos/`](videos/README.md), one folder per format. Short format is here now; long format and other video skills will land in the same directory as they are written.

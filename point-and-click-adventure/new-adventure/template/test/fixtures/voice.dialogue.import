@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ysfh1i3uk8pu"
+path="res://.godot/imported/voice.dialogue-08d322919591f1fa90cf902bfea66d36.tres"
+
+[deps]
+
+source_file="res://test/fixtures/voice.dialogue"
+dest_files=["res://.godot/imported/voice.dialogue-08d322919591f1fa90cf902bfea66d36.tres"]
+
+[params]
+
+defaults=true

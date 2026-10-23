@@ -1,0 +1,49 @@
+{
+  "background": "res://content/closeups/greybox_notice/art/bg.png",
+  "hotspots": [
+    {
+      "id": "text",
+      "name": "The order",
+      "polygon": [
+        [
+          440,
+          240
+        ],
+        [
+          1340,
+          240
+        ],
+        [
+          1340,
+          700
+        ],
+        [
+          440,
+          700
+        ]
+      ]
+    },
+    {
+      "id": "seal",
+      "name": "Seal",
+      "polygon": [
+        [
+          1320,
+          740
+        ],
+        [
+          1480,
+          740
+        ],
+        [
+          1480,
+          900
+        ],
+        [
+          1320,
+          900
+        ]
+      ]
+    }
+  ]
+}
