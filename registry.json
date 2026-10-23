@@ -471,6 +471,39 @@
           "target": "~/.claude/skills/voice-cast/references/designed-process.md"
         }
       ]
+    },
+    {
+      "name": "ship-check",
+      "type": "registry:item",
+      "title": "Ship Check",
+      "description": "Prove a point-and-click adventure change in the builds people play: headless import, GUT and lint, scripted QA in the exported desktop app and in Chrome, the real pack file list, per-room budgets, reels, evidence in docs/qa and Vercel deploys. Part of the adventure-kit collection. Installs to ~/.claude/skills/ship-check/.",
+      "files": [
+        {
+          "path": "adventure-kit/ship-check/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/ship-check/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/ship-check/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/ship-check/RULES.md"
+        },
+        {
+          "path": "adventure-kit/ship-check/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/ship-check/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/ship-check/references/budgets.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/ship-check/references/budgets.md"
+        },
+        {
+          "path": "adventure-kit/ship-check/references/qa-scenarios.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/ship-check/references/qa-scenarios.md"
+        }
+      ]
     }
   ]
 }
