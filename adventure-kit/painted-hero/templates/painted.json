@@ -1,0 +1,1119 @@
+{
+ "out": "art-source/work/characters/hero/painted",
+ "guides": "art-source/work/characters/hero/guides/sheets",
+ "frame_size": [
+  448,
+  672
+ ],
+ "character_px": 480,
+ "sheets": {
+  "walk_r": {
+   "view": "r",
+   "raw": null,
+   "crop": [
+    34,
+    125,
+    380,
+    520
+   ],
+   "thin": 0,
+   "cells": [
+    [
+     "walk_r_0",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     0
+    ],
+    [
+     "walk_r_1",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     1
+    ],
+    [
+     "walk_r_2",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     2
+    ],
+    [
+     "walk_r_3",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     3
+    ],
+    [
+     "walk_r_4",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     4
+    ],
+    [
+     "walk_r_5",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     5
+    ],
+    [
+     "walk_r_6",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     6
+    ],
+    [
+     "walk_r_7",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_r",
+     7
+    ]
+   ]
+  },
+  "poses_a_r": {
+   "view": "r",
+   "raw": null,
+   "thin": 5,
+   "cells": [
+    [
+     "idle_r",
+     "art-source/work/characters/hero/rig",
+     "idle_r",
+     0
+    ],
+    [
+     "talk_a_r_5",
+     "art-source/work/characters/hero/rig",
+     "talk_a_r",
+     5
+    ],
+    [
+     "talk_a_r_11",
+     "art-source/work/characters/hero/rig",
+     "talk_a_r",
+     11
+    ],
+    [
+     "talk_b_r_5",
+     "art-source/work/characters/hero/rig",
+     "talk_b_r",
+     5
+    ],
+    [
+     "talk_b_r_11",
+     "art-source/work/characters/hero/rig",
+     "talk_b_r",
+     11
+    ],
+    [
+     "look_around_r_10",
+     "art-source/work/characters/hero/rig",
+     "look_around_r",
+     10
+    ],
+    [
+     "look_around_r_22",
+     "art-source/work/characters/hero/rig",
+     "look_around_r",
+     22
+    ],
+    [
+     "fidget_a_r_12",
+     "art-source/work/characters/hero/rig",
+     "fidget_a_r",
+     12
+    ]
+   ]
+  },
+  "poses_b_r": {
+   "view": "r",
+   "raw": null,
+   "thin": 5,
+   "cells": [
+    [
+     "use_r_3",
+     "art-source/work/characters/hero/rig",
+     "use_r",
+     3
+    ],
+    [
+     "use_r_5",
+     "art-source/work/characters/hero/rig",
+     "use_r",
+     5
+    ],
+    [
+     "use_r_7",
+     "art-source/work/characters/hero/rig",
+     "use_r",
+     7
+    ],
+    [
+     "give_r_4",
+     "art-source/work/characters/hero/rig",
+     "give_r",
+     4
+    ],
+    [
+     "give_r_11",
+     "art-source/work/characters/hero/rig",
+     "give_r",
+     11
+    ],
+    [
+     "flare_r_3",
+     "art-source/work/characters/hero/rig",
+     "flare_r",
+     3
+    ],
+    [
+     "flare_r_6",
+     "art-source/work/characters/hero/rig",
+     "flare_r",
+     6
+    ],
+    [
+     "fidget_b_r_12",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_r",
+     12
+    ]
+   ]
+  },
+  "poses_c_r": {
+   "view": "r",
+   "raw": null,
+   "thin": 5,
+   "cells": [
+    [
+     "pickup_low_r_4",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_r",
+     4
+    ],
+    [
+     "pickup_low_r_7",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_r",
+     7
+    ],
+    [
+     "pickup_low_r_10",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_r",
+     10
+    ],
+    [
+     "pickup_high_r_4",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_r",
+     4
+    ],
+    [
+     "pickup_high_r_6",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_r",
+     6
+    ],
+    [
+     "pickup_high_r_9",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_r",
+     9
+    ],
+    [
+     "fidget_b_r_17",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_r",
+     17
+    ],
+    [
+     "fidget_b_r_23",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_r",
+     23
+    ]
+   ]
+  },
+  "walk_d": {
+   "view": "d",
+   "raw": null,
+   "crop": [
+    34,
+    125,
+    380,
+    520
+   ],
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "walk_d_0",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     0
+    ],
+    [
+     "walk_d_1",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     1
+    ],
+    [
+     "walk_d_2",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     2
+    ],
+    [
+     "walk_d_3",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     3
+    ],
+    [
+     "walk_d_4",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     4
+    ],
+    [
+     "walk_d_5",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     5
+    ],
+    [
+     "walk_d_6",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     6
+    ],
+    [
+     "walk_d_7",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_d",
+     7
+    ]
+   ]
+  },
+  "poses_a_d": {
+   "view": "d",
+   "raw": null,
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "idle_d",
+     "art-source/work/characters/hero/rig",
+     "idle_d",
+     0
+    ],
+    [
+     "talk_a_d_5",
+     "art-source/work/characters/hero/rig",
+     "talk_a_d",
+     5
+    ],
+    [
+     "talk_a_d_11",
+     "art-source/work/characters/hero/rig",
+     "talk_a_d",
+     11
+    ],
+    [
+     "talk_b_d_5",
+     "art-source/work/characters/hero/rig",
+     "talk_b_d",
+     5
+    ],
+    [
+     "talk_b_d_11",
+     "art-source/work/characters/hero/rig",
+     "talk_b_d",
+     11
+    ],
+    [
+     "look_around_d_10",
+     "art-source/work/characters/hero/rig",
+     "look_around_d",
+     10
+    ],
+    [
+     "look_around_d_22",
+     "art-source/work/characters/hero/rig",
+     "look_around_d",
+     22
+    ],
+    [
+     "fidget_a_d_12",
+     "art-source/work/characters/hero/rig",
+     "fidget_a_d",
+     12
+    ]
+   ]
+  },
+  "poses_b_d": {
+   "view": "d",
+   "raw": null,
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "use_d_3",
+     "art-source/work/characters/hero/rig",
+     "use_d",
+     3
+    ],
+    [
+     "use_d_5",
+     "art-source/work/characters/hero/rig",
+     "use_d",
+     5
+    ],
+    [
+     "use_d_7",
+     "art-source/work/characters/hero/rig",
+     "use_d",
+     7
+    ],
+    [
+     "give_d_4",
+     "art-source/work/characters/hero/rig",
+     "give_d",
+     4
+    ],
+    [
+     "give_d_11",
+     "art-source/work/characters/hero/rig",
+     "give_d",
+     11
+    ],
+    [
+     "flare_d_3",
+     "art-source/work/characters/hero/rig",
+     "flare_d",
+     3
+    ],
+    [
+     "flare_d_6",
+     "art-source/work/characters/hero/rig",
+     "flare_d",
+     6
+    ],
+    [
+     "fidget_b_d_12",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_d",
+     12
+    ]
+   ]
+  },
+  "poses_c_d": {
+   "view": "d",
+   "raw": null,
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "pickup_low_d_4",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_d",
+     4
+    ],
+    [
+     "pickup_low_d_7",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_d",
+     7
+    ],
+    [
+     "pickup_low_d_10",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_d",
+     10
+    ],
+    [
+     "pickup_high_d_4",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_d",
+     4
+    ],
+    [
+     "pickup_high_d_6",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_d",
+     6
+    ],
+    [
+     "pickup_high_d_9",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_d",
+     9
+    ],
+    [
+     "fidget_b_d_17",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_d",
+     17
+    ],
+    [
+     "fidget_b_d_23",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_d",
+     23
+    ]
+   ]
+  },
+  "walk_u": {
+   "view": "u",
+   "raw": null,
+   "crop": [
+    34,
+    125,
+    380,
+    520
+   ],
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "walk_u_0",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     0
+    ],
+    [
+     "walk_u_1",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     1
+    ],
+    [
+     "walk_u_2",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     2
+    ],
+    [
+     "walk_u_3",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     3
+    ],
+    [
+     "walk_u_4",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     4
+    ],
+    [
+     "walk_u_5",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     5
+    ],
+    [
+     "walk_u_6",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     6
+    ],
+    [
+     "walk_u_7",
+     "art-source/work/characters/hero/rig-walk8",
+     "walk_u",
+     7
+    ]
+   ]
+  },
+  "poses_a_u": {
+   "view": "u",
+   "raw": null,
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "idle_u",
+     "art-source/work/characters/hero/rig",
+     "idle_u",
+     0
+    ],
+    [
+     "talk_a_u_5",
+     "art-source/work/characters/hero/rig",
+     "talk_a_u",
+     5
+    ],
+    [
+     "talk_a_u_11",
+     "art-source/work/characters/hero/rig",
+     "talk_a_u",
+     11
+    ],
+    [
+     "talk_b_u_5",
+     "art-source/work/characters/hero/rig",
+     "talk_b_u",
+     5
+    ],
+    [
+     "talk_b_u_11",
+     "art-source/work/characters/hero/rig",
+     "talk_b_u",
+     11
+    ],
+    [
+     "look_around_u_10",
+     "art-source/work/characters/hero/rig",
+     "look_around_u",
+     10
+    ],
+    [
+     "look_around_u_22",
+     "art-source/work/characters/hero/rig",
+     "look_around_u",
+     22
+    ],
+    [
+     "fidget_a_u_12",
+     "art-source/work/characters/hero/rig",
+     "fidget_a_u",
+     12
+    ]
+   ]
+  },
+  "poses_b_u": {
+   "view": "u",
+   "raw": null,
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "use_u_3",
+     "art-source/work/characters/hero/rig",
+     "use_u",
+     3
+    ],
+    [
+     "use_u_5",
+     "art-source/work/characters/hero/rig",
+     "use_u",
+     5
+    ],
+    [
+     "use_u_7",
+     "art-source/work/characters/hero/rig",
+     "use_u",
+     7
+    ],
+    [
+     "give_u_4",
+     "art-source/work/characters/hero/rig",
+     "give_u",
+     4
+    ],
+    [
+     "give_u_11",
+     "art-source/work/characters/hero/rig",
+     "give_u",
+     11
+    ],
+    [
+     "flare_u_3",
+     "art-source/work/characters/hero/rig",
+     "flare_u",
+     3
+    ],
+    [
+     "flare_u_6",
+     "art-source/work/characters/hero/rig",
+     "flare_u",
+     6
+    ],
+    [
+     "fidget_b_u_12",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_u",
+     12
+    ]
+   ]
+  },
+  "poses_c_u": {
+   "view": "u",
+   "raw": null,
+   "thin": 5,
+   "squeeze": 0.8,
+   "cells": [
+    [
+     "pickup_low_u_4",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_u",
+     4
+    ],
+    [
+     "pickup_low_u_7",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_u",
+     7
+    ],
+    [
+     "pickup_low_u_10",
+     "art-source/work/characters/hero/rig",
+     "pickup_low_u",
+     10
+    ],
+    [
+     "pickup_high_u_4",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_u",
+     4
+    ],
+    [
+     "pickup_high_u_6",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_u",
+     6
+    ],
+    [
+     "pickup_high_u_9",
+     "art-source/work/characters/hero/rig",
+     "pickup_high_u",
+     9
+    ],
+    [
+     "fidget_b_u_17",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_u",
+     17
+    ],
+    [
+     "fidget_b_u_23",
+     "art-source/work/characters/hero/rig",
+     "fidget_b_u",
+     23
+    ]
+   ]
+  }
+ },
+ "animations": {
+  "walk_r": {
+   "cells": [
+    "walk_r_0",
+    "walk_r_1",
+    "walk_r_2",
+    "walk_r_3",
+    "walk_r_4",
+    "walk_r_5",
+    "walk_r_6",
+    "walk_r_7"
+   ],
+   "fps": 8,
+   "from": [
+    "art-source/work/characters/hero/rig-walk8",
+    "walk_r"
+   ]
+  },
+  "idle_r": {
+   "cells": [
+    "idle_r"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "idle_r"
+   ],
+   "loop": true
+  },
+  "talk_a_r": {
+   "keys": [
+    "idle_r",
+    "talk_a_r_5",
+    "talk_a_r_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "talk_a_r"
+   ]
+  },
+  "talk_b_r": {
+   "keys": [
+    "idle_r",
+    "talk_b_r_5",
+    "talk_b_r_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "talk_b_r"
+   ]
+  },
+  "look_around_r": {
+   "keys": [
+    "idle_r",
+    "look_around_r_10",
+    "look_around_r_22"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "look_around_r"
+   ]
+  },
+  "fidget_a_r": {
+   "keys": [
+    "idle_r",
+    "fidget_a_r_12"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "fidget_a_r"
+   ]
+  },
+  "use_r": {
+   "keys": [
+    "idle_r",
+    "use_r_3",
+    "use_r_5",
+    "use_r_7"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "use_r"
+   ]
+  },
+  "give_r": {
+   "keys": [
+    "idle_r",
+    "give_r_4",
+    "give_r_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "give_r"
+   ]
+  },
+  "flare_r": {
+   "keys": [
+    "idle_r",
+    "flare_r_3",
+    "flare_r_6"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "flare_r"
+   ]
+  },
+  "fidget_b_r": {
+   "keys": [
+    "idle_r",
+    "fidget_b_r_12",
+    "fidget_b_r_17",
+    "fidget_b_r_23"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "fidget_b_r"
+   ]
+  },
+  "pickup_low_r": {
+   "keys": [
+    "idle_r",
+    "pickup_low_r_4",
+    "pickup_low_r_7",
+    "pickup_low_r_10"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "pickup_low_r"
+   ]
+  },
+  "pickup_high_r": {
+   "keys": [
+    "idle_r",
+    "pickup_high_r_4",
+    "pickup_high_r_6",
+    "pickup_high_r_9"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "pickup_high_r"
+   ]
+  },
+  "walk_d": {
+   "cells": [
+    "walk_d_0",
+    "walk_d_1",
+    "walk_d_2",
+    "walk_d_3",
+    "walk_d_4",
+    "walk_d_5",
+    "walk_d_6",
+    "walk_d_7"
+   ],
+   "fps": 8,
+   "from": [
+    "art-source/work/characters/hero/rig-walk8",
+    "walk_d"
+   ]
+  },
+  "idle_d": {
+   "cells": [
+    "idle_d"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "idle_d"
+   ],
+   "loop": true
+  },
+  "talk_a_d": {
+   "keys": [
+    "idle_d",
+    "talk_a_d_5",
+    "talk_a_d_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "talk_a_d"
+   ]
+  },
+  "talk_b_d": {
+   "keys": [
+    "idle_d",
+    "talk_b_d_5",
+    "talk_b_d_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "talk_b_d"
+   ]
+  },
+  "look_around_d": {
+   "keys": [
+    "idle_d",
+    "look_around_d_10",
+    "look_around_d_22"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "look_around_d"
+   ]
+  },
+  "fidget_a_d": {
+   "keys": [
+    "idle_d",
+    "fidget_a_d_12"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "fidget_a_d"
+   ]
+  },
+  "use_d": {
+   "keys": [
+    "idle_d",
+    "use_d_3",
+    "use_d_5",
+    "use_d_7"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "use_d"
+   ]
+  },
+  "give_d": {
+   "keys": [
+    "idle_d",
+    "give_d_4",
+    "give_d_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "give_d"
+   ]
+  },
+  "flare_d": {
+   "keys": [
+    "idle_d",
+    "flare_d_3",
+    "flare_d_6"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "flare_d"
+   ]
+  },
+  "fidget_b_d": {
+   "keys": [
+    "idle_d",
+    "fidget_b_d_12",
+    "fidget_b_d_17",
+    "fidget_b_d_23"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "fidget_b_d"
+   ]
+  },
+  "pickup_low_d": {
+   "keys": [
+    "idle_d",
+    "pickup_low_d_4",
+    "pickup_low_d_7",
+    "pickup_low_d_10"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "pickup_low_d"
+   ]
+  },
+  "pickup_high_d": {
+   "keys": [
+    "idle_d",
+    "pickup_high_d_4",
+    "pickup_high_d_6",
+    "pickup_high_d_9"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "pickup_high_d"
+   ]
+  },
+  "walk_u": {
+   "cells": [
+    "walk_u_0",
+    "walk_u_1",
+    "walk_u_2",
+    "walk_u_3",
+    "walk_u_4",
+    "walk_u_5",
+    "walk_u_6",
+    "walk_u_7"
+   ],
+   "fps": 8,
+   "from": [
+    "art-source/work/characters/hero/rig-walk8",
+    "walk_u"
+   ]
+  },
+  "idle_u": {
+   "cells": [
+    "idle_u"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "idle_u"
+   ],
+   "loop": true
+  },
+  "talk_a_u": {
+   "keys": [
+    "idle_u",
+    "talk_a_u_5",
+    "talk_a_u_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "talk_a_u"
+   ]
+  },
+  "talk_b_u": {
+   "keys": [
+    "idle_u",
+    "talk_b_u_5",
+    "talk_b_u_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "talk_b_u"
+   ]
+  },
+  "look_around_u": {
+   "keys": [
+    "idle_u",
+    "look_around_u_10",
+    "look_around_u_22"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "look_around_u"
+   ]
+  },
+  "fidget_a_u": {
+   "keys": [
+    "idle_u",
+    "fidget_a_u_12"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "fidget_a_u"
+   ]
+  },
+  "use_u": {
+   "keys": [
+    "idle_u",
+    "use_u_3",
+    "use_u_5",
+    "use_u_7"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "use_u"
+   ]
+  },
+  "give_u": {
+   "keys": [
+    "idle_u",
+    "give_u_4",
+    "give_u_11"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "give_u"
+   ]
+  },
+  "flare_u": {
+   "keys": [
+    "idle_u",
+    "flare_u_3",
+    "flare_u_6"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "flare_u"
+   ]
+  },
+  "fidget_b_u": {
+   "keys": [
+    "idle_u",
+    "fidget_b_u_12",
+    "fidget_b_u_17",
+    "fidget_b_u_23"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "fidget_b_u"
+   ]
+  },
+  "pickup_low_u": {
+   "keys": [
+    "idle_u",
+    "pickup_low_u_4",
+    "pickup_low_u_7",
+    "pickup_low_u_10"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "pickup_low_u"
+   ]
+  },
+  "pickup_high_u": {
+   "keys": [
+    "idle_u",
+    "pickup_high_u_4",
+    "pickup_high_u_6",
+    "pickup_high_u_9"
+   ],
+   "from": [
+    "art-source/work/characters/hero/rig",
+    "pickup_high_u"
+   ]
+  }
+ }
+}

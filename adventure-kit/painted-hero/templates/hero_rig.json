@@ -1,0 +1,32 @@
+{
+ "height": 1.85,
+ "frame_size": [
+  448,
+  672
+ ],
+ "character_px": 480,
+ "camera_center_z": 1.1,
+ "tilt_deg": 10.0,
+ "power": 0.03,
+ "inflate": 0.004,
+ "multires_level": 2,
+ "smooth_head": true,
+ "stance_lift": -0.004,
+ "stance": {
+  "chest": [
+   6,
+   0,
+   0
+  ],
+  "neck": [
+   12,
+   0,
+   0
+  ],
+  "head": [
+   -9,
+   0,
+   0
+  ]
+ }
+}

@@ -744,6 +744,59 @@
           "target": "~/.claude/skills/skinned-npc/templates/request.json"
         }
       ]
+    },
+    {
+      "name": "painted-hero",
+      "type": "registry:item",
+      "title": "Painted Hero",
+      "description": "Design and animate a point-and-click game's main character as hand-painted 2D frames: a Blender mannequin rig supplies every pose, Sol paints the hero over 4x2 pose-guide sheets, and adv-art cuts, registers and packs the frames with the rig's anchors, events and ground speed. Pose rig script included. Part of the adventure-kit collection. Installs to ~/.claude/skills/painted-hero/.",
+      "files": [
+        {
+          "path": "adventure-kit/painted-hero/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/painted-hero/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/RULES.md"
+        },
+        {
+          "path": "adventure-kit/painted-hero/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/painted-hero/references/painted-json.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/references/painted-json.md"
+        },
+        {
+          "path": "adventure-kit/painted-hero/references/requests.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/references/requests.md"
+        },
+        {
+          "path": "adventure-kit/painted-hero/scripts/extract_base_mesh.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/scripts/extract_base_mesh.py"
+        },
+        {
+          "path": "adventure-kit/painted-hero/scripts/pose_rig.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/scripts/pose_rig.py"
+        },
+        {
+          "path": "adventure-kit/painted-hero/templates/hero_rig.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/templates/hero_rig.json"
+        },
+        {
+          "path": "adventure-kit/painted-hero/templates/painted.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/painted-hero/templates/painted.json"
+        }
+      ]
     }
   ]
 }
