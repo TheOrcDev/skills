@@ -443,6 +443,34 @@
           "target": "~/.claude/skills/living-backdrop/templates/LivingBackdrop.tsx"
         }
       ]
+    },
+    {
+      "name": "voice-cast",
+      "type": "registry:item",
+      "title": "Voice Cast",
+      "description": "Voice every line of a point-and-click adventure with ElevenLabs: extract lines by static Dialogue Manager ID, diff against a lock, post masters to -18 LUFS QOA, and write the envelopes that drive a mouthless hero. Generation is the designed process, marked unproven. Part of the adventure-kit collection. Installs to ~/.claude/skills/voice-cast/.",
+      "files": [
+        {
+          "path": "adventure-kit/voice-cast/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/voice-cast/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/voice-cast/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/voice-cast/RULES.md"
+        },
+        {
+          "path": "adventure-kit/voice-cast/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/voice-cast/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/voice-cast/references/designed-process.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/voice-cast/references/designed-process.md"
+        }
+      ]
     }
   ]
 }
