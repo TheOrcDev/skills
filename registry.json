@@ -658,6 +658,54 @@
           "target": "~/.claude/skills/paint-room/templates/then-request.json"
         }
       ]
+    },
+    {
+      "name": "story-track",
+      "type": "registry:item",
+      "title": "Story Track",
+      "description": "Write a point-and-click adventure's story and puzzles so they can be built and tested: three drafted cores, a signed bible, cast and room atlas, a Mermaid puzzle chart per part before any art, Dialogue Manager scripts with static line IDs and voice direction, hint goals, journal pages and a playthrough that GUT and QA both run. Part of the adventure-kit collection. Installs to ~/.claude/skills/story-track/.",
+      "files": [
+        {
+          "path": "adventure-kit/story-track/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/story-track/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/RULES.md"
+        },
+        {
+          "path": "adventure-kit/story-track/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/story-track/templates/atlas.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/templates/atlas.md"
+        },
+        {
+          "path": "adventure-kit/story-track/templates/bible.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/templates/bible.md"
+        },
+        {
+          "path": "adventure-kit/story-track/templates/cast.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/templates/cast.md"
+        },
+        {
+          "path": "adventure-kit/story-track/templates/puzzles.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/templates/puzzles.md"
+        },
+        {
+          "path": "adventure-kit/story-track/templates/sample.dialogue",
+          "type": "registry:file",
+          "target": "~/.claude/skills/story-track/templates/sample.dialogue"
+        }
+      ]
     }
   ]
 }

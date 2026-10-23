@@ -1,0 +1,97 @@
+# A sample part file for Dialogue Manager 4, in content/dialogue/<part>/<area>.dialogue.
+# Every spoken line and every response carries a static [ID:…]: it names the
+# voice file and is the translation key, so it is unique across the whole game.
+# Turning points carry [#vo=…] direction before the ID. Indent with tabs.
+# Lines starting with # are comments. Delete the commented hint and journal
+# blocks at the end after copying: the lint reads [ID:…] tags in comments too.
+
+~ harbour_arrival
+
+Hero: Salt, tar and fog. Somebody here still mends their nets. [ID:P1_HARBOUR_ARRIVAL_1]
+
+=> END
+
+~ board_look
+
+Hero: A tide board. Most of the chalk has run, but one line is circled. [ID:P1_BOARD_LOOK_1]
+
+=> END
+
+~ boat_look
+
+Hero: A rowboat, tied short. At high water it would be smashed against the steps. [ID:P1_BOAT_LOOK_1]
+
+=> END
+
+~ boat_use
+
+if not GameState.get_flag("tide_read")
+	Hero: Row where? Into that? Not until the water goes down. [ID:P1_BOAT_USE_HIGH_1]
+	=> END
+Hero: Low tide at four bells. Close enough. [ID:P1_BOAT_USE_LOW_1]
+
+=> END
+
+~ keeper_look
+
+Hero: An old man in an oilskin, watching a lamp that isn't lit. [ID:P1_KEEPER_LOOK_1]
+
+=> END
+
+~ keeper_talk
+
+if not GameState.get_flag("keeper_met")
+	do GameState.set_flag("keeper_met")
+	Keeper: You're standing in my light. Or you would be, if there was any. [ID:P1_KEEPER_MEET_1]
+	Hero: I'll stand somewhere darker. [ID:P1_KEEPER_MEET_2]
+=> keeper_ask
+
+~ keeper_ask
+
+Keeper: Well? [ID:P1_KEEPER_WELL]
+- Why is the lamp out? [ID:P1_KEEPER_ASK_LAMP]
+	Keeper: Lens cracked the night the ship went down. No lens, no light. [ID:P1_KEEPER_LAMP_1]
+	=> keeper_ask
+- What ship? [if GameState.get_flag("keeper_met") /] [ID:P1_KEEPER_ASK_SHIP]
+	Keeper: Ask the wreck. It's lying on its side at low water. [ID:P1_KEEPER_SHIP_1]
+	=> keeper_ask
+- About the last night it burned... [if GameState.get_flag("saw_last_night") and not GameState.get_flag("keeper_confessed") /] [ID:P1_KEEPER_ASK_NIGHT]
+	Keeper: ...You saw that. Nobody saw that. [#vo=stunned, quiet] [ID:P1_KEEPER_NIGHT_1]
+	Keeper: I let it go out. On purpose. [#vo=ashamed, slow] [ID:P1_KEEPER_NIGHT_2]
+	do GameState.set_flag("keeper_confessed")
+	=> keeper_ask
+- Nothing. [ID:P1_KEEPER_LEAVE]
+	=> END
+
+~ keeper_lens
+
+Keeper: Brass, and not a scratch on it. Where did you find this? [ID:P1_KEEPER_LENS_1]
+Hero: Where you said the ship was. [ID:P1_KEEPER_LENS_2]
+Keeper: Then it can burn again. If somebody finds the oil. [ID:P1_KEEPER_LENS_3]
+
+=> END
+
+# The hint lines for this part live in content/dialogue/hints.dialogue, one cue
+# per goal and ask: <goal>_1 is a nudge, the last one is nearly the answer.
+# Shown here for the shape only.
+#
+# ~ tide_1
+#
+# Hero: That board by the steps had something circled on it. [ID:HINT_TIDE_1]
+#
+# => END
+#
+# ~ tide_2
+#
+# Hero: The tide board. Whatever is circled, it's about when the water drops. [ID:HINT_TIDE_2]
+#
+# => END
+#
+# The journal's memory pages live in content/dialogue/journal.dialogue, one cue
+# per memory, named after the memory id:
+#
+# ~ p1_last_night
+#
+# Hero: The lamp burning, a ship's lights on the rocks, and the keeper's hand on the wick. [ID:JOURNAL_P1_LAST_NIGHT]
+#
+# => END
