@@ -1,0 +1,25 @@
+{
+  "id": "harbour_steps",
+  "display_name": "Harbour steps",
+  "now": "art-source/raw/IMG-0042/IMG-0042-v2.png",
+  "then": "art-source/raw/IMG-0043/IMG-0043-v1.png",
+  "walk": [[120, 760], [760, 700], [1400, 700], [1880, 780], [1880, 1060], [120, 1060]],
+  "scale_zones": {"far_y": 700, "far_scale": 0.72, "near_y": 1060, "near_scale": 1.05},
+  "markers": {
+    "default": [960, 900],
+    "from_quay": [220, 900],
+    "from_customs_house": [1720, 820]
+  },
+  "hotspots": [
+    {"id": "keeper", "name": "Harbour keeper", "polygon": [[1180, 880], [1180, 460], [1360, 460], [1360, 880]], "walk_to": [1060, 900], "default_verb": "talk", "pick_priority": 2},
+    {"id": "tide_board", "name": "Tide board", "polygon": [[540, 640], [540, 420], [720, 420], [720, 640]], "walk_to": [630, 760]},
+    {"id": "bollard", "name": "Bollard", "polygon": [[860, 980], [860, 860], [960, 860], [960, 980]], "walk_to": [1000, 1000], "default_verb": "use"},
+    {"id": "ship", "name": "A ship at the quay", "polygon": [[1450, 680], [1450, 300], [1900, 300], [1900, 680]], "walk_to": [1500, 780], "era": "then", "pick_priority": 1},
+    {"id": "quay", "name": "To the quay", "polygon": [[0, 1060], [0, 600], [120, 600], [120, 1060]], "walk_to": [160, 900], "exit": {"room": "harbour_quay", "entry": "from_steps", "direction": "left"}},
+    {"id": "customs_door", "name": "Customs house", "polygon": [[1700, 760], [1700, 420], [1860, 420], [1860, 760]], "walk_to": [1720, 820], "exit": {"room": "customs_house", "entry": "from_steps", "direction": "up", "requires_flag": "customs_unlocked"}}
+  ],
+  "npcs": [
+    {"scene": "res://content/characters/keeper/keeper.tscn", "name": "Keeper", "position": [1270, 880], "facing": "left", "era": "now"}
+  ],
+  "effects": {"preset": "exterior", "light": [1480, 120], "aim": 225}
+}

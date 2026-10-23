@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rope",
+    "name": "Wet rope",
+    "icon": "res://content/items/rope/icon.png",
+    "look_file": "harbour/items",
+    "look_cue": "rope_look",
+    "combinations": {"hook": "grapnel"}
+  },
+  {
+    "id": "hook",
+    "name": "Iron hook",
+    "icon": "res://content/items/hook/icon.png",
+    "look_file": "harbour/items",
+    "look_cue": "hook_look",
+    "combinations": {"rope": "grapnel"}
+  },
+  {
+    "id": "grapnel",
+    "name": "Grapnel",
+    "icon": "res://content/items/grapnel/icon.png",
+    "look_file": "harbour/items",
+    "look_cue": "grapnel_look",
+    "combinations": {}
+  }
+]

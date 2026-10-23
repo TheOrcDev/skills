@@ -1,0 +1,41 @@
+{
+  "id": "harbour_steps",
+  "display_name": "Harbour steps",
+  "now": "art-source/raw/IMG-0042/IMG-0042-v2.png",
+  "then": "art-source/raw/IMG-0043/IMG-0043-v1.png",
+  "plate": "art-source/raw/IMG-0044/IMG-0044-v1.png",
+  "props": {
+    "Crate": [[880, 710], [880, 620], [1030, 620], [1030, 710]]
+  },
+  "walk": [[120, 760], [760, 700], [1400, 700], [1880, 780], [1880, 1060], [120, 1060]],
+  "walk_then": [[120, 760], [760, 700], [1400, 700], [1880, 780], [1880, 1060], [120, 1060]],
+  "scale_zones": {"far_y": 700, "far_scale": 0.72, "near_y": 1060, "near_scale": 1.05},
+  "markers": {
+    "default": [960, 900],
+    "from_quay": [220, 900],
+    "from_customs_house": [1720, 820]
+  },
+  "hotspots": [
+    {"id": "crate", "name": "Crate", "polygon": [[880, 710], [880, 620], [1030, 620], [1030, 710]], "walk_to": [950, 760], "default_verb": "use", "pick_priority": 1},
+    {"id": "keeper", "name": "Harbour keeper", "polygon": [[1180, 880], [1180, 460], [1360, 460], [1360, 880]], "walk_to": [1060, 900], "default_verb": "talk", "pick_priority": 2},
+    {"id": "ship", "name": "A ship at the quay", "polygon": [[1450, 680], [1450, 300], [1900, 300], [1900, 680]], "walk_to": [1500, 780], "era": "then", "pick_priority": 1},
+    {"id": "customs_door", "name": "Customs house", "polygon": [[1700, 760], [1700, 420], [1860, 420], [1860, 760]], "walk_to": [1720, 820], "exit": {"room": "customs_house", "entry": "from_steps", "direction": "up", "requires_flag": "customs_unlocked"}}
+  ],
+  "occluders": {
+    "railing": [[0, 1080], [0, 960], [420, 940], [420, 1080]]
+  },
+  "npcs": [
+    {"scene": "res://content/characters/keeper/keeper.tscn", "name": "Keeper", "position": [1270, 880], "facing": "left", "era": "now"}
+  ],
+  "effects": {
+    "preset": "exterior",
+    "light": [1480, 120],
+    "aim": 225,
+    "ground_mist": true,
+    "then": true,
+    "extra": [
+      {"type": "DustMotes", "name": "SeaSpray", "era": "now", "layer": "foreground",
+       "properties": {"area": [200, 600, 1600, 400], "mote_color": [0.9, 0.92, 0.95, 0.4], "mote_count": 40, "drift": [6, -2], "mote_size": 2.0}}
+    ]
+  }
+}

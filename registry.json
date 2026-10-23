@@ -595,6 +595,69 @@
           "target": "~/.claude/skills/look-gate/templates/style-bible.md"
         }
       ]
+    },
+    {
+      "name": "paint-room",
+      "type": "registry:item",
+      "title": "Paint Room",
+      "description": "Turn an atlas entry into a playable point-and-click room: Sol paints the present, the past is an edit of it, an alignment gate checks the pair, and a traced room.json builds the art and the Godot scene through adv-art room and new_room.gd. Close-ups, item icons, props and clean plates included. Part of the adventure-kit collection. Installs to ~/.claude/skills/paint-room/.",
+      "files": [
+        {
+          "path": "adventure-kit/paint-room/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/paint-room/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/RULES.md"
+        },
+        {
+          "path": "adventure-kit/paint-room/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/paint-room/references/room-json.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/references/room-json.md"
+        },
+        {
+          "path": "adventure-kit/paint-room/templates/closeup.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/templates/closeup.json"
+        },
+        {
+          "path": "adventure-kit/paint-room/templates/items.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/templates/items.json"
+        },
+        {
+          "path": "adventure-kit/paint-room/templates/requests.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/templates/requests.json"
+        },
+        {
+          "path": "adventure-kit/paint-room/templates/room.full.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/templates/room.full.json"
+        },
+        {
+          "path": "adventure-kit/paint-room/templates/room.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/templates/room.json"
+        },
+        {
+          "path": "adventure-kit/paint-room/templates/room_script.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/templates/room_script.gd"
+        },
+        {
+          "path": "adventure-kit/paint-room/templates/then-request.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/paint-room/templates/then-request.json"
+        }
+      ]
     }
   ]
 }

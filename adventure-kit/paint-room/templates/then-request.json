@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "harbour-steps-then",
+    "title": "Room: the harbour steps, then",
+    "kind": "then",
+    "purpose": "harbour_steps in the past: an edit of the accepted now image (IMG-0042 v2), so the flashback restores the room in place.",
+    "requested": "plan 004, slice 3",
+    "references": ["art-source/raw/IMG-0042/IMG-0042-v2.png"],
+    "fields": {
+      "keep": "the steps, the harbour wall, the lamp post, the customs house door and the masts",
+      "place": "the harbour steps",
+      "when": "on a bright morning when the harbour was busy",
+      "restore": "clean dressed stone, painted shutters, a tall ship moored at the quay with its sails furled, gulls, warm sunlight across the steps."
+    },
+    "criteria": [
+      "Every shape stands where it stands in the now image (adv-art align p90 <= 3 px).",
+      "The key light comes from the same side as the now image."
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "tide_ledger",
+  "image": "art-source/raw/IMG-0047/IMG-0047-v2.png",
+  "hotspots": [
+    {"id": "entry", "name": "Last night's entry", "polygon": [[380, 418], [865, 418], [865, 572], [380, 572]], "pick_priority": 1},
+    {"id": "margin", "name": "A note in the margin", "polygon": [[1535, 378], [1795, 378], [1795, 502], [1535, 502]], "pick_priority": 1},
+    {"id": "page", "name": "The tide ledger", "polygon": [[120, 150], [1700, 130], [1720, 1000], [120, 1000]]}
+  ]
+}

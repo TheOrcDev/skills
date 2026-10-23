@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "harbour-steps-now",
+    "title": "Room: the harbour steps, now",
+    "kind": "now",
+    "purpose": "harbour_steps (atlas H2), the present: the stone steps down to the harbour, the keeper's post and the customs house door. A playable room: the hero walks the lower third.",
+    "requested": "plan 004, slice 3",
+    "references": ["art-source/style/harbour-style-key.png"],
+    "fields": {
+      "setting": "wide stone steps leading down to a ruined harbour at night, a customs house door on the right, a tide board on a post on the left",
+      "composition": "the steps fill the lower third and run left to right; the customs house door on the right edge; the harbour wall and a lamp post left of centre; masts dissolving into fog behind",
+      "ground": "broad worn flagstones, wet and reflective, kept open and clear of objects.",
+      "light": "a hazy moon behind the masts on the right"
+    },
+    "criteria": [
+      "The lower third is open walkable floor with mid-to-light fog behind it.",
+      "The customs house door and the tide board read clearly as things to click.",
+      "No people, no readable text, no frame."
+    ]
+  }
+]
