@@ -830,6 +830,2294 @@
           "target": "~/.claude/skills/memory-reveals/templates/reveal.json"
         }
       ]
+    },
+    {
+      "name": "new-adventure",
+      "type": "registry:item",
+      "title": "New Adventure",
+      "description": "Set up a mouse-only, fully voiced point-and-click adventure in Godot 4.7.2 from a working template: adventure core with verb coin, inventory, dialogue, saves, hints, journal and cutscenes; scaffolds; image, art and voice tools; GUT tests, lint, scripted QA, desktop and web builds; a greybox sample that plays end to end. Part of the point-and-click-adventure collection. Installs to ~/.claude/skills/new-adventure/.",
+      "files": [
+        {
+          "path": "point-and-click-adventure/new-adventure/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/SKILL.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/RULES.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/WORKFLOW.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/scripts/fetch_addons.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/scripts/fetch_addons.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/scripts/new_game.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/scripts/new_game.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/.gitignore",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/.gitignore"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/import_sprites.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/import_sprites.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/import_sprites.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/import_sprites.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/lint.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/lint.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/lint.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/lint.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_bus_layout.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_bus_layout.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_bus_layout.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_bus_layout.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_closeup.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_closeup.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_closeup.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_closeup.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_item.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_item.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_item.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_item.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_npc.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_npc.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_npc.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_npc.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_reveal.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_reveal.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_reveal.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_reveal.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_room.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_room.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/new_room.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/new_room.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/scaffold_core.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/scaffold_core.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/addons/adv_tools/scaffold_core.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/addons/adv_tools/scaffold_core.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/.gdignore",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/.gdignore"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/requests/_TEMPLATE.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/requests/_TEMPLATE.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/characters/hero/hero_sprites.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/characters/hero/hero_sprites.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/characters/warden/npc.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/characters/warden/npc.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/characters/warden/npc_spec.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/characters/warden/npc_spec.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/characters/warden/warden_painting.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/characters/warden/warden_painting.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/characters/warden/warden_painting.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/characters/warden/warden_painting.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/closeups/greybox_notice/closeup_spec.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/closeups/greybox_notice/closeup_spec.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/greybox/build.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/greybox/build.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/greybox/items.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/greybox/items.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/reveal/greybox_vista/reveal_spec.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/reveal/greybox_vista/reveal_spec.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/rooms/greybox_chapel/room_spec.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/rooms/greybox_chapel/room_spec.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/rooms/greybox_courtyard/room_spec.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/rooms/greybox_courtyard/room_spec.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/art-source/work/rooms/greybox_gate/room_spec.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/art-source/work/rooms/greybox_gate/room_spec.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/audio-source/.gdignore",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/audio-source/.gdignore"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/chapters.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/chapters.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/hero.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/hero.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/hero_sprites.tres",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/hero_sprites.tres"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_a_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_fidget_b_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_flare_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_flare_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_flare_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_flare_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_flare_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_flare_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_flare_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_flare_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_flare_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_flare_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_flare_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_flare_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_give_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_give_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_give_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_give_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_give_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_give_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_give_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_give_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_give_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_give_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_give_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_give_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_idle_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_idle_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_idle_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_idle_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_idle_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_idle_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_idle_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_idle_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_idle_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_idle_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_idle_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_idle_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_look_around_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_look_around_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_look_around_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_look_around_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_look_around_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_look_around_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_look_around_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_look_around_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_look_around_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_look_around_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_look_around_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_look_around_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_high_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_pickup_low_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_a_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_a_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_a_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_a_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_a_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_a_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_a_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_a_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_a_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_a_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_a_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_a_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_b_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_b_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_b_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_b_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_b_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_b_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_b_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_b_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_b_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_b_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_talk_b_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_talk_b_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_use_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_use_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_use_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_use_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_use_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_use_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_use_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_use_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_use_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_use_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_use_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_use_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_walk_d.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_walk_d.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_walk_d.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_walk_d.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_walk_r.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_walk_r.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_walk_r.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_walk_r.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_walk_u.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_walk_u.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/hero/sprites/hero_walk_u.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/hero/sprites/hero_walk_u.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/warden/warden.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/warden/warden.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/warden/warden.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/warden/warden.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/characters/warden/warden.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/characters/warden/warden.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/closeups/greybox_notice/art/bg.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/closeups/greybox_notice/art/bg.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/closeups/greybox_notice/art/bg.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/closeups/greybox_notice/art/bg.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/closeups/greybox_notice/greybox_notice.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/closeups/greybox_notice/greybox_notice.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/closeups/greybox_notice/greybox_notice.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/closeups/greybox_notice/greybox_notice.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/closeups/greybox_notice/greybox_notice.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/closeups/greybox_notice/greybox_notice.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/cutscenes/greybox_vista/art/ring0.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/cutscenes/greybox_vista/art/ring0.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/cutscenes/greybox_vista/art/ring0.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/cutscenes/greybox_vista/art/ring0.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/cutscenes/greybox_vista/art/ring1.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/cutscenes/greybox_vista/art/ring1.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/cutscenes/greybox_vista/art/ring1.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/cutscenes/greybox_vista/art/ring1.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/cutscenes/greybox_vista/greybox_vista.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/cutscenes/greybox_vista/greybox_vista.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/cutscenes/greybox_vista/opening.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/cutscenes/greybox_vista/opening.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/cutscenes/greybox_vista/opening.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/cutscenes/greybox_vista/opening.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/core.dialogue",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/core.dialogue"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/core.dialogue.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/core.dialogue.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/greybox.dialogue",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/greybox.dialogue"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/greybox.dialogue.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/greybox.dialogue.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/hints.dialogue",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/hints.dialogue"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/hints.dialogue.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/hints.dialogue.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/journal.dialogue",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/journal.dialogue"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/dialogue/journal.dialogue.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/dialogue/journal.dialogue.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/hints/goals.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/hints/goals.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/hints/goals.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/hints/goals.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/oil/icon.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/oil/icon.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/oil/icon.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/oil/icon.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/oil/oil.tres",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/oil/oil.tres"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/oiled_rag/icon.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/oiled_rag/icon.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/oiled_rag/icon.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/oiled_rag/icon.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/oiled_rag/oiled_rag.tres",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/oiled_rag/oiled_rag.tres"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/rag/icon.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/rag/icon.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/rag/icon.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/rag/icon.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/items/rag/rag.tres",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/items/rag/rag.tres"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/journal/entries.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/journal/entries.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/journal/entries.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/journal/entries.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/art/bg_now.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/art/bg_now.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/art/bg_now.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/art/bg_now.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/art/bg_then.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/art/bg_then.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/art/bg_then.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/art/bg_then.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/art/flask.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/art/flask.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/art/flask.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/art/flask.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/greybox_chapel.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/greybox_chapel.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/greybox_chapel.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/greybox_chapel.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_chapel/greybox_chapel.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_chapel/greybox_chapel.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_courtyard/art/bg_now.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_courtyard/art/bg_now.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_courtyard/art/bg_now.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_courtyard/art/bg_now.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_courtyard/greybox_courtyard.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_courtyard/greybox_courtyard.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_courtyard/greybox_courtyard.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_courtyard/greybox_courtyard.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_courtyard/greybox_courtyard.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_courtyard/greybox_courtyard.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/art/bg_now.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/art/bg_now.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/art/bg_now.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/art/bg_now.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/art/gate.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/art/gate.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/art/gate.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/art/gate.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/art/rag.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/art/rag.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/art/rag.png.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/art/rag.png.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/greybox_gate.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/greybox_gate.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/greybox_gate.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/greybox_gate.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/rooms/greybox_gate/greybox_gate.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/rooms/greybox_gate/greybox_gate.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/story/greybox_playthrough.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/story/greybox_playthrough.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/content/story/greybox_playthrough.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/content/story/greybox_playthrough.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/default_bus_layout.tres",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/default_bus_layout.tres"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/docs/.gdignore",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/docs/.gdignore"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/export_presets.cfg",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/export_presets.cfg"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/gitattributes",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/gitattributes"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/plans/.gdignore",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/plans/.gdignore"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/project.godot",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/project.godot"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/actor.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/actor.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/actor.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/actor.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/actor_body.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/actor_body.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/actor_body.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/actor_body.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/anim_names.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/anim_names.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/anim_names.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/anim_names.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/chapters.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/chapters.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/chapters.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/chapters.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/character_sprites.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/character_sprites.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/character_sprites.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/character_sprites.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/closeup.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/closeup.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/closeup.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/closeup.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/exit.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/exit.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/exit.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/exit.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/game_state.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/game_state.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/game_state.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/game_state.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/hotspot.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/hotspot.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/hotspot.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/hotspot.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/idle_fidgets.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/idle_fidgets.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/idle_fidgets.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/idle_fidgets.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/interaction.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/interaction.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/interaction.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/interaction.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/inventory.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/inventory.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/inventory.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/inventory.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/item_def.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/item_def.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/item_def.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/item_def.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/main.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/main.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/main.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/main.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/main.tscn",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/main.tscn"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/playthrough.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/playthrough.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/playthrough.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/playthrough.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/qa.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/qa.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/qa.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/qa.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/rig_body.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/rig_body.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/rig_body.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/rig_body.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/room.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/room.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/room.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/room.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/rooms.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/rooms.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/rooms.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/rooms.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/saves.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/saves.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/saves.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/saves.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/say.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/say.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/say.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/say.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/scale_zones.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/scale_zones.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/scale_zones.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/scale_zones.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/settings.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/settings.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/settings.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/settings.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/sprite_body.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/sprite_body.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/core/sprite_body.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/core/sprite_body.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/era_grade.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/era_grade.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/era_grade.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/era_grade.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/fog.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/fog.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/fog.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/fog.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/light_shafts.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/light_shafts.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/light_shafts.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/light_shafts.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/liquid.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/liquid.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/liquid.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/liquid.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/liquid_stream.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/liquid_stream.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/liquid_stream.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/liquid_stream.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/memory_dissolve.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/memory_dissolve.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/memory_dissolve.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/memory_dissolve.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/ring_feather.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/ring_feather.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/ring_feather.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/ring_feather.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/silhouette.gdshader",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/silhouette.gdshader"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/shaders/silhouette.gdshader.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/shaders/silhouette.gdshader.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/cutscene.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/cutscene.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/cutscene.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/cutscene.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/cutscene_steps.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/cutscene_steps.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/cutscene_steps.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/cutscene_steps.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/cutscenes.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/cutscenes.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/cutscenes.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/cutscenes.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/letterbox.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/letterbox.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/letterbox.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/letterbox.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/reveal.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/reveal.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/reveal.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/reveal.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/reveal_cutscene.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/reveal_cutscene.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/reveal_cutscene.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/reveal_cutscene.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/reveal_stage.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/reveal_stage.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/reveal_stage.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/reveal_stage.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/steps_cutscene.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/steps_cutscene.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/steps_cutscene.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/steps_cutscene.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/vision.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/vision.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/cinematics/vision.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/cinematics/vision.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/closeups.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/closeups.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/closeups.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/closeups.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/dust_motes.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/dust_motes.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/dust_motes.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/dust_motes.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/effects.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/effects.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/effects.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/effects.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/fog_layer.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/fog_layer.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/fog_layer.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/fog_layer.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/light_shafts.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/light_shafts.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/effects/light_shafts.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/effects/light_shafts.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/flashback.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/flashback.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/flashback.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/flashback.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/hero/hero_body.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/hero/hero_body.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/hero/hero_body.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/hero/hero_body.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/hints.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/hints.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/hints.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/hints.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/journal.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/journal.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/journal.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/journal.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/voice.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/voice.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/systems/voice.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/systems/voice.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/choice_list.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/choice_list.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/choice_list.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/choice_list.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/cursors.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/cursors.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/cursors.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/cursors.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/end_card.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/end_card.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/end_card.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/end_card.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/hotspot_reveal.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/hotspot_reveal.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/hotspot_reveal.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/hotspot_reveal.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/inventory_panel.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/inventory_panel.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/inventory_panel.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/inventory_panel.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/journal_screen.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/journal_screen.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/journal_screen.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/journal_screen.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/menu_screen.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/menu_screen.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/menu_screen.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/menu_screen.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/menus.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/menus.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/menus.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/menus.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/settings_screen.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/settings_screen.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/settings_screen.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/settings_screen.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/skip_button.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/skip_button.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/skip_button.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/skip_button.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/slots_screen.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/slots_screen.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/slots_screen.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/slots_screen.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/title_screen.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/title_screen.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/title_screen.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/title_screen.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/top_bar.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/top_bar.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/top_bar.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/top_bar.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/verb_coin.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/verb_coin.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/src/ui/verb_coin.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/src/ui/verb_coin.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/core/test_anim_names.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/core/test_anim_names.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/core/test_anim_names.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/core/test_anim_names.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/core/test_inventory.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/core/test_inventory.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/core/test_inventory.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/core/test_inventory.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/core/test_scale_zones.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/core/test_scale_zones.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/core/test_scale_zones.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/core/test_scale_zones.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/choices.dialogue",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/choices.dialogue"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/choices.dialogue.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/choices.dialogue.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/voice.dialogue",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/voice.dialogue"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/voice.dialogue.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/voice.dialogue.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/voice/TEST_FILE_1.wav",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/voice/TEST_FILE_1.wav"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/voice/TEST_FILE_1.wav.import",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/voice/TEST_FILE_1.wav.import"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/voice/envelopes.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/voice/envelopes.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/fixtures/voice/envelopes.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/fixtures/voice/envelopes.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/hooks/pre_run.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/hooks/pre_run.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/hooks/pre_run.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/hooks/pre_run.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_closeups.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_closeups.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_closeups.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_closeups.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_cutscenes.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_cutscenes.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_cutscenes.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_cutscenes.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_dialogue_choices.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_dialogue_choices.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_dialogue_choices.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_dialogue_choices.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_exits.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_exits.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_exits.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_exits.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_flashback.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_flashback.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_flashback.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_flashback.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_greybox_chain.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_greybox_chain.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_greybox_chain.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_greybox_chain.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_hero.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_hero.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_hero.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_hero.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_hints.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_hints.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_hints.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_hints.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_inventory_ui.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_inventory_ui.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_inventory_ui.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_inventory_ui.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_journal.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_journal.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_journal.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_journal.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_menus.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_menus.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_menus.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_menus.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_reveal.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_reveal.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_reveal.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_reveal.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_rig_body.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_rig_body.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_rig_body.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_rig_body.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_rooms_all.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_rooms_all.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_rooms_all.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_rooms_all.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_saves.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_saves.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_saves.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_saves.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_settings.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_settings.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_settings.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_settings.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_title.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_title.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_title.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_title.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_verb_coin.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_verb_coin.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_verb_coin.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_verb_coin.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_voice.gd",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_voice.gd"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/test/integration/test_voice.gd.uid",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/test/integration/test_voice.gd.uid"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/.gdignore",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/.gdignore"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/README.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/README.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/adv-art",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/adv-art"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/.python-version",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/.python-version"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/__init__.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/__init__.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/align.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/align.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/cli.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/cli.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/depth.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/depth.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/grade.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/grade.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/icons.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/icons.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/imageio.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/imageio.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/masks.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/masks.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/npc.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/npc.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/pack.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/pack.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/painted.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/painted.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/placeholder.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/placeholder.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/reveal.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/reveal.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/rings.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/rings.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/room.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/room.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/adv_art/sheet.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/adv_art/sheet.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/pyproject.toml",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/pyproject.toml"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/tests/test_painted.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/tests/test_painted.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/tests/test_room.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/tests/test_room.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/tests/test_tools.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/tests/test_tools.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/art/uv.lock",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/art/uv.lock"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/bun.lock",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/bun.lock"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/config.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/config.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/package.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/package.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/run.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/run.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/src/cache.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/src/cache.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/src/client.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/src/client.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/src/dialogue.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/src/dialogue.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/src/hash.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/src/hash.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/src/manifest.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/src/manifest.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/src/paths.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/src/paths.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/src/post.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/src/post.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/test/client.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/test/client.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/test/dialogue.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/test/dialogue.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/test/hash_cache.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/test/hash_cache.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/test/manifest.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/test/manifest.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/test/post.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/test/post.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/audio/tsconfig.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/audio/tsconfig.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/build/browser-qa.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/build/browser-qa.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/build/build_hero.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/build/build_hero.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/build/deploy.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/build/deploy.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/build/export.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/build/export.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/build/loading_art.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/build/loading_art.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/build/pck_list.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/build/pck_list.py"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/build/serve.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/build/serve.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/godot.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/godot.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/budget.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/budget.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/budgets.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/budgets.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/bun.lock",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/bun.lock"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/check.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/check.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/index.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/index.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/new-request.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/new-request.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/package.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/package.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/run.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/run.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/credentials.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/credentials.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/ledger.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/ledger.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/paths.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/paths.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/pricing.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/pricing.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/request.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/request.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/run-request.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/run-request.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/sol.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/sol.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/src/templates.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/src/templates.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/test/fixtures.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/test/fixtures.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/test/ledger.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/test/ledger.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/test/request.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/test/request.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/test/run-request.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/test/run-request.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/test/sol.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/test/sol.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/test/templates.test.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/test/templates.test.ts"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/images/tsconfig.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/images/tsconfig.json"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/tools/test.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/tools/test.sh"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/web/.gdignore",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/web/.gdignore"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/web/loading/icon.png",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/web/loading/icon.png"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/web/loading/now.webp",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/web/loading/now.webp"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/web/loading/then.webp",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/web/loading/then.webp"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/template/web/shell.html",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/template/web/shell.html"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/AGENTS.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/AGENTS.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/CLAUDE.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/CLAUDE.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/docs/agent-board.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/docs/agent-board.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/docs/art-pipeline.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/docs/art-pipeline.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/docs/audio-pipeline.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/docs/audio-pipeline.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/docs/decisions.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/docs/decisions.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/docs/game-design.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/docs/game-design.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/docs/roadmap.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/docs/roadmap.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/docs/technical-plan.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/docs/technical-plan.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/plans/001-foundations.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/plans/001-foundations.md"
+        },
+        {
+          "path": "point-and-click-adventure/new-adventure/templates/plans/README.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/new-adventure/templates/plans/README.md"
+        }
+      ]
     }
   ]
 }
