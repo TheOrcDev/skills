@@ -1,0 +1,5 @@
+A sheet of {count} separate inventory item icons for a [[GENRE]] point-and-click adventure game, painted in the [[STYLE]] style of the reference image, each object drawn whole and alone, in a {grid} grid with generous empty space between them, nothing overlapping or touching:
+
+{items}
+
+Each object is lit from the upper left with a soft rim light, slightly three-quarter view, as a clean cut-out on a fully transparent background, with no shadows, labels, frames or scenery. No text, letters or numbers anywhere. No watermark, signature or border.

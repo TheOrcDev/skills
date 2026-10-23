@@ -1,0 +1,3 @@
+A close-up of {subject} from the reference image, in exactly the same [[STYLE]] style: {detail}
+
+{lettering}No people or figures. No watermark, signature or border.

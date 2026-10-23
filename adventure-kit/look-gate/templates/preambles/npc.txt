@@ -1,0 +1,5 @@
+A single full-body character for a [[GENRE]] point-and-click adventure game, painted in the same [[STYLE]] style as the reference image: {character}
+
+[[NPC_LOOK]], with no visible face ({face}). Pose: {pose} Shown whole from head to feet, facing three-quarters to the viewer's left, filling most of the image height, with a little space around them. Even soft light from the upper left with a gentle cool rim light. On a fully transparent background, with no ground, shadow or scenery.
+
+No text, labels, letters or numbers. No other figures. No watermark, signature or border.

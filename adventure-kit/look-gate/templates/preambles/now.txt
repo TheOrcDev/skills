@@ -1,0 +1,7 @@
+Paint a NEW scene (do not copy the reference's layout) in exactly the same [[STYLE]] style as the reference image: {setting}, seen from eye level, slightly above, for a [[GENRE]] point-and-click adventure game background.
+
+Composition: {composition}
+
+The lower third of the image is open, walkable ground: {ground} It is lit by {light} with [[ATMOSPHERE]] behind it, so that [[HERO_SILHOUETTE]] standing on it would read clearly. Strong rim light on silhouettes and layered depth, as in the reference. Dark framing only in the top corners and the extreme foreground edges.
+
+No people, figures, animals or creatures. No readable text, letters or numbers anywhere. No watermark, signature or border.

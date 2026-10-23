@@ -542,6 +542,59 @@
           "target": "~/.claude/skills/art-requests/templates/specs.json"
         }
       ]
+    },
+    {
+      "name": "look-gate",
+      "type": "registry:item",
+      "title": "Look Gate",
+      "description": "Set a point-and-click game's look before volume art: the style bible, composition rules for playable rooms, shared prompt preambles, an engine A/B, the first style key and landmark crops, the hero's model sheet, and one room proven in the engine with the operator's sign-off. Part of the adventure-kit collection. Installs to ~/.claude/skills/look-gate/.",
+      "files": [
+        {
+          "path": "adventure-kit/look-gate/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/look-gate/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/RULES.md"
+        },
+        {
+          "path": "adventure-kit/look-gate/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/look-gate/templates/preambles/closeup.txt",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/templates/preambles/closeup.txt"
+        },
+        {
+          "path": "adventure-kit/look-gate/templates/preambles/items.txt",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/templates/preambles/items.txt"
+        },
+        {
+          "path": "adventure-kit/look-gate/templates/preambles/now.txt",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/templates/preambles/now.txt"
+        },
+        {
+          "path": "adventure-kit/look-gate/templates/preambles/npc.txt",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/templates/preambles/npc.txt"
+        },
+        {
+          "path": "adventure-kit/look-gate/templates/preambles/then.txt",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/templates/preambles/then.txt"
+        },
+        {
+          "path": "adventure-kit/look-gate/templates/style-bible.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/look-gate/templates/style-bible.md"
+        }
+      ]
     }
   ]
 }

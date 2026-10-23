@@ -1,0 +1,5 @@
+Edit this image in place. Keep exactly the same composition, camera, perspective, horizon and every shape where it stands: {keep}. Only change the time and the condition.
+
+Restore {place} to how it looked {when}, [[THEN_LOOK]]: {restore} The key light comes from the same direction as in the original.
+
+No people, figures, animals or creatures. No readable text, letters or numbers. No watermark, signature or border.
