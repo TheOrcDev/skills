@@ -1,0 +1,51 @@
+{
+  "id": "keeper",
+  "speaker": "Keeper",
+  "aliases": [],
+  "painting": "art-source/raw/IMG-0051/IMG-0051-v2.png",
+  "height": 430,
+  "feet": [500, 1500],
+  "speech": [540, 20],
+  "subtitle_color": [0.82, 0.86, 0.9],
+  "grid": 28,
+  "keep_color": false,
+  "bones": [
+    {"name": "Base", "parent": "", "from": [500, 1500], "to": [500, 1000]},
+    {"name": "Spine", "parent": "Base", "from": [500, 960], "to": [520, 430]},
+    {"name": "Head", "parent": "Spine", "from": [540, 380], "to": [540, 60]},
+    {"name": "ArmR", "parent": "Spine", "from": [360, 430], "to": [300, 760]},
+    {"name": "HandR", "parent": "ArmR", "from": [300, 760], "to": [310, 960]},
+    {"name": "ArmL", "parent": "Spine", "from": [680, 440], "to": [760, 760]},
+    {"name": "Lantern", "parent": "HandR", "from": [310, 960], "to": [310, 1180]}
+  ],
+  "motions": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "Spine": [0.8, 0.22, 0.0],
+        "Head": [1.4, 0.13, 1.0],
+        "ArmR": [1.2, 0.22, 0.5],
+        "Lantern": [2.0, 0.3, 1.2]
+      }
+    },
+    "talk_a": {
+      "loop": true,
+      "bones": {"Spine": [1.0, 0.3, 0.0], "Head": [1.5, 0.2, 1.0], "ArmL": [1.2, 0.25, 0.0]},
+      "voice": {"Head": 5.0, "Spine": 1.5, "ArmL": -12.0}
+    },
+    "talk_b": {
+      "loop": true,
+      "bones": {"Spine": [1.2, 0.35, 0.0], "Head": [2.0, 0.3, 0.5]},
+      "voice": {"Head": -4.0, "ArmR": -8.0, "HandR": -14.0}
+    },
+    "lift_lantern": {
+      "loop": false,
+      "length": 2.0,
+      "keys": {
+        "ArmR": [[0.0, 0.0], [0.6, -40.0], [1.4, -40.0], [2.0, 0.0]],
+        "HandR": [[0.0, 0.0], [0.6, -20.0], [1.4, -20.0], [2.0, 0.0]],
+        "Head": [[0.0, 0.0], [0.7, -6.0], [1.4, -6.0], [2.0, 0.0]]
+      }
+    }
+  }
+}

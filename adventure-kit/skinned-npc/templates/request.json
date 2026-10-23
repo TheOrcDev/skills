@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "npc-keeper",
+    "title": "NPC: the keeper",
+    "kind": "npc",
+    "plan": "004",
+    "purpose": "The harbour keeper (docs/story/cast.md), painted once and skinned to a few bones in Godot. Stands by the lighthouse door in harbour_steps and talks by default.",
+    "requested": "plan 004, slice 5 (NPCs)",
+    "size": "1440x2560",
+    "references": [
+      "art-source/style/harbour-style-key.png"
+    ],
+    "fields": {
+      "character": "the old harbour keeper: tall and thin, in a long oilskin coat and a wide-brimmed hat, a coil of rope over one shoulder, an unlit storm lantern in one hand.",
+      "face": "the face is lost in the shadow of the hat brim; only a white beard edge catches the light",
+      "pose": "standing, slightly bent forward into the wind, the lantern hanging from the right hand away from the coat, the left hand on the rope."
+    },
+    "must": [
+      "The whole figure, hat to boots, with space around it",
+      "Arms and the lantern standing clear of the coat"
+    ],
+    "mustNot": [
+      "Ground, shadow, scenery or a painted background"
+    ],
+    "criteria": [
+      "Whole from hat to boots, nothing cropped",
+      "Arms and head clear enough of the body to bend with a few bones",
+      "A clean transparent background",
+      "Mid and light greys, so a black hero reads against it"
+    ]
+  }
+]

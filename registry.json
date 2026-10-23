@@ -706,6 +706,44 @@
           "target": "~/.claude/skills/story-track/templates/sample.dialogue"
         }
       ]
+    },
+    {
+      "name": "skinned-npc",
+      "type": "registry:item",
+      "title": "Skinned NPC",
+      "description": "Add a talking side character to a point-and-click game as one painting skinned to a few bones: Sol paints the NPC once on transparency, npc.json places the bones and feet, adv-art npc trims and grades it, new_npc.gd meshes and skins it to a Skeleton2D, and RigBody plays idle, voice-driven talk and keyed one-shots written as data. Part of the adventure-kit collection. Installs to ~/.claude/skills/skinned-npc/.",
+      "files": [
+        {
+          "path": "adventure-kit/skinned-npc/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/skinned-npc/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/skinned-npc/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/skinned-npc/RULES.md"
+        },
+        {
+          "path": "adventure-kit/skinned-npc/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/skinned-npc/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/skinned-npc/references/bones-and-motions.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/skinned-npc/references/bones-and-motions.md"
+        },
+        {
+          "path": "adventure-kit/skinned-npc/templates/npc.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/skinned-npc/templates/npc.json"
+        },
+        {
+          "path": "adventure-kit/skinned-npc/templates/request.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/skinned-npc/templates/request.json"
+        }
+      ]
     }
   ]
 }
