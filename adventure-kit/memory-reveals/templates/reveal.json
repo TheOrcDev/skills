@@ -1,0 +1,11 @@
+{
+  "id": "harbour_reveal",
+  "ring0": "art-source/raw/IMG-0070/IMG-0070-v1.png",
+  "ring1": "art-source/raw/IMG-0071/IMG-0071-v2.png",
+  "ring2": "art-source/raw/IMG-0072/IMG-0072-v1.png",
+  "feet": [900, 940],
+  "hero_height": 260,
+  "facing": "idle_r",
+  "title": "The Harbour",
+  "place": "The old port"
+}

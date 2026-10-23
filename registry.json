@@ -797,6 +797,39 @@
           "target": "~/.claude/skills/painted-hero/templates/painted.json"
         }
       ]
+    },
+    {
+      "name": "memory-reveals",
+      "type": "registry:item",
+      "title": "Memory Reveals",
+      "description": "Add two-state places and cinematics to a point-and-click game: an aligned past carried in the same room, visions, playable memories, memory vistas, zoom-out discovery reveals built from 3:1 rings, a cutscene runner whose skip leaves the world as a watched run would, letterbox, journal rewatching and Reduce camera motion. Part of the adventure-kit collection. Installs to ~/.claude/skills/memory-reveals/.",
+      "files": [
+        {
+          "path": "adventure-kit/memory-reveals/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/memory-reveals/SKILL.md"
+        },
+        {
+          "path": "adventure-kit/memory-reveals/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/memory-reveals/RULES.md"
+        },
+        {
+          "path": "adventure-kit/memory-reveals/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/memory-reveals/WORKFLOW.md"
+        },
+        {
+          "path": "adventure-kit/memory-reveals/references/cutscenes.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/memory-reveals/references/cutscenes.md"
+        },
+        {
+          "path": "adventure-kit/memory-reveals/templates/reveal.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/memory-reveals/templates/reveal.json"
+        }
+      ]
     }
   ]
 }
