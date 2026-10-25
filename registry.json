@@ -335,6 +335,19 @@
       ]
     },
     {
+      "name": "agent-qa-testing",
+      "type": "registry:item",
+      "title": "agent-qa testing",
+      "description": "Run selected agent-qa web tests, inspect recorded outcomes and memidex memory, and report evidence for the requested browser flow.",
+      "files": [
+        {
+          "path": "skills/agent-qa-testing/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/agent-qa-testing/SKILL.md"
+        }
+      ]
+    },
+    {
       "name": "intro-video",
       "type": "registry:item",
       "title": "Intro Video",
