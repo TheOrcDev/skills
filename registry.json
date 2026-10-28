@@ -445,6 +445,19 @@
       ]
     },
     {
+      "name": "anti-slop-checklist",
+      "type": "registry:item",
+      "title": "Anti-Slop Checklist",
+      "description": "Anti-slop rules for AI agents building or reviewing UI: start from a reference, keep every snippet and install command real, cut filler copy and invented stats, then screenshot and critique before shipping. Installs to .claude/skills/anti-slop-checklist/SKILL.md in the target project.",
+      "files": [
+        {
+          "path": "skills/anti-slop-checklist/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/anti-slop-checklist/SKILL.md"
+        }
+      ]
+    },
+    {
       "name": "voice-cast",
       "type": "registry:item",
       "title": "Voice Cast",

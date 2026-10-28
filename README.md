@@ -199,6 +199,24 @@ npx shadcn@latest add TheOrcDev/skills/grond
 
 Call it with `/grond`, "GROND", or "smash it to main."
 
+### `anti-slop-checklist` - UI that doesn't look AI-made
+
+The rules an agent runs through before calling a page done. Start from a reference and prebuilt blocks, make every code snippet and install command real, say what the tool does above the fold, and leave out filler like "blazing fast" along with invented stats, testimonials and "trusted by" logos. Then screenshot the result, critique it like a senior product designer and fix the differences.
+
+Install for Codex, Claude Code, Cursor, and other supported agents:
+
+```bash
+npx skills add TheOrcDev/skills --skill anti-slop-checklist
+```
+
+Install into Claude Code through the shadcn registry:
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/anti-slop-checklist
+```
+
+Call it with `/anti-slop-checklist`, "check for slop", or "does this look AI-made?"
+
 ---
 
 **Lok'tar Ogar!** 🪓
