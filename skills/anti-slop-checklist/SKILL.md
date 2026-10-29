@@ -1,30 +1,55 @@
 ---
 name: anti-slop-checklist
-description: Anti-slop rules for AI agents building or reviewing UI. Use before shipping a landing page or any AI-generated interface, or when the user says "anti-slop", "check for slop", or "does this look AI-made".
+description: Anti-slop rules for building UI with AI agents. Use when building or reviewing landing pages, components or any UI so the result doesn't look like generic AI output.
 ---
 
 # Anti-slop checklist
 
-Rules for the agent so the UI it builds does not look generic or AI-made. Run through them before calling a page done. Add new rules to the list below as we find them.
+Follow these rules when building UI. Run the checklist before calling the work done.
 
-## Start from a reference
+## Process
 
-- Do not build from "build me something". Ask for a reference (a screenshot plus context: what the product is, who uses it, what the screen is for).
-- Start from prebuilt blocks or complete pages when they exist. Do not rebuild something the chosen block already provides.
+- Start from a reference: a screenshot plus what the user likes about it. Never "build me something".
+- Write a short brief first: what it does, who it's for, 3 words it should feel like and 3 it shouldn't.
+- Start from blocks (shadcn blocks or a component library) and compose them. Don't rebuild what a chosen block already provides.
+- After building, screenshot desktop and mobile, list what's wrong (spacing, hierarchy, contrast, copy), fix it, repeat.
+
+## Visual
+
+- No default purple or blue-to-pink gradients unless the brand uses them.
+- No glow, blur and glassmorphism on everything. Use effects only where they mean something.
+- No cards inside cards. One level of containers is enough.
+- No emoji as icons and no decorative emoji in headings.
+- One accent color, one type scale, spacing on a 4 or 8 px grid.
+- One primary action per section. Real visual hierarchy, not three equal buttons.
+- Check mobile and dark mode, not just desktop.
 
 ## Content
 
-- The code snippet is real. It runs for this tool, and the copy button copies it.
-- The install command is exactly right (package name, package manager, flags).
-- The hero says what the tool does and who it is for, above the fold.
-- Feature copy says what each feature does. No vague filler like "blazing fast", "powerful" or "seamless".
-- No invented stats, testimonials, "trusted by" logos or GitHub numbers. Use real data or leave it out.
+- Code snippets must actually run, and the copy button must copy them.
+- Install commands must be exactly right.
+- The hero says what the product does and who it's for, above the fold.
+- Never invent stats, testimonials, "trusted by" logos, GitHub numbers or people's names.
+- Every link and button goes somewhere real. No "#" links or dead nav items.
 
-## Review loop
+## Copy
 
-- Screenshot the result and critique it like a senior product designer. Return concrete changes only.
-- Compare against the reference, then fix the differences.
+Inspired by Cursor's Unslop skill: https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md
 
-## Rules to add
+- Say what it does, not how it feels. Name the mechanism or a number.
+- If a line could appear unchanged on another product's site, cut it.
+- Never use: seamless, blazing fast, powerful, leverage, elevate, unlock, supercharge, delve, robust, cutting-edge, game-changer.
+- No "Not just X, but Y". No forced groups of three.
+- Plain words and active voice. "Use", not "leverage".
+- Sentence case headings. No em dash overuse.
+- No generic closers like "The future of X is here". End with the real next step.
 
-- (add new anti-slop rules here)
+## Before you ship
+
+1. Is the code snippet real, and does copy work?
+2. Is the install command exact?
+3. Does the hero say what it is and who it's for?
+4. Is any copy vague or full of AI words?
+5. Any invented stats, testimonials, logos or names?
+6. Did the AI rebuild something a block already provides?
+7. Did you check mobile and dark mode?
