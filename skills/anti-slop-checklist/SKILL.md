@@ -7,13 +7,6 @@ description: Anti-slop rules for building UI with AI agents. Use when building o
 
 Follow these rules when building UI. Run the checklist before calling the work done.
 
-## Process
-
-- Start from a reference: a screenshot plus what the user likes about it. Never "build me something".
-- Write a short brief first: what it does, who it's for, 3 words it should feel like and 3 it shouldn't.
-- Start from blocks (shadcn blocks or a component library) and compose them. Don't rebuild what a chosen block already provides.
-- After building, screenshot desktop and mobile, list what's wrong (spacing, hierarchy, contrast, copy), fix it, repeat.
-
 ## Visual
 
 - No default purple or blue-to-pink gradients unless the brand uses them.
@@ -22,6 +15,12 @@ Follow these rules when building UI. Run the checklist before calling the work d
 - No emoji as icons and no decorative emoji in headings.
 - One accent color, one type scale, spacing on a 4 or 8 px grid.
 - One primary action per section. Real visual hierarchy, not three equal buttons.
+- No gradient text on every heading.
+- No rounded-2xl on everything. Pick one radius and stick to it.
+- No identical 3-column feature grid with an icon in a circle as the default layout.
+- No floating blobs, orbs or random grid backgrounds as decoration.
+- No pill badge above every heading ("✨ New").
+- Enough contrast. No light gray text on white or dark gray on black.
 - Check mobile and dark mode, not just desktop.
 
 ## Content
@@ -44,6 +43,11 @@ Inspired by Cursor's Unslop skill: https://github.com/cursor/plugins/blob/main/p
 - Sentence case headings. No em dash overuse.
 - No generic closers like "The future of X is here". End with the real next step.
 
+## Review
+
+- Reuse existing components instead of rebuilding them.
+- Screenshot desktop and mobile, list what's wrong (spacing, hierarchy, contrast, copy), fix it, repeat.
+
 ## Before you ship
 
 1. Is the code snippet real, and does copy work?
@@ -51,5 +55,5 @@ Inspired by Cursor's Unslop skill: https://github.com/cursor/plugins/blob/main/p
 3. Does the hero say what it is and who it's for?
 4. Is any copy vague or full of AI words?
 5. Any invented stats, testimonials, logos or names?
-6. Did the AI rebuild something a block already provides?
+6. Any purple gradients, cards in cards, emoji icons or other visual tells?
 7. Did you check mobile and dark mode?
