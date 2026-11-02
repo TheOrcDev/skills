@@ -3131,6 +3131,24 @@
           "target": "~/.claude/skills/new-adventure/templates/plans/README.md"
         }
       ]
+    },
+    {
+      "name": "cozy-image",
+      "type": "registry:item",
+      "title": "Cozy Image",
+      "description": "Creates and edits images through your Cozy Studio MCP server, hosted or local: writes the prompt, picks aspect ratio, size and recipe, generates with a retry-safe request ID, waits for the job, downloads the result into the project and looks at it before reporting. Installs to .claude/skills/cozy-image/ in the target project.",
+      "files": [
+        {
+          "path": "skills/cozy-image/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/cozy-image/SKILL.md"
+        },
+        {
+          "path": "skills/cozy-image/REFERENCE.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/cozy-image/REFERENCE.md"
+        }
+      ]
     }
   ]
 }

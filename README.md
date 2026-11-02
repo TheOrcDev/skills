@@ -217,6 +217,30 @@ npx shadcn@latest add TheOrcDev/skills/anti-slop-checklist
 
 Call it with `/anti-slop-checklist`, "check for slop", or "does this look AI-made?"
 
+### `cozy-image` - images through your Cozy Studio
+
+Every image request goes through your [Cozy Studio](https://github.com/gvastethecreator/cozy-studio) over MCP, hosted or local. The agent:
+
+- writes the prompt, and picks the aspect ratio, size and any recipe (sprite sheet, character sheet, remaster or a look shared across a set);
+- generates with a request ID that is safe to retry, so a timeout never bills twice;
+- waits for the job, downloads the image into the project and looks at it before reporting.
+
+To edit or iterate, pass catalog image IDs as references. Needs the Studio MCP tools connected and **Agent access (MCP)** set to **Generate and cancel**; setup is in the skill's reference.
+
+Install for Codex, Claude Code, Cursor, and other supported agents:
+
+```bash
+npx skills add TheOrcDev/skills --skill cozy-image
+```
+
+Install into Claude Code through the shadcn registry:
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/cozy-image
+```
+
+Call it with `/cozy-image`, "make me an image of...", or just ask for an image, icon or sprite sheet.
+
 ---
 
 **Lok'tar Ogar!** 🪓
