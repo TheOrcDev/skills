@@ -3136,7 +3136,7 @@
       "name": "cozy-image",
       "type": "registry:item",
       "title": "Cozy Image",
-      "description": "Creates and edits images through your Cozy Studio MCP server, hosted or local: writes the prompt, picks aspect ratio, size and recipe, generates with a retry-safe request ID, waits for the job, downloads the result into the project and looks at it before reporting. Installs to .claude/skills/cozy-image/ in the target project.",
+      "description": "Creates and edits images through your Cozy Studio MCP server, hosted or local: writes the prompt, picks aspect ratio, size and recipe, optionally applies one of your installed styles, generates with a retry-safe request ID, waits for the job, downloads the result into the project and looks at it before reporting. Installs to .claude/skills/cozy-image/ in the target project.",
       "files": [
         {
           "path": "skills/cozy-image/SKILL.md",

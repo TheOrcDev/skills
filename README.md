@@ -221,7 +221,8 @@ Call it with `/anti-slop-checklist`, "check for slop", or "does this look AI-mad
 
 Every image request goes through your [Cozy Studio](https://github.com/gvastethecreator/cozy-studio) over MCP, hosted or local. The agent:
 
-- writes the prompt, and picks the aspect ratio, size and any recipe (sprite sheet, character sheet, remaster or a look shared across a set);
+- writes the prompt, and picks the aspect ratio, size and any recipe (sprite sheet, character sheet or remaster);
+- when you ask for a look ("watercolor", "film noir", "pixel art"), finds it among your installed style packs and saved styles and applies it as Studio's style browser does;
 - generates with a request ID that is safe to retry, so a timeout never bills twice;
 - waits for the job, downloads the image into the project and looks at it before reporting.
 

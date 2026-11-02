@@ -1,6 +1,6 @@
 ---
 name: cozy-image
-description: Creates and edits images through the user's Cozy Studio MCP server (studio_generate, studio_job, studio_catalog), then saves them into the project and shows them. Use whenever the user asks to create, generate, draw, render, edit, restyle or iterate on an image, illustration, icon, logo, sprite, texture, character sheet or concept art, or says "make me an image", "cozy it", or invokes /cozy-image.
+description: Creates and edits images through the user's Cozy Studio MCP server (studio_generate, studio_job, studio_catalog), optionally in one of the user's installed styles (studio_styles), then saves them into the project and shows them. Use whenever the user asks to create, generate, draw, render, edit, restyle or iterate on an image, illustration, icon, logo, sprite, texture, character sheet or concept art, or says "make me an image", "cozy it", or invokes /cozy-image.
 ---
 
 # Cozy image
@@ -35,13 +35,30 @@ The tools are named `studio_*` and sit under whatever name the user gave the ser
   - `aspectRatio`: 16:9 for a hero or banner, 9:16 for a phone screen, 1:1 for an icon or avatar, 2:3 for a poster.
   - `imageSize`: `1K` unless the user wants more. `2K` and `4K` take longer and use more of the user's plan.
   - `count`: 1. Use 2 to 4 only when the user wants options.
-- [ ] **Add a recipe only when it fits**, such as a sprite sheet, character sheet, remaster or a look shared across a set. Plain generation needs none. See [Recipes](REFERENCE.md#recipes).
+- [ ] **Add a style only when the user wants one.** That means they name a look ("watercolor", "Kodak Portra", "pixel art"), a style pack or one of their saved styles, or they ask for "a style".
+  - Search with `studio_styles` and `q`, then pass up to five IDs in `styleIds`.
+  - If several styles fit, list the best three or four names and let the user pick.
+  - No style asked for means no `styleIds`. See [Styles](REFERENCE.md#styles).
+- [ ] **Add a recipe only when it fits**, such as a sprite sheet, character sheet or remaster. Plain generation needs none. `styleIds` can't be combined with another recipe. See [Recipes](REFERENCE.md#recipes).
 - [ ] **Generate** with a new `requestId`: `batch-`, a slug of the subject, then 4 random hex characters. If the call times out or the connection drops, call again with the **same** `requestId` and identical input; Studio returns the batch it already accepted. A new ID would generate, and bill, a second time.
 - [ ] **Wait** as in Quick start.
   - On `failed`, report the job's `error` and fix the input before retrying with a new `requestId`.
   - On `needs_review`, stop: the user resolves it in the Studio UI.
 - [ ] **Save** each image where the user asked. Otherwise use the project's image folder (`public/`, `assets/` or `images/`), or create `images/`. Name the file after the subject and keep the extension that matches `mimeType`.
 - [ ] **Look before you report.** Open the saved file and check that it matches the request. Then give the user the path, the dimensions and the catalog `id`, which they need to iterate.
+
+## With a style
+
+```json
+{
+  "requestId": "batch-lighthouse-storybook-4c1e",
+  "prompt": "A small white lighthouse on a rocky coast at dusk, a rowing boat on the shingle",
+  "aspectRatio": "3:2",
+  "styleIds": ["SP00-015"]
+}
+```
+
+`SP00-015` is "Watercolor Storybook - Beatrix Potter", found with `studio_styles` and `{ "q": "watercolor" }`. The prompt says what to draw; the style says how.
 
 ## Edit or iterate
 
@@ -58,7 +75,8 @@ Pass catalog image IDs as references and set `task` to `image_edit`:
 
 - Earlier results: take the `id` from `studio_catalog`, searching with `q`, `batch_id` or `job_id`.
 - An image file from the user: import it first. See [References](REFERENCE.md#references).
-- To keep a set consistent, reference the first approved image in every later call and reuse the same style parameters.
+- To keep a set consistent, reference the first approved image in every later call and pass the same `styleIds`.
+- To restyle an image, reference it, pass `styleIds` and keep `styleMode` at `preserve`.
 
 ## Rules
 

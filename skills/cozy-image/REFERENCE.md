@@ -55,6 +55,8 @@ Unknown keys are rejected.
 | `count` | 1 to 16; each image is its own job | 1 |
 | `negativePrompt` | Up to 16,000 characters | None |
 | `referenceIds` | Up to 16 catalog image IDs | None |
+| `styleIds` | Up to 5 style IDs from `studio_styles`; leave `recipeId` empty | None |
+| `styleMode` | `preserve` or `reinterpret`; only matters with `referenceIds` | **Default style reference mode** in Settings |
 | `recipeId`, `recipeParams` | From `studio_recipes` | None |
 | `providerId` | From `studio_providers` | `chatgpt` |
 | `workspaceId` | From `studio_workspaces` | Studio's default workspace |
@@ -84,7 +86,7 @@ Unknown keys are rejected.
 | `remaster` | Restoring or reworking a reference image | `style`, `lighting`, `color`, `fidelity` |
 | `camera` | The same subject from a new camera angle, from a reference | `azimuth`, `elevation`, `distance`, `hasReference` |
 | `cinematic` | A storyboard grid | `frames`, `rows`, `cols`, `genre`, `tone`, `lighting` |
-| `styles` | A look written out field by field, shared across a set | See [A shared look](#a-shared-look) |
+| `styles` | A look you write out field by field | See [Your own look](#your-own-look) |
 | `character-poses`, `character-sprites`, `character-scenes`, `character-variants`, `character-transforms` | Character Lab work from a reference | Read them from `studio_recipes` |
 
 When you pass a reference to `character` or `camera`, set `hasReference: true`. A `spritesheet` with no reference must set both `view` and `style`, because their defaults (`Match Source`, `Preserve Style`) copy a source image. `remaster` always needs a reference.
@@ -102,11 +104,29 @@ Example of a sprite sheet:
 }
 ```
 
-## A shared look
+## Styles
 
-The `styles` recipe sends a look to the provider as structured directives. Write the fields once and pass them unchanged with every image in a set.
+Styles come from the style packs installed in Studio and from the user's saved styles. Applying one through MCP gives the same result as picking it in Studio's style browser.
 
-`presetId` and `presetName` are required. They are labels only: they are not sent to the provider, and a look you write yourself can use any ID, such as `custom-` followed by a slug.
+1. **Find it.** Call `studio_styles` with `q` (for example `"watercolor"`, `"film noir"`, `"pixel"`); every word must match.
+   - Each result has `id`, `name`, `packName`, `category` and `tags`. `total` and `hasMore` page through matches with `limit` and `offset`.
+   - `packs` lists the installed packs and their preset counts. Call without `q` to see what's installed.
+2. **Apply it.** Pass the IDs in `studio_generate.styleIds`, up to five, and leave `recipeId` empty. Studio:
+   - applies the styles at the **Default style intensity** from Settings;
+   - merges each style's avoid rules into `negativePrompt`.
+3. **With references:**
+   - `styleMode: "preserve"` keeps their subject, pose and framing and changes only the look.
+   - `"reinterpret"` lets the prompt change them.
+
+Several IDs blend in the order given. Keep the prompt about content: subject, action, setting and framing. Let the style carry medium, palette, light and texture, and don't describe a second, competing style in the prompt.
+
+If `studio_styles` isn't available, the Studio is older than this skill. Describe the look in the prompt instead, or use [Your own look](#your-own-look).
+
+### Your own look
+
+For a look that no installed style matches, the `styles` recipe takes the fields directly. Write them once and pass them unchanged with every image in a set.
+
+`presetId` and `presetName` are required. They are labels only: they aren't sent to the provider, so use any ID, such as `custom-` followed by a slug.
 
 ```json
 {
@@ -123,30 +143,7 @@ The `styles` recipe sends a look to the provider as structured directives. Write
 }
 ```
 
-The fields are `aesthetic`, `subjectTreatment`, `colorTone`, `lightingShadow`, `textureMaterial`, `cameraComposition`, `atmosphereMood` and `renderingQuality`.
-
-To restyle a reference without changing its subject, pose or framing, pass it in `referenceIds` and add `"mode": "PRESERVE_REFERENCE"` to `recipeParams`.
-
-### Saved and installed styles
-
-- **User styles.** `studio_user_styles` lists the user's saved styles. Each has `visualDna` and `avoidRules`.
-- **Style packs.** `studio_extensions` lists the installed packs (`kind: "style-pack"`). `studio_extension_json` with `{ "extensionId": "<id>", "path": "search.json" }` lists a pack's presets by `id`, `name`, `categoryName` and `tags`.
-  - The full preset text is in `runtime.json`, at about 2.5 KB per preset. That is usually more than an MCP client accepts in one tool result.
-  - If it's too large, use the preset's `name` and `styleAnchors` as the starting point for your own fields.
-- **Mapping into `recipeParams`.** Saved styles (`visualDna`) and pack presets (`style`) use the same snake_case keys:
-
-  | Style key | Parameter |
-  |---|---|
-  | `aesthetic` | `aesthetic` |
-  | `subject_treatment` | `subjectTreatment` |
-  | `color_and_tone` | `colorTone` |
-  | `lighting_and_shadow` | `lightingShadow` |
-  | `texture_and_material` | `textureMaterial` |
-  | `camera_and_composition` | `cameraComposition` |
-  | `atmosphere_and_mood` | `atmosphereMood` |
-  | `rendering_and_quality` | `renderingQuality` |
-
-  Put `avoidRules`, or a preset's `negativePrompt`, in `negativePrompt`. Use the style's `id` as `presetId` and its `name` as `presetName`.
+The fields are `aesthetic`, `subjectTreatment`, `colorTone`, `lightingShadow`, `textureMaterial`, `cameraComposition`, `atmosphereMood` and `renderingQuality`. To restyle a reference without changing its subject, pose or framing, add `"mode": "PRESERVE_REFERENCE"` to `recipeParams`.
 
 ## References
 
@@ -174,6 +171,8 @@ Both import tools return `catalogImageId`; put it in `referenceIds`. If an impor
 | `MCP access denied` | Agent access is Off or Read only | Ask the user to set it to Generate and cancel |
 | `Invalid tool arguments` with `issues` | A field is wrong or unknown | Fix the listed fields |
 | `Unknown recipe. Use studio_recipes.` | Wrong `recipeId` | Check `studio_recipes` |
+| `Unknown style. Use studio_styles.` with `styleId` | That style isn't installed or was deleted | Search `studio_styles` again |
+| `styleIds apply through the styles recipe` | `styleIds` was sent with another `recipeId` | Drop one of them |
 | `Catalog reference not found` or `is unavailable` | Wrong or deleted reference | Search `studio_catalog` again |
 | 409 conflict on `studio_generate` | The same `requestId` was used with different input | Use a new `requestId` |
 | The provider is not ready or signed out | The ChatGPT sign-in has expired | The user signs in again in Studio. For hosted Studio, they import their local sign-in again (HOSTING.md, step 5) |
