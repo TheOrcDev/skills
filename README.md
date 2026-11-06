@@ -151,6 +151,24 @@ npx shadcn@latest add TheOrcDev/skills/shadscan-pre-commit
 
 Call it with `$shadscan-pre-commit`, "run Shadscan before every agent commit", or "prevent UI regressions in this agent task."
 
+### `agent-qa-testing` - browser tests with evidence
+
+Run the requested browser flow and bring back the evidence. [agent-qa](https://github.com/vostride/agent-qa) combines natural-language testing with advanced memidex memory and self-improvement. This skill validates and selects existing tests, runs them within the agreed scope, and inspects results and memory. A dry run is selection; a completed verdict is evidence.
+
+Install for supported agents:
+
+```bash
+npx skills add TheOrcDev/skills --skill agent-qa-testing
+```
+
+Install into Claude Code through the shadcn registry:
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/agent-qa-testing
+```
+
+Call it with `$agent-qa-testing` or "verify this flow with agent-qa." Requires an installed agent-qa CLI; live runs also need its browser and model provider.
+
 ### `github-to-origin` - move a repo to Cursor Origin
 
 Moves a repo from GitHub to Cursor Origin hosting and, critically, repoints Vercel so production keeps deploying. Covers the two traps that make this look done when it isn't: a synced repo is a *mirror* with GitHub still the source of truth, and installing the Vercel app on the Origin repo does not move the project that owns your domain.
