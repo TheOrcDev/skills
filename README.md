@@ -91,6 +91,30 @@ npx shadcn@latest add TheOrcDev/skills/short-format-video
 
 Call it with `/short-format-video`, "write a Short", or "script this Reel."
 
+## 🖍️ Video editing
+
+Skills for editing recorded footage live in [`video-editing/`](video-editing/README.md). They're post-production passes that go on top of a finished take without changing it.
+
+| Skill | Purpose |
+|---|---|
+| [excalidraw-drawing](video-editing/excalidraw-drawing/SKILL.md) | Excalidraw-style diagram drawn onto the on-screen board as you explain it |
+
+### `excalidraw-drawing` - draw it up on the board
+
+You open a blank drawing board mid-video and talk through how something works. This skill draws that explanation onto the board while you speak, in one fixed Excalidraw style: rough.js hand-drawn boxes and arrows, Virgil handwriting, Cascadia for code, hachure fills and a dark-board palette. Every box, arrow and label draws itself on at the word that introduces it. It's rendered as a transparent Remotion layer and laid over the **untouched** footage with ffmpeg, so there are no zooms, no cuts and the audio is copied as-is. It ships with a template project and a vocabulary of terminal boxes, files, packages, UI windows, stick figures, braces and report lines. Scripts find the board's cut-in frame, take word timings from windowed whisper.cpp, check the layout over real frames, and composite with frame-count and PSNR checks. A full worked example is included.
+
+![Excalidraw drawing example](video-editing/excalidraw-drawing/examples/copybook-setup.jpg)
+
+```bash
+npx skills add TheOrcDev/skills --full-depth --skill excalidraw-drawing
+```
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/excalidraw-drawing
+```
+
+Call it with `/excalidraw-drawing`, "draw it up on my board", or "excalidraw this explanation."
+
 ## 🪓 The Horde
 
 ### `orc-me` - orc voice mode

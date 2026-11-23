@@ -3149,6 +3149,104 @@
           "target": "~/.claude/skills/cozy-image/REFERENCE.md"
         }
       ]
+    },
+    {
+      "name": "excalidraw-drawing",
+      "type": "registry:item",
+      "title": "Excalidraw Drawing",
+      "description": "Animates an Excalidraw-style hand-drawn diagram onto the drawing board in a recorded video, synced word by word to the narration, and composites it over the untouched footage. Rough.js + Virgil/Cascadia, Remotion transparent layer, ffmpeg overlay; template project and scripts included. Installs to .claude/skills/excalidraw-drawing/ in the target project.",
+      "files": [
+        {
+          "path": "video-editing/excalidraw-drawing/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/SKILL.md"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/STYLE.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/STYLE.md"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/examples/copybook-setup.scene.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/examples/copybook-setup.scene.ts"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/scripts/check.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/scripts/check.sh"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/scripts/composite.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/scripts/composite.sh"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/scripts/find-cut.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/scripts/find-cut.py"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/scripts/new-board.sh",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/scripts/new-board.sh"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/scripts/words.py",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/scripts/words.py"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/package.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/package.json"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/remotion.config.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/remotion.config.ts"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/src/Board.tsx",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/src/Board.tsx"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/src/Root.tsx",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/src/Root.tsx"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/src/config.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/src/config.ts"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/src/dsl.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/src/dsl.ts"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/src/index.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/src/index.ts"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/src/scene.ts",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/src/scene.ts"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/src/sketch.tsx",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/src/sketch.tsx"
+        },
+        {
+          "path": "video-editing/excalidraw-drawing/template/tsconfig.json",
+          "type": "registry:file",
+          "target": "~/.claude/skills/excalidraw-drawing/template/tsconfig.json"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "name": "excalidraw-board",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Excalidraw-style drawing layer for a recorded video (excalidraw-drawing skill)",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.507",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.507",
+    "roughjs": "4.6.6"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}
