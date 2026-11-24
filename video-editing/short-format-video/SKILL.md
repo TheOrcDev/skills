@@ -85,10 +85,14 @@ Rules for the hook:
 
 - **Face to camera**, tight or medium-close framing, eye contact from frame one.
 - **Captions on** from the first word.
-- Optional **pop-up icons that match the claim** while the line is spoken (for the hook above: Twitch, YouTube, X logos popping in one by one, timed to the words). Keep them at or below y 300. Nothing important above y 300.
+- Optional **pop-up icons that match the claim** while the line is spoken (for the hook above: Twitch, YouTube, X logos popping in one by one, timed to the words). Keep them at or below y 300. Nothing important above y 300. Icons sit beside or under the title, not wider than the title block.
 - No greeting, no "hey guys", no logo sting, no music intro before the line. The hook is the first frame.
 - Roughly a dozen words, one breath. Read it aloud: if it takes more than about 2 seconds at a natural pace, cut words until it does.
-- On-screen hook text: max about 7 words, from frame 0 to about the end of the first spoken sentence. Top of the block at y 300-350 px, bottom by about y 650 px on 1080x1920.
+- On-screen hook title from frame 0 to about the end of the first spoken sentence (typically 1.5-2.5 s, fully landed at least 1.2 s). Max about 7 words.
+- Keep the title small and calm: 56-68 px (hard cap 72), Medium or Semibold, sentence case or short Title Case. Max 2 lines, about 3-5 words per line. Not Black, not ALL CAPS across the frame, not a full-width bar. Full numbers in [RULES.md](RULES.md).
+- Width: max 864 px (80% of 1080). Side margins at least 108 px, prefer 120 px (x 120-960). Phones crop the left and right; no edge-to-edge text.
+- Placement: top of the block at y 320-380, bottom by y 560. Nothing important above y 300. Clear of the bottom about 350 px and the right about 150 px.
+- Entrance: fade plus a short rise, or fade plus scale 96% to 100%, 8-12 frames, ease-out. No slam, shake or bounce.
 
 ### Beat 2: Post-hook bridge (~2 to ~5 seconds)
 
@@ -175,7 +179,7 @@ Beat 3 (Value): <line(s)>
 Beat 4 (CTA): <line>
 
 ## Shot list / video script
-Captions: <style note, e.g. 2-4 word chunks, white, black stroke, keyword amber, bottom-centre inside safe area>
+Captions: <style note, e.g. 2-4 word chunks, white, black stroke, keyword amber, bottom-centre inside safe area. Opening hook title: 56-68 px Semibold, max 864 px wide, y 320-560>
 Aspect: 9:16, 1080x1920
 
 | # | Time | VO line | Camera | Graphics / captions | B-roll | Cut notes |
@@ -261,7 +265,7 @@ A complete package at roughly 30 seconds, showing the arc and a shot list an edi
 Recommended: #2. It is the hook as a promise, and it fits on one line of a Shorts thumbnail.
 
 ## Thumbnail / cover text
-Text: "5 platforms. Free." Visual: face cam with destination logos in the hook band (y 300-650).
+Text: "5 platforms. Free." Visual: face cam with a compact hook title (y 320-560, max 864 px wide) and destination logos under it.
 
 ## Framework
 Hook, post-hook bridge, Value, CTA
@@ -276,17 +280,17 @@ Beat 3 (Value): Add your destinations, Twitch, YouTube, X, whatever you stream o
 Beat 4 (CTA): Go to videorc.com and try it.
 
 ## Shot list / video script
-Captions: 2-4 word chunks, white with black stroke, keyword in amber, on from frame one. Full-head at y 1150-1450; split at the seam. Nothing above y 300. Clear of bottom ~350 px and right ~150 px.
+Captions: 2-4 word chunks, white with black stroke, keyword in amber, on from frame one. Full-head at y 1150-1450; split at the seam. Nothing above y 300. Clear of bottom ~350 px and right ~150 px. Opening hook title is separate: 56-68 px Semibold, max 864 px wide, y 320-560.
 Aspect: 9:16, 1080x1920
 
 | # | Time | VO line | Camera | Graphics / captions | B-roll | Cut notes |
 |---|------|---------|--------|---------------------|--------|-----------|
-| 1 | 0.0-2.2 | Did you know you can go live on 5 platforms at once for free? | A-roll, face cam A, centre, medium-close, eye contact | Captions on. Hook text in y 300-650. Twitch, YouTube, X logos pop in on "5 platforms"; `FREE` badge pops on "free" | None | **Hard cut** to face cam B the moment "free" lands |
+| 1 | 0.0-2.2 | Did you know you can go live on 5 platforms at once for free? | A-roll, face cam A, centre, medium-close, eye contact | Captions on. Compact hook title (56-68 px Semibold, max 864 px wide, y 320-560). Twitch, YouTube, X logos pop in on "5 platforms"; `FREE` badge pops on "free" | None | **Hard cut** to face cam B the moment "free" lands |
 | 2 | 2.2-5.0 | You can do this easily with this app. It's called Videorc. | A-roll, face cam B, off-axis 30 degrees, waist-up, punched in 15% | Videorc logo slides in beside head on "Videorc" | None | Whip to screen UI |
 | 3a | 5.0-11.0 | Add your destinations, Twitch, YouTube, X, whatever you stream on, up to five of them. | B-roll | Destination pills appear on the UI as each platform is named; counter `5 / 5` fills on "up to five" | Screen: Videorc destinations panel, adding each platform | Cut on the fifth pill to B-roll |
 | 3b | 11.0-16.0 | Hit go live once, and you're live everywhere. | B-roll | Caption keyword `ONCE` in amber. Five live tiles light up on "everywhere" | Orc at desk, over-the-shoulder, clicks Go Live, then screen recording of stream tiles going live | Cut to face cam A on "everywhere" |
 | 3c | 16.0-24.0 | No watermark, and the free plan actually covers this. | A-roll, face cam A, centre, medium-close | `NO WATERMARK` strike-through badge; `FREE PLAN` pill on "free plan" | Optional 1s insert: clean stream output, no watermark corner | Punch-in 10% on "actually" for emphasis |
-| 4 | 24.0-30.0 | Go to videorc.com and try it. | A-roll, face cam B, waist-up, small lean toward the lens | CTA: `videorc.com` pill in the hook band (y 300-650), visible on the last line | None | End on the last line. No end card longer than ~1s |
+| 4 | 24.0-30.0 | Go to videorc.com and try it. | A-roll, face cam B, waist-up, small lean toward the lens | CTA: `videorc.com` pill in the upper safe band (y 320-560), visible on the last line | None | End on the last line. No end card longer than ~1s |
 
 ## B-roll
 1. Screen recording, Videorc destinations panel: add Twitch, YouTube, X and two more. Clean 1080x1920 crop or 16:9 letterboxed. Used in 3a.
@@ -328,7 +332,7 @@ videorc, multistream, multistreaming, go live on multiple platforms, stream to t
 The cut is [WORKFLOW.md](WORKFLOW.md). Short version for anyone dispatching an editor:
 
 - Remotion (React), one project per video folder. Headless shell via `npx remotion browser ensure`, not system Chrome.
-- Hook text from frame 0 in the y 300-650 band. Word-synced captions. Screenshots, animations and logos over explaining parts. SFX at about 20-30% volume (around -12 dB), well under his voice.
+- Compact hook title from frame 0: 56-68 px Medium/Semibold, max 864 px wide, y 320-560, subtle fade-in. Word-synced captions. Screenshots, animations and logos over explaining parts. SFX at about 20-30% volume (around -12 dB), well under his voice.
 - Export 1080x1920, 30 fps, H.264 High yuv420p, AAC 48 kHz, about -14 LUFS, faststart. Cover PNG 1080x1920.
 - Finished files go to `~/Movies/Short Format Videos/` as `YYYY-MM-DD Topic.mp4` and `YYYY-MM-DD Topic cover.png`. Never leave the only copy in `~/projects`.
 - "This one too" style thumbnail shots need the real thumbnail from OrcDev before the edit.
@@ -365,7 +369,7 @@ Every about 60 days, lightly remix (zoom, mirror, crop or new hook), Instagram t
 Run this list. Any `no` means the package is not done.
 
 - [ ] First spoken word is the hook. Nothing before it.
-- [ ] Hook reads aloud in about 2 seconds, face to camera, captions on, graphics match the claim. On-screen hook in y 300-650, nothing important above y 300.
+- [ ] Hook reads aloud in about 2 seconds, face to camera, captions on, graphics match the claim. On-screen hook title 56-68 px, max 80% width, y 320-560, nothing important above y 300.
 - [ ] Hard cut or angle change immediately after the hook sentence, written in the cut notes.
 - [ ] Bridge names the product within 5 seconds. Tool is on screen in the first seconds.
 - [ ] Value beats are two to four verified proof points (or one clear point / 3-5 features), each visible on screen when spoken.
