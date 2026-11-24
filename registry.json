@@ -358,29 +358,6 @@
       ]
     },
     {
-      "name": "short-format-video",
-      "type": "registry:item",
-      "title": "Short Format Video",
-      "description": "OrcDev Shorts, Reels and TikTok end to end: voice, Notion script package, beat-by-beat shot list, Remotion edit, posting, Drive and Notion log, 60-day repost. Installs to .claude/skills/short-format-video/ in the target project.",
-      "files": [
-        {
-          "path": "videos/short-format-video/RULES.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/short-format-video/RULES.md"
-        },
-        {
-          "path": "videos/short-format-video/SKILL.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/short-format-video/SKILL.md"
-        },
-        {
-          "path": "videos/short-format-video/WORKFLOW.md",
-          "type": "registry:file",
-          "target": "~/.claude/skills/short-format-video/WORKFLOW.md"
-        }
-      ]
-    },
-    {
       "name": "github-to-origin",
       "type": "registry:item",
       "title": "GitHub to Origin",
@@ -3157,6 +3134,29 @@
           "path": "skills/cozy-image/REFERENCE.md",
           "type": "registry:file",
           "target": "~/.claude/skills/cozy-image/REFERENCE.md"
+        }
+      ]
+    },
+    {
+      "name": "short-format-video",
+      "type": "registry:item",
+      "title": "Short Format Video",
+      "description": "OrcDev Shorts, Reels and TikTok end to end: voice, Notion script package, beat-by-beat shot list, Remotion edit, posting, Drive and Notion log, 60-day repost. Installs to .claude/skills/short-format-video/ in the target project.",
+      "files": [
+        {
+          "path": "video-editing/short-format-video/RULES.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/short-format-video/RULES.md"
+        },
+        {
+          "path": "video-editing/short-format-video/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/short-format-video/SKILL.md"
+        },
+        {
+          "path": "video-editing/short-format-video/WORKFLOW.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/short-format-video/WORKFLOW.md"
         }
       ]
     },
