@@ -69,13 +69,14 @@ npx skills add TheOrcDev/skills --full-depth --skill new-adventure
 
 Install the others the same way, and keep them side by side: they link to each other and `new-adventure` copies files from `painted-hero` and `look-gate`.
 
-## 🎬 Video
+## 🖍️ Video editing
 
-Skills for scripting, cutting and posting video content live in [`videos/`](videos/README.md), one folder per format. Short format is here now; long format and other video skills will land in the same directory as they are written.
+Skills for scripting, cutting, posting and editing video content live in [`video-editing/`](video-editing/README.md). Short format and board overlays are here now; long format and other video skills will land in the same directory as they are written.
 
 | Skill | Purpose |
 |---|---|
-| [short-format-video](videos/short-format-video/SKILL.md) | Shorts, Reels and TikTok end to end: voice, script package, shot list, Remotion edit, posting and 60-day repost |
+| [short-format-video](video-editing/short-format-video/SKILL.md) | Shorts, Reels and TikTok end to end: voice, script package, shot list, Remotion edit, posting and 60-day repost |
+| [excalidraw-drawing](video-editing/excalidraw-drawing/SKILL.md) | Excalidraw-style diagram drawn onto the on-screen board as you explain it |
 
 ### `short-format-video` - Shorts from script through post
 
@@ -90,14 +91,6 @@ npx shadcn@latest add TheOrcDev/skills/short-format-video
 ```
 
 Call it with `/short-format-video`, "write a Short", "script this Reel", "cut this Short", or "post this video."
-
-## 🖍️ Video editing
-
-Skills for editing recorded footage live in [`video-editing/`](video-editing/README.md). They're post-production passes that go on top of a finished take without changing it.
-
-| Skill | Purpose |
-|---|---|
-| [excalidraw-drawing](video-editing/excalidraw-drawing/SKILL.md) | Excalidraw-style diagram drawn onto the on-screen board as you explain it |
 
 ### `excalidraw-drawing` - draw it up on the board
 
