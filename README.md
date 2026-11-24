@@ -71,15 +71,15 @@ Install the others the same way, and keep them side by side: they link to each o
 
 ## 🎬 Video
 
-Skills for scripting and packaging video content live in [`videos/`](videos/README.md), one folder per format. Short format is here now; long format and other video skills will land in the same directory as they are written.
+Skills for scripting, cutting and posting video content live in [`videos/`](videos/README.md), one folder per format. Short format is here now; long format and other video skills will land in the same directory as they are written.
 
 | Skill | Purpose |
 |---|---|
-| [short-format-video](videos/short-format-video/SKILL.md) | Shorts, Reels and TikTok scripts: spoken script plus editor-ready shot list on the Hook, bridge, Value, CTA arc |
+| [short-format-video](videos/short-format-video/SKILL.md) | Shorts, Reels and TikTok end to end: voice, script package, shot list, Remotion edit, posting and 60-day repost |
 
-### `short-format-video` - Shorts scripts with editor-ready shot lists
+### `short-format-video` - Shorts from script through post
 
-Writes a TikTok, Reel or YouTube Short as one document with two halves: the **spoken script** and a beat-by-beat **shot list** (camera angle, captions, on-screen graphics, B-roll, cut notes), so an editor can cut the video from the doc and the footage alone. Every Short runs the same arc, **Hook, post-hook bridge, Value, CTA**, with a hard angle change right after the hook, captions on every beat, graphics that match the spoken line, and A-roll/B-roll marked per beat. Ships with the standing OrcDev packaging: four titles with one Recommended, description, X post, YouTube tags, and honest product claims only.
+Runs a TikTok, Reel or YouTube Short from idea to post. Writes the **spoken script** and a beat-by-beat **shot list** (camera angle, captions, on-screen graphics, B-roll, cut notes) on the **Hook, post-hook bridge, Value, CTA** arc, then the Remotion cut (hook placement, word-synced captions, SFX levels, 1080x1920 export), then YouTube / TikTok / Instagram trial / X with Drive and Notion logging and a 60-day remix cycle. Coordinator starts one editor per video. Nobody posts without an explicit yes. Packaging is four titles with one Recommended, thumbnail text, description with the Videorc footer, X post and YouTube tags. Verified product claims only.
 
 ```bash
 npx skills add TheOrcDev/skills --full-depth --skill short-format-video
@@ -89,7 +89,7 @@ npx skills add TheOrcDev/skills --full-depth --skill short-format-video
 npx shadcn@latest add TheOrcDev/skills/short-format-video
 ```
 
-Call it with `/short-format-video`, "write a Short", or "script this Reel."
+Call it with `/short-format-video`, "write a Short", "script this Reel", "cut this Short", or "post this video."
 
 ## 🖍️ Video editing
 

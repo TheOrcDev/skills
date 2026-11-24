@@ -1,10 +1,10 @@
 # Video skills
 
-Skills for scripting, planning and packaging OrcDev video content. Each skill is one folder with a `SKILL.md`; supporting references or scripts sit beside it when a skill needs them.
+Skills for scripting, planning, cutting and posting OrcDev video content. Each skill is one folder with a `SKILL.md`; supporting references or scripts sit beside it when a skill needs them.
 
 | Format | Skill | Purpose |
 |---|---|---|
-| Short format (TikTok, Reels, YouTube Shorts) | [short-format-video](short-format-video/SKILL.md) | Spoken script plus editor-ready shot list on the Hook, bridge, Value, CTA arc, with four titles, description, X post and tags |
+| Short format (TikTok, Reels, YouTube Shorts) | [short-format-video](short-format-video/SKILL.md) | End-to-end Shorts: voice, script package, beat-by-beat shot list, Remotion edit, posting, Drive and Notion log, 60-day repost. Companions: [RULES.md](short-format-video/RULES.md), [WORKFLOW.md](short-format-video/WORKFLOW.md) |
 
 ## Coming to this collection
 
@@ -13,7 +13,7 @@ More video skills will land here as siblings of `short-format-video`, one folder
 - `long-format-video` for full-length YouTube videos
 - further formats (livestream segments, tutorials, trailers) as they are needed
 
-Keep the same shape when adding one: `videos/<skill-id>/SKILL.md`, an entry in the root `registry.json`, and a row in the table above.
+Keep the same shape when adding one: `videos/<skill-id>/SKILL.md`, companion files beside it when needed, an entry in the root `registry.json` that lists every file, and a row in the table above.
 
 ## Installation
 
