@@ -91,7 +91,7 @@ Rules for the hook:
 - On-screen hook title from frame 0 to about the end of the first spoken sentence (typically 1.5-2.5 s, fully landed at least 1.2 s). Max about 7 words.
 - Keep the title small and calm: 56-68 px (hard cap 72, floor 52 px if needed to stay on one line), Medium or Semibold, sentence case or short Title Case. **Exactly one line.** If it would wrap, shorten the phrase (keep the meaning, no invented facts) or shrink the font slightly. Not Black, not ALL CAPS across the frame, not a full-width bar. Full numbers in [RULES.md](RULES.md).
 - Width: max 864 px (80% of 1080). Side margins at least 108 px, prefer 120 px (x 120-960). Phones crop the left and right; no edge-to-edge text.
-- Placement: one line above his head, just below y 300, never on his face or forehead. Nothing important above y 300. Clear of the bottom about 350 px and the right about 150 px. If the face fills the frame, scale the talking head down or open on a split so the hook has a clear gap above his hair.
+- Placement: one line above his head, just below y 300, never on his face or forehead. Nothing important above y 300. Clear of the bottom about 350 px and the right about 150 px. If the face fills the frame, scale the talking head down or open on a split so the hook has a clear gap above his hair. **No overlay of any kind** (hook, CTA, chips, logos, captions) may cover his face, hair, forehead or eyes. Measure the face on the actual frames of that shot. A punch-in close-up often fills the old y 320-560 band; move the graphic or scale the head so it stays clear.
 - Entrance: fade plus a short rise, or fade plus scale 96% to 100%, 8-12 frames, ease-out. No slam, shake or bounce.
 
 ### Beat 2: Post-hook bridge (~2 to ~5 seconds)
@@ -123,7 +123,7 @@ One clear action, spoken **and** on screen:
 
 - Use the exact URL for this video. Never a vague "link in bio" when a URL fits. The edit may still show "Link in bio" / repo URL / site URL as on-screen text; the spoken line prefers the URL.
 - Face to camera again for the close, so the video ends on a person, not a UI.
-- End on his last line with the CTA visible. No long outro, no end card longer than about 1 s. A clean loop back to the hook is a plus.
+- End on his last line with the CTA visible, **never on his face**. On a punch-in close-up, put the CTA below the chin / onto the chest, or scale the head down so the card sits above his hair, still never above y 300. No long outro, no end card longer than about 1 s. A clean loop back to the hook is a plus.
 - Optional soft second ask only if the platform rewards it ("follow for the next one"). The URL is always the primary CTA.
 
 ## 3. Attention rules for the shot list

@@ -35,6 +35,12 @@ Platform UI to stay clear of (organic Shorts, Reels and TikTok inherit the same 
 
 Word-synced captions stay 70-90 px heavy sans in the lower-middle safe zone. Do not restyle them to match this title, and do not put this title in the caption slot.
 
+## No overlay on his face
+
+- **No overlay may cover his face.** This is not only the hook title. CTA cards, "Link in description" plates, offer chips, logos, captions, badges, and any other graphic must stay clear of his hair, forehead, eyes, nose and mouth.
+- Always measure the face and hair on the actual frames of that shot. Punch-in close-ups often fill the old upper band (y 320-560); a card left around y 372 will sit on his forehead and eyes. In that case move the overlay below the chin / onto the chest (still inside safe lanes), or scale and anchor the talking head down so there is a clear gap, the same as the hook treatment.
+- Still never above y 300, still inside 80% width, still clear of the bottom and right rails.
+
 ## Voice
 
 - Casual talk-to-camera voice, contractions, plain words.
