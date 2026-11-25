@@ -174,7 +174,7 @@ After x264, min/max luma is useless (ringing around stroked text gives 0/255). C
 - Run ffprobe on the output.
 - Check A/V sync with the 2048-sample cross-correlation, not by eye.
 - Look at several extracted frames: hook frame 0, a later hook frame, a caption frame, each visual overlay, the last frame, and the cover. Draw y 300, x 120 and x 888 guides on the hook frame. Confirm the hook is one line, 52-68 px Medium/Semibold, inside the 80% width, never above y 300, and clear of his hair, forehead and face.
-- Confirm the cover hook sits inside the Instagram 3:4 crop (about y 240 to 1680) and in the same y 320-560 band as the in-video title.
+- Confirm the cover hook is the same one line as the in-video title, still clear of his face, and inside the Instagram 3:4 crop (about y 240 to 1680).
 - Confirm SFX stems (or confirm there are no SFX).
 - Confirm spelling of every on-screen product name.
 - Write `out/NOTES.md`.
