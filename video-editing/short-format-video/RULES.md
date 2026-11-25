@@ -9,7 +9,7 @@ Standing format, voice and fact rules for every OrcDev Short (YouTube Shorts, Ti
 - Hard hook in the first second. Then "what it is and why it matters", 3-5 features or one clear point, short CTA.
 - No slow intro, no logo sting, no fade in. Frame 0 must already be interesting.
 - Speaking pace is about 2.5 to 3 words per second. A 30-second Short is roughly 75 to 90 spoken words. Count the words and cut until the script fits the target.
-- On-screen hook title is small, calm and inside the central 80% of the frame. Not a giant full-width blast. Numbers below.
+- On-screen hook title is **one short line**, small and calm, inside the central 80% of the frame, and never on his face or forehead. Not a giant full-width blast, and not a 2-line stack across his forehead. Numbers below.
 
 ## On-screen hook title
 
@@ -20,8 +20,8 @@ All numbers below are for the 1080x1920 canvas.
 - **Width:** max 80% of the frame (864 px). Side margins at least 108 px. Prefer 120 px, so glyphs sit inside x 120-960. No full-width, no edge-to-edge, no line that hugs the frame. Phones crop the left and right; wide titles get cut.
 - **Size:** 56-68 px. Hard cap 72 px. Readable at arm's length, not a third of the frame tall.
 - **Weight and case:** Medium or Semibold (500-600). Never Black, ExtraBold or Ultra for this title. Sentence case, or short Title Case. Not a full-line ALL CAPS blast. One keyword may use the accent color; the rest stays the same weight.
-- **Lines:** 1-2 lines. 3 only if every line still has about 3-5 words. About 3-5 words per line. Whole title about 5-7 words.
-- **Placement:** upper-middle safe zone. Top of the block, plate included, at y 320-380. Bottom of the block by y 560. Never above y 300. Never into the bottom about 350 px (platform caption and music bar) or the right about 150-192 px (like/share rail). Overlapping hair is fine. Cover frames must also sit inside Instagram's 3:4 crop (about y 240-1680).
+- **Lines:** **Exactly one line.** Never wrap to 2 or more lines. If the phrase does not fit, rewrite it to a shorter punchy line that keeps the same meaning (no invented facts) and/or shrink the font slightly (stay in the 56-68 px band if you can; do not drop below 52 px). About 3-6 words is typical.
+- **Placement:** upper-middle safe zone, **above his head, never on his face or forehead.** Never above y 300. Start the block just below y 300 (typically y 310-360). A one-line plate is short, so the bottom should stay well above his hair. Measure the top of his hair / forehead on the actual hook frames and leave a clear gap. If the face fills the frame and hair starts near or above y 300, scale and anchor the talking head down (or open on a split with the visual on top) so there is room for the hook between y 300 and the top of his hair. **Do not place the hook across his forehead**, even if that would fall inside the old y 320-560 box. Never into the bottom about 350 px (platform caption and music bar) or the right about 150-192 px (like/share rail). Cover frames use the same one-line hook, still clear of his face, and inside Instagram's 3:4 crop (about y 240-1680).
 - **Box vs stroke:** white or near-white type. Either a 2-3 px dark stroke plus a soft shadow, or a small rounded plate (padding 16-24 px, fill about 45-65% black). Fit the plate to the words. Not a full-width bar. Not a thick slam outline.
 - **On screen:** from frame 0 through the first spoken sentence, typically 1.5-2.5 s. Fully landed for at least 1.2 s. Fade off in 4-8 frames at the Beat 1 hard cut. Do not leave it up for the rest of the video.
 - **Entrance:** fade plus an 8-16 px rise, or fade plus scale 96% to 100%, 8-12 frames at 30 fps, ease-out. No slam, shake, bounce, 3D flip or overshoot spring.

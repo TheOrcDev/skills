@@ -75,20 +75,20 @@ Small, calm on-screen hook title from frame 0 to about the end of the first spok
 
 On a 1080x1920 frame:
 
-- Font 56-68 px, hard cap 72 px. Medium or Semibold (500-600), never Black, ExtraBold or Ultra.
+- Font 56-68 px, hard cap 72 px, floor 52 px if a slightly smaller size is what keeps the title on one line. Medium or Semibold (500-600), never Black, ExtraBold or Ultra.
 - Sentence case or short Title Case. Not a full-line ALL CAPS blast. One keyword may take the accent color.
-- Max 2 lines (3 only with about 3-5 words on each). About 3-5 words per line.
-- Max block width 864 px (80% of 1080). Side margins at least 108 px; prefer 120 px so the glyphs sit inside x 120-960. No full-width, no edge-to-edge.
-- Top of the block (plate included) at y 320-380, bottom by y 560. Never above y 300: TikTok's For You tabs and Reels' header cover the top about 250 px; YouTube's vertical overlay keeps the top 288 px clear. Overlapping his forehead/hair is fine.
+- **Exactly one line.** Never wrap to 2 or more lines. If the phrase does not fit in the width band, rewrite it to a shorter punchy line that keeps the same meaning (no invented facts) and/or shrink the font slightly. About 3-6 words is typical.
+- Max block width 864 px (80% of 1080). Side margins at least 108 px; prefer 120 px so the glyphs sit inside x 120-960 (prefer max 768 px / x 120-888). No full-width, no edge-to-edge.
+- **Never on his face or forehead.** Place the one-line hook above his head, just below y 300 (typically starting y 310-360). Never above y 300: TikTok's For You tabs and Reels' header cover the top about 250 px; YouTube's vertical overlay keeps the top 288 px clear. Measure the top of his hair / forehead on the actual hook frames and leave a clear gap. If the face fills the frame (hair often starts near y 180-300), scale and anchor the talking head down, or open on a split with the visual on top, so there is room for the hook between y 300 and the top of his hair. Do not park the hook on his forehead even if that falls inside the old y 320-560 box.
 - Keep clear of the bottom about 350 px (TikTok / Reels / Shorts caption and music; published overlays reserve 660-672 px) and the right about 150-192 px (like/share rail; TikTok's rail is about 300 px from y 840 down).
 - The same y 300 floor applies to every overlay (CTA, title pills, logos, chips). Nothing important above y 300. CTA pills at the end sit in this same upper safe band (y 320-560), not a full-width title bar.
 - Contrast: 2-3 px dark stroke plus a soft shadow, or a small rounded plate (padding 16-24 px, about 45-65% black) fitted to the words. Not a full-width bar.
 - Entrance: fade plus an 8-16 px rise, or fade plus scale 96% to 100%, 8-12 frames at 30 fps, ease-out. No slam, shake, bounce or overshoot spring.
 - Hold through the first spoken sentence, typically 1.5-2.5 s, fully landed at least 1.2 s. Fade off 4-8 frames at the Beat 1 hard cut.
 
-The face often fills the frame (head top about y 180 at 1080x1920), so a compact top-third title still sits over the hair. A split layout (visual on top) at frame 0 gives the hook a clean area. Instagram's profile grid crops covers to 3:4 (about y 240 to 1680), so keep the cover title in the same y 320-560 band.
+The face often fills the frame (head top about y 180 at 1080x1920). That is why a title dropped into the old y 320-560 band lands on his forehead. Do not do that. Create a gap above his head (scale and anchor the talking head down, or use a split with the visual on top) and put the one-line hook in that gap, just below y 300. Instagram's profile grid crops covers to 3:4 (about y 240 to 1680); keep the same one-line hook on the cover, still clear of his face.
 
-Measure placement on the final file, not only in CSS. Drawing guide lines at y 300, y 560, x 120 and x 960 on extracted frames (`drawbox`) makes width and height violations obvious.
+Measure placement on the final file, not only in CSS. Drawing guide lines at y 300, x 120 and x 888 on extracted frames (`drawbox`) makes width and forehead overlaps obvious. Confirm the hook is one line and that its plate does not overlap his hair or forehead.
 
 ### 2. Tight pacing
 
@@ -173,7 +173,7 @@ After x264, min/max luma is useless (ringing around stroked text gives 0/255). C
 
 - Run ffprobe on the output.
 - Check A/V sync with the 2048-sample cross-correlation, not by eye.
-- Look at several extracted frames: hook frame, a caption frame, each visual overlay, the last frame. Draw y 300, y 560, x 120 and x 960 guides on the hook frame. The title block must sit inside that box, at 56-68 px, not filling it.
+- Look at several extracted frames: hook frame 0, a later hook frame, a caption frame, each visual overlay, the last frame, and the cover. Draw y 300, x 120 and x 888 guides on the hook frame. Confirm the hook is one line, 52-68 px Medium/Semibold, inside the 80% width, never above y 300, and clear of his hair, forehead and face.
 - Confirm the cover hook sits inside the Instagram 3:4 crop (about y 240 to 1680) and in the same y 320-560 band as the in-video title.
 - Confirm SFX stems (or confirm there are no SFX).
 - Confirm spelling of every on-screen product name.
