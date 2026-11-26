@@ -47,7 +47,7 @@ Do not upload, post or send anything anywhere.
 - Use Remotion (React) for the edit. Each video folder gets its own small Remotion project. Do not share `node_modules` across folders unless it just works.
 - Render with Remotion's own headless shell (`npx remotion browser ensure`), not system Chrome (system Chrome produced mosaic/blank frames).
 - ffmpeg and ffprobe are on the machine (on the house Mac, `/opt/homebrew/bin`). Bun and Node are installed.
-- Remotion's bundler does not follow symlinks in `public/` (404 even with absolute links). Copy real files in: 1440x2560 CRF 12-14 proxies are sharp enough for 1080 output plus a 113% zoom, and they render faster than 4K. Originals stay untouched.
+- Remotion's bundler does not follow symlinks in `public/` (404 even with absolute links). Copy real files in: 1440x2560 CRF 12-14 proxies are sharp enough for 1080 output plus a modest punch-in (up to about 0.90 on the 0.72-0.78 base), and they render faster than 4K. Originals stay untouched.
 - Bundle once (`npx remotion bundle --out-dir work/bundle`) and render stills from that bundle (`renderStill`). Repeated `npx remotion still` per frame is slow. Contact sheets with ffmpeg `xstack` make review fast.
 
 ## Re-transcribe and silence cuts
@@ -71,7 +71,7 @@ A working pattern is one EDL file (kept ranges in source frames plus word times)
 
 ### 1. Hook in the first second
 
-Small, calm on-screen hook title from frame 0 to about the end of the first spoken sentence. Short (about 5-7 words), readable without sound. The spoken first line is also the hook, so the text can match it or sharpen it. This is not a giant ultra-bold blast, and it is not the same style as the 70-90 px Black captions. Standing numbers live in [RULES.md](RULES.md).
+Small, calm on-screen hook title from frame 0 to about the end of the first spoken sentence. Short (about 5-7 words), readable without sound. The spoken first line is also the hook, so the text can match it or sharpen it. This is not a giant ultra-bold blast, and it is not the same style as the word-synced captions. Standing numbers live in [RULES.md](RULES.md).
 
 On a 1080x1920 frame:
 
@@ -79,28 +79,32 @@ On a 1080x1920 frame:
 - Sentence case or short Title Case. Not a full-line ALL CAPS blast. One keyword may take the accent color.
 - **Exactly one line.** Never wrap to 2 or more lines. If the phrase does not fit in the width band, rewrite it to a shorter punchy line that keeps the same meaning (no invented facts) and/or shrink the font slightly. About 3-6 words is typical.
 - Max block width 864 px (80% of 1080). Side margins at least 108 px; prefer 120 px so the glyphs sit inside x 120-960 (prefer max 768 px / x 120-888). No full-width, no edge-to-edge.
-- **Never on his face or forehead.** Place the one-line hook above his head, just below y 300 (typically starting y 310-360). Never above y 300: TikTok's For You tabs and Reels' header cover the top about 250 px; YouTube's vertical overlay keeps the top 288 px clear. Measure the top of his hair / forehead on the actual hook frames and leave a clear gap. If the face fills the frame (hair often starts near y 180-300), scale and anchor the talking head down, or open on a split with the visual on top, so there is room for the hook between y 300 and the top of his hair. Do not park the hook on his forehead even if that falls inside the old y 320-560 box.
+- **Never on his face or forehead.** Place the one-line hook above his head, just below y 300 (typically starting y 310-360). Never above y 300: TikTok's For You tabs and Reels' header cover the top about 250 px; YouTube's vertical overlay keeps the top 288 px clear. Measure the top of his hair / forehead on the actual hook frames and leave a clear gap. The default talking-head scale (0.72-0.78, bottom-anchored, for the whole video; see [RULES.md](RULES.md)) is what creates that gap on current tight raws. The Ghostex hook is the reference: one-line hook just below y 300, captions in the clear space (often the gap above his hair). Do not park the hook on his forehead even if that falls inside the old y 320-560 box.
 - Keep clear of the bottom about 350 px (TikTok / Reels / Shorts caption and music; published overlays reserve 660-672 px) and the right about 150-192 px (like/share rail; TikTok's rail is about 300 px from y 840 down).
-- The same y 300 floor applies to every overlay (CTA cards, title pills, logos, chips, captions). Nothing important above y 300. **No overlay may cover his face, hair, forehead or eyes** — not just the hook. Measure the face on the actual frames of that shot. On a punch-in close-up the old upper band (y 320-560) often sits on his forehead; move the overlay below the chin / onto the chest, or scale and anchor the head down so there is a clear gap. Do not park a closing CTA at y 372 on a tight crop.
+- The same y 300 floor applies to every overlay (CTA cards, title pills, logos, chips, captions). Nothing important above y 300. **No overlay may cover his face, hair, forehead or eyes**, not just the hook. Measure the face on the actual frames of that shot. Stay on the 0.72-0.78 scale (punch-ins only to about 0.82-0.90) so the upper band stays clear. If a graphic would still sit on his forehead, move it below the chin / onto the chest, or scale the head down so there is a clear gap. Do not park a closing CTA at y 372 on a tight crop.
 - Contrast: 2-3 px dark stroke plus a soft shadow, or a small rounded plate (padding 16-24 px, about 45-65% black) fitted to the words. Not a full-width bar.
 - Entrance: fade plus an 8-16 px rise, or fade plus scale 96% to 100%, 8-12 frames at 30 fps, ease-out. No slam, shake, bounce or overshoot spring.
 - Hold through the first spoken sentence, typically 1.5-2.5 s, fully landed at least 1.2 s. Fade off 4-8 frames at the Beat 1 hard cut.
 
-The face often fills the frame (head top about y 180 at 1080x1920). That is why a title dropped into the old y 320-560 band lands on his forehead. Do not do that. Create a gap above his head (scale and anchor the talking head down, or use a split with the visual on top) and put the one-line hook in that gap, just below y 300. Instagram's profile grid crops covers to 3:4 (about y 240 to 1680); keep the same one-line hook on the cover, still clear of his face.
+Current tight raws often have the hair around y 130-190 in a 1080x1920 fit, so a 1.0 crop leaves no room for the hook. The 0.72-0.78 bottom-anchored scale creates the gap above his head. Put the one-line hook in that gap, just below y 300. From the next batch the camera moves back (about arm's length, 60-80 cm, hair about 15-20% down in the raw); measure that headroom and recalibrate the scale, because a looser raw may need less scale-down. Instagram's profile grid crops covers to 3:4 (about y 240 to 1680); keep the same one-line hook on the cover, still clear of his face.
 
 Measure placement on the final file, not only in CSS. Drawing guide lines at y 300, x 120 and x 888 on extracted frames (`drawbox`) makes width and forehead overlaps obvious. Confirm the hook is one line and that its plate does not overlap his hair or forehead. Confirm the same for every other overlay, including the closing CTA on punch-in close-ups.
 
 ### 2. Tight pacing
 
-Cut every silence, breath gap, false start and dead air between and inside parts. Join the parts seamlessly. Use subtle punch-in zooms (100% to about 108-115%) on talking-head stretches every few seconds so the frame never feels static. The final cut should feel fast but natural, not robotic. List pauses can be cut down to about 0.1 s and still sound natural.
+Cut every silence, breath gap, false start and dead air between and inside parts. Join the parts seamlessly. Use subtle punch-in zooms on talking-head stretches every few seconds so the frame never feels static, but stay on the 0.72-0.78 base and only ease up to about 0.82-0.90. Never jump to 1.04-1.125. The final cut should feel fast but natural, not robotic. List pauses can be cut down to about 0.1 s and still sound natural.
 
 ### 3. Captions that work
 
-Burned-in, word-by-word or 2-4 word chunks synced to word timestamps. Keep each chunk to one line. At 80 px Montserrat Black that is about 14-15 characters per 780 px; greedy split by length plus phrase-break markers in the EDL. Big (about 70-90 px on 1080 wide), heavy sans-serif, white with a thick dark stroke/shadow, the currently spoken word highlighted in an accent color (Videorc green or a bright yellow). These sizes are for the word-synced caption track only. Do not use them on the opening hook title (that stays 56-68 px Medium/Semibold, see section 1).
+Burned-in, plain white TikTok-style captions synced to word timestamps. Short 1-3 word chunks or one short line, one line only. Greedy split by length plus phrase-break markers in the EDL.
 
-Caption y depends on layout:
+- Type: bold sans, about 64-80 px on 1080 wide, all white. A 2-3 px dark stroke plus a soft shadow. No fill plate.
+- No colored active-word highlight, no green, no amber, no yellow on the spoken word. Every word in the chunk is the same white. Do not copy the old karaoke / CapCut-style highlight.
+- These sizes and colors are for the caption track only. Do not use them on the opening hook title (that stays 56-68 px Medium/Semibold, see section 1).
 
-- Full-head shots: lower-middle safe zone, roughly y 1150-1450 on 1920. Captions at about y 1310 sit just under the chin.
+Caption y depends on layout. Never place captions on his face, hair, forehead, eyes, nose or mouth.
+
+- Full-head shots: follow the Ghostex hook layout. During the open, captions can sit in the gap between the one-line hook and his hair. Later they sit under the chin or on the chest, in the lower-middle safe zone, still above the bottom about 350 px. About y 1310 is a starting point only; measure the chin on that shot.
 - Split layouts: captions at the seam (top-anchored around y 968-1060), never in the 1150-1450 zone (that covers the eyes).
 
 Clear of the platform UI at the bottom (about 350 px) and the right-side buttons (about 150 px). Spell product names correctly. Never show whisper mistakes.
@@ -139,14 +143,15 @@ Check SFX with numbers, not only by ear:
 
 ### 7. Ending
 
-End on his last line with the CTA visible (for example "Link in bio" / repo URL / site URL as text). The CTA must stay in a safe lane and **never on his face**. The upper band (y 320-560) is only valid when that band is clear of his hair and forehead (same rule as the hook). On a punch-in close-up, move the CTA below the chin / onto the chest, or scale the head down so the card sits above his hair, still never above y 300. No long outro, no end card longer than about 1 s. A clean loop back to the hook is a plus.
+End on his last line with the CTA visible (for example "Link in bio" / repo URL / site URL as text). The CTA must stay in a safe lane and **never on his face**. Stay on the 0.72-0.78 talking-head scale (punch-in at most 0.82-0.90) so the CTA can sit above his hair, just below y 300, or under the chin / on the chest. The upper band (y 320-560) is only valid when that band is clear of his hair and forehead. No long outro, no end card longer than about 1 s. A clean loop back to the hook is a plus.
 
 ## Safe-zone layouts that worked
 
 Use these as starting geometry, then measure on extracted frames.
 
-- Talking head scaled to 0.86-0.9, anchored to the bottom, edges feathered (`mask-image`, 13% sides and 15% top) into a `#07090a` background. The recording background is near-black, so the seam does not show. Under 10% feather leaves a faint box edge.
-- Split: face cam at 0.78 scale with the eyes around y 1255 under a 960 px panel, or visual panel 0 to 1000 with eyes around y 1380 (face scale at least 1 so the sides stay covered). Moving everything below y 300 costs the split about 200 px; wrap existing mockups in `translateY(170px) scale(0.85)` with `transform-origin: 540px 300px`, then grow the panel and push seam captions and face cam down about 50 px. Check connectors and titles again afterwards.
+- Talking head scaled to 0.72-0.78 for the whole video, anchored to the bottom, edges feathered (`mask-image`, 13% sides and 15% top) into a `#07090a` background. The recording background is near-black, so the seam does not show. Under 10% feather leaves a faint box edge. Punch-ins ease up to about 0.82-0.90 only. Never jump to 1.04-1.125.
+- Measure the raw headroom before you lock that scale. Tight takes (hair around y 130-190 in a 1080x1920 fit) need 0.72-0.78. From the next batch the camera moves back (about arm's length, 60-80 cm, hair about 15-20% down in the raw), so a looser raw may need less scale-down and can support different, wider layouts. Recalibrate. Do not copy an old scale blindly.
+- Split: face cam at about 0.78 scale with the eyes around y 1255 under a 960 px panel, or visual panel 0 to 1000 with eyes around y 1380 (face scale at least 1 so the sides stay covered). Moving everything below y 300 costs the split about 200 px; wrap existing mockups in `translateY(170px) scale(0.85)` with `transform-origin: 540px 300px`, then grow the panel and push seam captions and face cam down about 50 px. Check connectors and titles again afterwards, and keep captions at the seam, never on the eyes.
 - Full-screen visuals: plan them for y 300 to 1200 from the start. y 1450 to 1570 was left empty on one pass; use it for a bigger visual or a second label.
 - Hub-and-spoke: hub at y about 725 with radius about 330 so the top tile clears 300 and the bottom tiles clear captions at 1160.
 
@@ -173,7 +178,7 @@ After x264, min/max luma is useless (ringing around stroked text gives 0/255). C
 
 - Run ffprobe on the output.
 - Check A/V sync with the 2048-sample cross-correlation, not by eye.
-- Look at several extracted frames: hook frame 0, a later hook frame, a caption frame, each visual overlay, the closing CTA / last 1-2 s, the last frame, and the cover. Draw y 300, x 120 and x 888 guides on the hook and end frames. Confirm the hook is one line, 52-68 px Medium/Semibold, inside the 80% width, never above y 300, and clear of his hair, forehead and face. Confirm **no overlay** (CTA, chips, captions, logos) covers his face on any checked frame, including punch-in close-ups at the end.
+- Look at several extracted frames: hook frame 0, a later hook frame, a caption frame, each visual overlay, the closing CTA / last 1-2 s, the last frame, and the cover. Draw y 300, x 120 and x 888 guides on the hook and end frames. Confirm the hook is one line, 52-68 px Medium/Semibold, inside the 80% width, never above y 300, and clear of his hair, forehead and face. Confirm captions are plain white, with no colored highlight, and sit in the clear space (Ghostex hook layout), never on his face. Confirm **no overlay** (CTA, chips, captions, logos) covers his face on any checked frame. Confirm the talking head stays on the 0.72-0.78 scale (punch-ins only to about 0.82-0.90), including at the end.
 - Confirm the cover hook is the same one line as the in-video title, still clear of his face, and inside the Instagram 3:4 crop (about y 240 to 1680).
 - Confirm SFX stems (or confirm there are no SFX).
 - Confirm spelling of every on-screen product name.

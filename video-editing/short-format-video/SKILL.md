@@ -83,7 +83,7 @@ Reference hook OrcDev likes:
 
 Rules for the hook:
 
-- **Face to camera**, tight or medium-close framing, eye contact from frame one.
+- **Face to camera**, medium-close, on the 0.72-0.78 talking-head scale (see [RULES.md](RULES.md)), eye contact from frame one.
 - **Captions on** from the first word.
 - Optional **pop-up icons that match the claim** while the line is spoken (for the hook above: Twitch, YouTube, X logos popping in one by one, timed to the words). Keep them at or below y 300. Nothing important above y 300. Icons sit beside or under the title, not wider than the title block.
 - No greeting, no "hey guys", no logo sting, no music intro before the line. The hook is the first frame.
@@ -91,7 +91,7 @@ Rules for the hook:
 - On-screen hook title from frame 0 to about the end of the first spoken sentence (typically 1.5-2.5 s, fully landed at least 1.2 s). Max about 7 words.
 - Keep the title small and calm: 56-68 px (hard cap 72, floor 52 px if needed to stay on one line), Medium or Semibold, sentence case or short Title Case. **Exactly one line.** If it would wrap, shorten the phrase (keep the meaning, no invented facts) or shrink the font slightly. Not Black, not ALL CAPS across the frame, not a full-width bar. Full numbers in [RULES.md](RULES.md).
 - Width: max 864 px (80% of 1080). Side margins at least 108 px, prefer 120 px (x 120-960). Phones crop the left and right; no edge-to-edge text.
-- Placement: one line above his head, just below y 300, never on his face or forehead. Nothing important above y 300. Clear of the bottom about 350 px and the right about 150 px. If the face fills the frame, scale the talking head down or open on a split so the hook has a clear gap above his hair. **No overlay of any kind** (hook, CTA, chips, logos, captions) may cover his face, hair, forehead or eyes. Measure the face on the actual frames of that shot. A punch-in close-up often fills the old y 320-560 band; move the graphic or scale the head so it stays clear.
+- Placement: one line above his head, just below y 300, never on his face or forehead. Nothing important above y 300. Clear of the bottom about 350 px and the right about 150 px. The default 0.72-0.78 talking-head scale, used for the whole video, is what creates that gap on current tight raws. Measure the raw headroom and recalibrate if the next batch is looser (camera further back, hair about 15-20% down). **No overlay of any kind** (hook, CTA, chips, logos, captions) may cover his face, hair, forehead or eyes. Measure the face on the actual frames of that shot. Punch-ins stay at about 0.82-0.90, never 1.04-1.125; if a graphic would still sit on his forehead, move it or scale the head so it stays clear.
 - Entrance: fade plus a short rise, or fade plus scale 96% to 100%, 8-12 frames, ease-out. No slam, shake or bounce.
 
 ### Beat 2: Post-hook bridge (~2 to ~5 seconds)
@@ -123,7 +123,7 @@ One clear action, spoken **and** on screen:
 
 - Use the exact URL for this video. Never a vague "link in bio" when a URL fits. The edit may still show "Link in bio" / repo URL / site URL as on-screen text; the spoken line prefers the URL.
 - Face to camera again for the close, so the video ends on a person, not a UI.
-- End on his last line with the CTA visible, **never on his face**. On a punch-in close-up, put the CTA below the chin / onto the chest, or scale the head down so the card sits above his hair, still never above y 300. No long outro, no end card longer than about 1 s. A clean loop back to the hook is a plus.
+- End on his last line with the CTA visible, **never on his face**. Stay on the 0.72-0.78 scale (punch-in at most 0.82-0.90) so the CTA can sit above his hair, just below y 300, or under the chin / on the chest. No long outro, no end card longer than about 1 s. A clean loop back to the hook is a plus.
 - Optional soft second ask only if the platform rewards it ("follow for the next one"). The URL is always the primary CTA.
 
 ## 3. Attention rules for the shot list
@@ -132,7 +132,7 @@ These are mandatory. Every one of them must be visible in the shot list.
 
 - **Hard cut or angle change right after the hook sentence.** The first sentence is one shot. The moment it ends, cut to a different angle, framing, or B-roll. This is the single biggest retention move on TikTok and Reels. Document it explicitly in the cut notes of Beat 1 to Beat 2.
 - **Document every angle change.** No two consecutive beats share the exact same camera setup without a reason written in the cut notes. Typical rotation: face cam A (centre, medium-close), face cam B (off-axis or punch-in), screen UI, B-roll.
-- **Captions on every beat.** Word-by-word or 2 to 4 word chunks, keyword emphasised, kept inside the safe area. State the caption style once at the top of the shot list. Safe area on 1080x1920: nothing important above y 300 (TikTok/Reels cover the top about 250 px), clear of the bottom about 350 px and the right about 150 px. Full-head captions sit roughly y 1150-1450; split-layout captions sit at the seam, not on the eyes.
+- **Captions on every beat.** Plain white TikTok-style: 1-3 word chunks or one short line, all white bold sans with a subtle dark stroke and shadow, no colored highlight, kept inside the safe area and never on his face. State the caption style once at the top of the shot list. Safe area on 1080x1920: nothing important above y 300 (TikTok/Reels cover the top about 250 px), clear of the bottom about 350 px and the right about 150 px. Full-head captions follow the Ghostex hook layout (in the gap above his hair during the open, later under the chin or on the chest); split-layout captions sit at the seam, not on the eyes.
 - **Graphics match the spoken line.** If he says "Twitch, YouTube and X", those three logos appear on those three words. If he says "five destinations", five destination pills appear. If he says "free", a `FREE` badge appears. Nothing on screen that the audio does not mention, and nothing mentioned that the screen does not show.
 - **B-roll where it helps.** Use it to break up talking-head time, to cover a jump cut, or to make an abstract line concrete. B-roll ideas that fit OrcDev's channel:
   - Orc at the computer, typing, clicking go-live
@@ -179,7 +179,7 @@ Beat 3 (Value): <line(s)>
 Beat 4 (CTA): <line>
 
 ## Shot list / video script
-Captions: <style note, e.g. 2-4 word chunks, white, black stroke, keyword amber, bottom-centre inside safe area. Opening hook title: one line, 56-68 px Semibold, max 864 px wide, above his head and never above y 300, never on his forehead>
+Captions: <style note, e.g. 1-3 word chunks, plain white bold sans, subtle dark stroke and shadow, no color highlight, never on his face. Opening hook title: one line, 56-68 px Semibold, max 864 px wide, above his head and never above y 300, never on his forehead>
 Aspect: 9:16, 1080x1920
 
 | # | Time | VO line | Camera | Graphics / captions | B-roll | Cut notes |
@@ -280,17 +280,17 @@ Beat 3 (Value): Add your destinations, Twitch, YouTube, X, whatever you stream o
 Beat 4 (CTA): Go to videorc.com and try it.
 
 ## Shot list / video script
-Captions: 2-4 word chunks, white with black stroke, keyword in amber, on from frame one. Full-head at y 1150-1450; split at the seam. Nothing above y 300. Clear of bottom ~350 px and right ~150 px. Opening hook title is separate: one line, 56-68 px Semibold, max 864 px wide, above his head and never on his forehead.
+Captions: 1-3 word chunks, plain white bold sans with a subtle dark stroke and shadow, no color highlight, on from frame one, never on his face. Full-head follows the Ghostex hook layout (gap above his hair during the open, later under the chin or on the chest); split at the seam. Nothing above y 300. Clear of bottom ~350 px and right ~150 px. Opening hook title is separate: one line, 56-68 px Semibold, max 864 px wide, above his head and never on his forehead.
 Aspect: 9:16, 1080x1920
 
 | # | Time | VO line | Camera | Graphics / captions | B-roll | Cut notes |
 |---|------|---------|--------|---------------------|--------|-----------|
 | 1 | 0.0-2.2 | Did you know you can go live on 5 platforms at once for free? | A-roll, face cam A, centre, medium-close, eye contact | Captions on. Compact one-line hook title (56-68 px Semibold, max 864 px wide, above his head, never above y 300, never on his forehead). Twitch, YouTube, X logos pop in on "5 platforms"; `FREE` badge pops on "free" | None | **Hard cut** to face cam B the moment "free" lands |
-| 2 | 2.2-5.0 | You can do this easily with this app. It's called Videorc. | A-roll, face cam B, off-axis 30 degrees, waist-up, punched in 15% | Videorc logo slides in beside head on "Videorc" | None | Whip to screen UI |
+| 2 | 2.2-5.0 | You can do this easily with this app. It's called Videorc. | A-roll, face cam B, off-axis 30 degrees, medium-close, still on the 0.72-0.78 talking-head scale | Videorc logo slides in beside head on "Videorc" | None | Whip to screen UI |
 | 3a | 5.0-11.0 | Add your destinations, Twitch, YouTube, X, whatever you stream on, up to five of them. | B-roll | Destination pills appear on the UI as each platform is named; counter `5 / 5` fills on "up to five" | Screen: Videorc destinations panel, adding each platform | Cut on the fifth pill to B-roll |
-| 3b | 11.0-16.0 | Hit go live once, and you're live everywhere. | B-roll | Caption keyword `ONCE` in amber. Five live tiles light up on "everywhere" | Orc at desk, over-the-shoulder, clicks Go Live, then screen recording of stream tiles going live | Cut to face cam A on "everywhere" |
-| 3c | 16.0-24.0 | No watermark, and the free plan actually covers this. | A-roll, face cam A, centre, medium-close | `NO WATERMARK` strike-through badge; `FREE PLAN` pill on "free plan" | Optional 1s insert: clean stream output, no watermark corner | Punch-in 10% on "actually" for emphasis |
-| 4 | 24.0-30.0 | Go to videorc.com and try it. | A-roll, face cam B, waist-up, small lean toward the lens | CTA: `videorc.com` pill in the upper safe band (y 320-560), visible on the last line | None | End on the last line. No end card longer than ~1s |
+| 3b | 11.0-16.0 | Hit go live once, and you're live everywhere. | B-roll | Captions stay plain white, no color highlight. Five live tiles light up on "everywhere" | Orc at desk, over-the-shoulder, clicks Go Live, then screen recording of stream tiles going live | Cut to face cam A on "everywhere" |
+| 3c | 16.0-24.0 | No watermark, and the free plan actually covers this. | A-roll, face cam A, centre, medium-close, on the 0.72-0.78 base | `NO WATERMARK` strike-through badge; `FREE PLAN` pill on "free plan" (clear of his face) | Optional 1s insert: clean stream output, no watermark corner | Subtle punch-in to about 0.85 on "actually" |
+| 4 | 24.0-30.0 | Go to videorc.com and try it. | A-roll, face cam B, medium-close, still on the 0.72-0.78 scale, small lean toward the lens | CTA: `videorc.com` pill in the gap above his hair, just below y 300, never on his face, visible on the last line | None | End on the last line. No end card longer than ~1s |
 
 ## B-roll
 1. Screen recording, Videorc destinations panel: add Twitch, YouTube, X and two more. Clean 1080x1920 crop or 16:9 letterboxed. Used in 3a.
@@ -332,7 +332,8 @@ videorc, multistream, multistreaming, go live on multiple platforms, stream to t
 The cut is [WORKFLOW.md](WORKFLOW.md). Short version for anyone dispatching an editor:
 
 - Remotion (React), one project per video folder. Headless shell via `npx remotion browser ensure`, not system Chrome.
-- Compact one-line hook title from frame 0: 56-68 px Medium/Semibold, max 864 px wide, above his head and never above y 300, never on his forehead, subtle fade-in. Word-synced captions. Screenshots, animations and logos over explaining parts. SFX at about 20-30% volume (around -12 dB), well under his voice.
+- Talking head at scale 0.72-0.78 for the whole video, bottom-anchored and feathered. Punch-ins only to about 0.82-0.90, never 1.04-1.125. Measure raw headroom and recalibrate if the next batch is looser.
+- Compact one-line hook title from frame 0: 56-68 px Medium/Semibold, max 864 px wide, above his head and never above y 300, never on his forehead, subtle fade-in. Plain white TikTok-style captions (1-3 word chunks, no color highlight), never on his face. Screenshots, animations and logos over explaining parts. SFX at about 20-30% volume (around -12 dB), well under his voice.
 - Export 1080x1920, 30 fps, H.264 High yuv420p, AAC 48 kHz, about -14 LUFS, faststart. Cover PNG 1080x1920.
 - Finished files go to `~/Movies/Short Format Videos/` as `YYYY-MM-DD Topic.mp4` and `YYYY-MM-DD Topic cover.png`. Never leave the only copy in `~/projects`.
 - "This one too" style thumbnail shots need the real thumbnail from OrcDev before the edit.
@@ -375,7 +376,8 @@ Run this list. Any `no` means the package is not done.
 - [ ] Value beats are two to four verified proof points (or one clear point / 3-5 features), each visible on screen when spoken.
 - [ ] CTA speaks the exact URL and shows it on screen. No end card longer than about 1 s.
 - [ ] Every shot list row has a time, VO line, `A-roll`/`B-roll` mark, camera, graphics, B-roll and cut note.
-- [ ] Captions planned on every beat, inside the safe area.
+- [ ] Captions planned on every beat: plain white TikTok-style, no color highlight, inside the safe area, never on his face.
+- [ ] Talking head stays at scale 0.72-0.78 for the whole cut (punch-ins only to about 0.82-0.90). Hook and CTA sit in the clear space, never on his face.
 - [ ] Exactly four titles in order Question / Bold / Hooky / Ragebait, one marked Recommended. Thumbnail/cover text and Framework present.
 - [ ] Description (with default footer), X Post (no hashtags) and comma-separated YouTube Tags present.
 - [ ] Series is `One-off` or `Update`. No "Illegal to Be Free" anywhere.

@@ -33,12 +33,30 @@ Platform UI to stay clear of (organic Shorts, Reels and TikTok inherit the same 
 - Right: YouTube 192 px; TikTok's like/share rail about 300 px from y 840 down; Reels 65 px plus the button column. The hook title lives in the upper band so it misses that rail, but it still keeps 150 px off the right edge.
 - Sides: TikTok 120 px; some phones crop 9:16 to fill a taller screen. That is why the title is capped at 80% width with 108-120 px side margins.
 
-Word-synced captions stay 70-90 px heavy sans in the lower-middle safe zone. Do not restyle them to match this title, and do not put this title in the caption slot.
+Word-synced captions are defined below. Do not restyle them to match this title, and do not put this title in the caption slot.
+
+## Talking-head framing
+
+On a 1080x1920 canvas, the talking head stays at scale 0.72-0.78 for the whole video, not only the hook. Anchor it to the bottom edge and feather the edges (`mask-image`, about 13% sides and 15% top) into a `#07090a` background so the seam does not show.
+
+- Punch-ins stay on that base: ease up to about 0.82-0.90. Never jump to 1.04-1.125. That tight crop puts his hair at the top of the frame and drops the hook or CTA onto his forehead.
+- Hook, captions and CTA never go on his face, hair, forehead or eyes. The Ghostex hook is the reference: one-line hook just below y 300, with captions (and later the CTA) in the clear space, often in the gap above his hair or under the chin / on the chest.
+- Measure the raw take before you lock the scale. Tight takes (hair around y 130-190 in a 1080x1920 fit, about 6-9% down) need 0.72-0.78 so the hook can sit below y 300. From the next batch the camera moves back (about arm's length, 60-80 cm, hair about 15-20% down in the raw). A looser raw may need less scale-down and can support different, wider layouts. Recalibrate from the measured headroom. Do not copy an old scale blindly.
+
+## Burned-in captions
+
+Plain white TikTok-style captions, not a colored karaoke highlight.
+
+- Type: bold sans (about 64-80 px on 1080 wide), all white. A 2-3 px dark stroke plus a soft shadow for legibility. No fill plate.
+- No colored active-word highlight, no green, no amber, no yellow on the spoken word. Every word in the chunk is the same white.
+- Chunks: short, 1-3 words or one short line. One line only. Synced to word timestamps.
+- Placement: in the safe area, never on his face, hair, forehead, eyes, nose or mouth. On a full talking-head, follow the Ghostex hook layout: during the open, captions can sit in the gap between the hook title and his hair; later they sit under the chin or on the chest (lower-middle safe zone, still above the bottom about 350 px). On a split, sit them at the seam, never on the eyes. Keep 150 px off the right rail.
+- These sizes and colors are for the caption track only. The opening hook title stays 56-68 px Medium/Semibold, as above.
 
 ## No overlay on his face
 
 - **No overlay may cover his face.** This is not only the hook title. CTA cards, "Link in description" plates, offer chips, logos, captions, badges, and any other graphic must stay clear of his hair, forehead, eyes, nose and mouth.
-- Always measure the face and hair on the actual frames of that shot. Punch-in close-ups often fill the old upper band (y 320-560); a card left around y 372 will sit on his forehead and eyes. In that case move the overlay below the chin / onto the chest (still inside safe lanes), or scale and anchor the talking head down so there is a clear gap, the same as the hook treatment.
+- Always measure the face and hair on the actual frames of that shot. Stay on the 0.72-0.78 talking-head scale (punch-ins only to about 0.82-0.90) so the old upper band (y 320-560) is usually clear of his hair. If a graphic would still sit on his forehead or eyes, move it below the chin / onto the chest (still inside safe lanes), or scale the head down so there is a clear gap, the same as the hook treatment.
 - Still never above y 300, still inside 80% width, still clear of the bottom and right rails.
 
 ## Voice
