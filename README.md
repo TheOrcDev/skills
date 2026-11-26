@@ -71,12 +71,13 @@ Install the others the same way, and keep them side by side: they link to each o
 
 ## 🖍️ Video editing
 
-Skills for scripting, cutting, posting and editing video content live in [`video-editing/`](video-editing/README.md). Short format and board overlays are here now; long format and other video skills will land in the same directory as they are written.
+Skills for scripting, cutting, posting and editing video content live in [`video-editing/`](video-editing/README.md). Short format, board overlays and talking-head intro overlays are here now; long format and other video skills will land in the same directory as they are written.
 
 | Skill | Purpose |
 |---|---|
 | [short-format-video](video-editing/short-format-video/SKILL.md) | Shorts, Reels and TikTok end to end: voice, script package, shot list, Remotion edit, posting and 60-day repost |
 | [excalidraw-drawing](video-editing/excalidraw-drawing/SKILL.md) | Excalidraw-style diagram drawn onto the on-screen board as you explain it |
+| [talking-head-intro](video-editing/talking-head-intro/SKILL.md) | Explainer overlays on a recorded talking-head hook or intro, timed to each spoken line |
 
 ### `short-format-video` - Shorts from script through post
 
@@ -107,6 +108,20 @@ npx shadcn@latest add TheOrcDev/skills/excalidraw-drawing
 ```
 
 Call it with `/excalidraw-drawing`, "draw it up on my board", or "excalidraw this explanation."
+
+### `talking-head-intro` - explainer overlays on a hook
+
+You have a recorded talking-head hook, usually 10-20 seconds, and you want graphics that explain each line as it is said. This skill transcribes first, then lays one official, tasteful overlay group per spoken line into the empty space, never over his face and never a product name before he says it. The footage stays untouched, the output matches the source resolution (3840x2160 for his 4K Videorc recordings), and a cover is exported beside it. It is not `intro-video`, which builds Remotion brand films from scratch.
+
+```bash
+npx skills add TheOrcDev/skills --full-depth --skill talking-head-intro
+```
+
+```bash
+npx shadcn@latest add TheOrcDev/skills/talking-head-intro
+```
+
+Call it with `/talking-head-intro`, "add intro overlays", or "edit this intro."
 
 ## 🪓 The Horde
 
@@ -180,7 +195,7 @@ Call it with `/github-to-origin`, "move this repo to origin", or "why isn't my O
 
 ### `intro-video` - remotion intros with ASR captions
 
-Builds Remotion intros, reels, and brand films with remocn. Caption times come from ASR (`sherpa-onnx` + zipformer) - never from character-count guesses. Script for spelling, ASR for timing.
+Builds Remotion intros, reels, and brand films with remocn. Caption times come from ASR (`sherpa-onnx` + zipformer) - never from character-count guesses. Script for spelling, ASR for timing. For explainer overlays on a recorded talking-head hook, use [`talking-head-intro`](video-editing/talking-head-intro/SKILL.md) instead.
 
 ```bash
 npx shadcn@latest add TheOrcDev/skills/intro-video

@@ -1,11 +1,12 @@
 # Video editing skills
 
-Skills for OrcDev video: scripting, cutting and posting, plus overlays, drawings and other post-production passes on a finished take. Each skill is one folder with a `SKILL.md`, plus any templates or scripts it needs beside it.
+Skills for OrcDev video: scripting, cutting and posting, plus overlays, drawings, talking-head intros and other post-production passes on a finished take. Each skill is one folder with a `SKILL.md`, plus any templates or scripts it needs beside it.
 
 | Skill | Purpose |
 |---|---|
 | [short-format-video](short-format-video/SKILL.md) | End-to-end Shorts: voice, script package, beat-by-beat shot list, Remotion edit, posting, Drive and Notion log, 60-day repost. Companions: [RULES.md](short-format-video/RULES.md), [WORKFLOW.md](short-format-video/WORKFLOW.md) |
 | [excalidraw-drawing](excalidraw-drawing/SKILL.md) | Excalidraw-style diagram drawn onto the on-screen board in sync with the narration, composited over untouched footage |
+| [talking-head-intro](talking-head-intro/SKILL.md) | Explainer overlays on a recorded talking-head hook or intro (about 10-20s): one visual per spoken line, official brand marks, source resolution preserved |
 
 ![Excalidraw drawing example](excalidraw-drawing/examples/copybook-setup.jpg)
 
@@ -32,6 +33,11 @@ npx shadcn@latest add TheOrcDev/skills/short-format-video
 ```bash
 npx skills add TheOrcDev/skills --full-depth --skill excalidraw-drawing
 npx shadcn@latest add TheOrcDev/skills/excalidraw-drawing
+```
+
+```bash
+npx skills add TheOrcDev/skills --full-depth --skill talking-head-intro
+npx shadcn@latest add TheOrcDev/skills/talking-head-intro
 ```
 
 Use `--full-depth`, because the Skills CLI's default discovery stops at the repository's `skills/` collection. Full-depth discovery also includes `video-editing/` and `game-dev/`. The shadcn entries target `~/.claude/skills/<name>/`, the same as the rest of the repository.

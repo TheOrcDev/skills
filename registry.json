@@ -3257,6 +3257,19 @@
           "target": "~/.claude/skills/excalidraw-drawing/template/tsconfig.json"
         }
       ]
+    },
+    {
+      "name": "talking-head-intro",
+      "type": "registry:item",
+      "title": "Talking Head Intro",
+      "description": "Explainer overlays on a recorded talking-head hook or intro, about 10-20 seconds: transcribe first, one visual per spoken line appearing when it is said, official brand assets, never a name before it is said, source resolution preserved. Installs to .claude/skills/talking-head-intro/ in the target project.",
+      "files": [
+        {
+          "path": "video-editing/talking-head-intro/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/talking-head-intro/SKILL.md"
+        }
+      ]
     }
   ]
 }
